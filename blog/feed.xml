@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>SimWrapper Blog</title>
+        <link>https://simwrapper.github.io/blog</link>
+        <description>The best place to stay up-to-date with the latest SimWrapper news and events.</description>
+        <lastBuildDate>Mon, 25 Apr 2022 06:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <image>
+            <title>SimWrapper Blog</title>
+            <url>https://simwrapper.github.io/img/SW_favicon.png</url>
+            <link>https://simwrapper.github.io/blog</link>
+        </image>
+        <copyright>Copyright © 2022 VSP, TU Berlin</copyright>
+        <item>
+            <title><![CDATA[SimWrapper version 1.10]]></title>
+            <link>https://simwrapper.github.io/blog/2022/04/25/version-1.10.html</link>
+            <guid>https://simwrapper.github.io/blog/2022/04/25/version-1.10.html</guid>
+            <pubDate>Mon, 25 Apr 2022 06:00:00 GMT</pubDate>
+            <description><![CDATA[<p>Version 1.10.0 of Simwrapper is released today.</p> <p>New features:</p> <ul> <li>Aggregate-OD learned dashboards, lineWidths, and hideSmallerThan (<a href="https://github.com/simwrapper/simwrapper/commit/b8035c2a522d67272b26a255177c39b60dfca0de">b8035c2</a>)</li> <li>Calculation tables can now be 'table' type, and use table*.yaml config (<a href="https://github.com/simwrapper/simwrapper/commit/28687085dce957d62fb336d5dcce2ce6b783a7a3">2868708</a>)</li> <li>Dashboards learned &quot;text&q...</li></ul>]]></description>
+        </item>
+        <item>
+            <title><![CDATA[SimWrapper version 1.9]]></title>
+            <link>https://simwrapper.github.io/blog/2022/03/17/version-1.9.html</link>
+            <guid>https://simwrapper.github.io/blog/2022/03/17/version-1.9.html</guid>
+            <pubDate>Thu, 17 Mar 2022 06:00:00 GMT</pubDate>
+            <description><![CDATA[<p>Version 1.9.0 of Simwrapper is released today.</p> <p>New features:</p> <ul> <li>Add dashboard row-id as a CSS class name, to enable custom css (<a href="https://github.com/simwrapper/simwrapper/commit/97f9a7da79c646a10f6211dfc89862727738cbca">97f9a7d</a>), closes <a href="https://github.com/simwrapper/simwrapper/issues/122">#122</a></li> <li>Dashboard widths in simwrapper-config.yaml; width: [100%|70rem] etc (<a href="https://github.com/simwrapper/simwrapper/commit/131fca67c572a90e3c0b0dccef94a602408801cb">131fca6</a>), closes <a href="https://github.com/simwrapper/simwrapper/issues/120">#120</a></li> <li>Enable Chro...</li></ul>]]></description>
+        </item>
+        <item>
+            <title><![CDATA[SimWrapper version 1.8]]></title>
+            <link>https://simwrapper.github.io/blog/2022/03/03/version-1.8.html</link>
+            <guid>https://simwrapper.github.io/blog/2022/03/03/version-1.8.html</guid>
+            <pubDate>Thu, 03 Mar 2022 06:00:00 GMT</pubDate>
+            <description><![CDATA[<p>Version 1.8.0 of Simwrapper is released today.</p> <p>New features:</p> <ul> <li>Dashboards learned &quot;video&quot; panel type (<a href="https://github.com/simwrapper/simwrapper/issues/107">#107</a>) (<a href="https://github.com/simwrapper/simwrapper/commit/a2670a4dec989b1b794b5843c05875116dce74a7">a2670a4</a>)</li> <li><strong>links:</strong> configurable viewport (<a href="https://github.com/simwrapper/simwrapper/issues/103">#103</a>) (<a href="https://github.com/simwrapper/simwrapper/commit/5011174e2662e53ea8e55edb7123558ba71d9c43">5011174</a>)</li> </ul> <p>and from 1.7:</p> <ul> <li>Dashboards learned &quot;text&quot; block type, for including...</li></ul>]]></description>
+        </item>
+        <item>
+            <title><![CDATA[SimWrapper version 1.6]]></title>
+            <link>https://simwrapper.github.io/blog/2022/01/31/version-1.6.html</link>
+            <guid>https://simwrapper.github.io/blog/2022/01/31/version-1.6.html</guid>
+            <pubDate>Mon, 31 Jan 2022 06:00:00 GMT</pubDate>
+            <description><![CDATA[<p>Version 1.6.0 of Simwrapper is released today.</p> <p>New features:</p> <ul> <li>DBF files now supported in most places where CSVs are allowed (<a href="https://github.com/simwrapper/simwrapper/commit/38663796e78936dd5c72e36aa43d76119ae4e645">3866379</a>)</li> <li>Enable drag/drop to load datasets (CSV,.GZ) (<a href="https://github.com/simwrapper/simwrapper/commit/a4bd4ce2c276dbb0f88902bfdabbe450ea912521">a4bd4ce</a>)</li> <li><strong>links:</strong> Categorical link data can be used for colors (<a href="https://github.com/simwrapper/simwrapper/commit/2e00fa50c2e77220ead36e29e9860d65d5958ce3">2e00fa5</a>)</li> ...</ul>]]></description>
+        </item>
+        <item>
+            <title><![CDATA[ActivitySim and SimWrapper]]></title>
+            <link>https://simwrapper.github.io/blog/2021/11/15/activitysim.html</link>
+            <guid>https://simwrapper.github.io/blog/2021/11/15/activitysim.html</guid>
+            <pubDate>Mon, 15 Nov 2021 06:00:00 GMT</pubDate>
+            <description><![CDATA[<p>Please welcome <a href="https://activitysim.github.io">ActivitySim</a> to the SimWrapper family!</p> <p>ActivitySim is an advanced activity-based transport model being co-developed by a consortium of cities and state agencies in the U.S. There is now an ActivitySim flavor of SimWrapper being implemen...</p>]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Using SimWrapper with local files on your PC/laptop]]></title>
+            <link>https://simwrapper.github.io/blog/2021/01/27/local-files.html</link>
+            <guid>https://simwrapper.github.io/blog/2021/01/27/local-files.html</guid>
+            <pubDate>Wed, 27 Jan 2021 06:00:00 GMT</pubDate>
+            <description><![CDATA[<p>You don't need to set up any external file servers or upload outputs to subversion to use SimWrapper: you can explore the files stored on your own laptop right away.</p>
+<p>This is great for debugging runs and for files that you cannot make public (or that you don't want to make public just yet).</p>
+<p>All you need to do is run the <strong>Mini File Server</strong> program on your local machine, in the folder that you want SimWrapper to have access to. It is a simple HTTP web server that lets your browser access that folder (and only that folder) via <code>localhost:8000</code>. Your machine's default firewall will prevent any outside network or internet access.</p>
+<p>Here's how to set it up.</p>
+]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Welcome to SimWrapper 👋]]></title>
+            <link>https://simwrapper.github.io/blog/2021/01/15/hello.html</link>
+            <guid>https://simwrapper.github.io/blog/2021/01/15/hello.html</guid>
+            <pubDate>Fri, 15 Jan 2021 06:00:00 GMT</pubDate>
+            <description><![CDATA[<p>New documentation site! I'm excited to get this info &quot;out there&quot;, in the hopes that more people will find SimWrapper useful after reading these pages.</p> <p>Let me know if you see mistakes or have suggestions on what topics need to be added. Ther...</p>]]></description>
+        </item>
+    </channel>
+</rss>

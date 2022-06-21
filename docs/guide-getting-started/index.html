@@ -1,0 +1,94 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>1. Getting started tutorial · SimWrapper</title><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="generator" content="Docusaurus"/><meta name="description" content="Welcome to SimWrapper! Let&#x27;s get you up and running with the basics. This guide uses sample data that&#x27;s hopefully a lot like data you have or use."/><meta name="docsearch:language" content="en"/><meta property="og:title" content="1. Getting started tutorial · SimWrapper"/><meta property="og:type" content="website"/><meta property="og:url" content="https://simwrapper.github.io/"/><meta property="og:description" content="Welcome to SimWrapper! Let&#x27;s get you up and running with the basics. This guide uses sample data that&#x27;s hopefully a lot like data you have or use."/><meta property="og:image" content="https://simwrapper.github.io/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/img/SW_favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://simwrapper.github.io/blog/atom.xml" title="SimWrapper Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://simwrapper.github.io/blog/feed.xml" title="SimWrapper Blog RSS Feed"/><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web:400,400i,700"/><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/SW_favicon.png" alt="SimWrapper"/><h2 class="headerTitleWithLogo">SimWrapper</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/docs/intro" target="_self">Documentation</a></li><li class=""><a href="/blog/" target="_self">News</a></li><li class=""><a href="https://github.com/simwrapper/simwrapper" target="_blank">Github</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Guides</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Introduction</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/intro">SimWrapper</a></li><li class="navListItem"><a class="navItem" href="/docs/file-management">File Management</a></li><li class="navListItem"><a class="navItem" href="/docs/mini-file-server">Mini File Server</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Guides</h3><ul class=""><li class="navListItem navListItemActive"><a class="navItem" href="/docs/guide-getting-started">1. Getting started tutorial</a></li><li class="navListItem"><a class="navItem" href="/docs/guide-dashboards">2. Dashboards in depth</a></li><li class="navListItem"><a class="navItem" href="/docs/guide-project-sites">3. Building a project site</a></li><li class="navListItem"><a class="navItem" href="/docs/guide-publishing">4. Publishing to the Web</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Reference</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/area-maps">Area Maps</a></li><li class="navListItem"><a class="navItem" href="/docs/bar-area-line">Bar, Area, and Line Charts</a></li><li class="navListItem"><a class="navItem" href="/docs/carrier-viewer">Carrier Viewer</a></li><li class="navListItem"><a class="navItem" href="/docs/calculation-tables">Calculation Tables</a></li><li class="navListItem"><a class="navItem" href="/docs/drt-vehicles">DRT Vehicle Animation</a></li><li class="navListItem"><a class="navItem" href="/docs/flow-map">Flow Maps</a></li><li class="navListItem"><a class="navItem" href="/docs/heatmap-charts">Heatmap Chart</a></li><li class="navListItem"><a class="navItem" href="/docs/link-vols">Network Link Plots</a></li><li class="navListItem"><a class="navItem" href="/docs/pie-charts">Pie Charts</a></li><li class="navListItem"><a class="navItem" href="/docs/sankey">Sankey Diagrams</a></li><li class="navListItem"><a class="navItem" href="/docs/text-block">Text Blocks</a></li><li class="navListItem"><a class="navItem" href="/docs/transit-supply">Transit Supply</a></li><li class="navListItem"><a class="navItem" href="/docs/vega-lite">Vega-Lite Charts</a></li><li class="navListItem"><a class="navItem" href="/docs/video">Video Player</a></li><li class="navListItem"><a class="navItem" href="/docs/xy-hexagons">XY Hexagons</a></li><li class="navListItem"><a class="navItem" href="/docs/xy-scatter-plots">XY Scatter Plots</a></li><li class="navListItem"><a class="navItem" href="/docs/aggregate-od">Aggregate O/D Flows</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">For Developers</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/scripts">Conversion Scripts</a></li><li class="navListItem"><a class="navItem" href="/docs/dev-guide">Developing SimWrapper</a></li><li class="navListItem"><a class="navItem" href="/docs/plugin-guide">Plugin Writing Guide</a></li><li class="navListItem"><a class="navItem" href="/docs/changelog">Change Log</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">1. Getting started tutorial</h1></header><article><div><span><p>Welcome to SimWrapper! Let's get you up and running with the basics. This guide uses sample data that's hopefully a lot like data you have or use.</p>
+<h2><a class="anchor" aria-hidden="true" id="outline-of-getting-started-guide"></a><a href="#outline-of-getting-started-guide" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Outline of Getting Started Guide</h2>
+<h3><a class="anchor" aria-hidden="true" id="1-get-and-start-up-simwrapper-in-your-data-folder"></a><a href="#1-get-and-start-up-simwrapper-in-your-data-folder" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1. Get and start up SimWrapper in your data folder</h3>
+<p>(create a sample-data.zip with some useful data)</p>
+<ul>
+<li>Install with <code>pip install simwrapper</code> or <code>conda install -c conda-forge simwrapper</code></li>
+<li>Switch to your data folder and run <code>simwrapper here</code></li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="2-area-maps-and-csv-data"></a><a href="#2-area-maps-and-csv-data" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2. Area maps and CSV data</h3>
+<ul>
+<li>Get some sample data such as <code>git clone https://github.com/simwrapper/simwrapper-example-project</code></li>
+<li>Load a shapefile or geojson</li>
+<li>Add a datafile</li>
+<li>set some colors, filters</li>
+<li>Save your map in a YAML file</li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="3-create-a-dashboard-with-some-charts"></a><a href="#3-create-a-dashboard-with-some-charts" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3. Create a dashboard with some charts</h3>
+<ul>
+<li>Introduce <code>dashboard-*.yaml</code> templates with a few line or area charts</li>
+<li>Layout with columns, rows</li>
+<li>Multiple tabs with multiple dashboard.yaml files</li>
+<li>You can always see the raw files on the Files tab of each dashboard</li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="4-add-maps-to-the-dashboard"></a><a href="#4-add-maps-to-the-dashboard" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>4. Add maps to the dashboard</h3>
+<ul>
+<li>Dashboards can include any of the vizualization types listed in the reference docs!</li>
+<li>Let's add our map from above using a <code>type: map</code> dashboard panel</li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="5-configuring-dashboard-templates-for-multiple-run-folders"></a><a href="#5-configuring-dashboard-templates-for-multiple-run-folders" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>5. Configuring dashboard templates for multiple run folders</h3>
+<ul>
+<li><p>In SimWrapper, everything is folder-based. So <code>viz-*.yaml</code> and <code>dashboard-*.yaml</code> files in a folder will automatically be detected and loaded based on their filenames. If you want to define dashboards that will be used for multiple folders, such as several runs for a particular project,</p></li>
+<li><p><strong>Create a folder</strong> named <code>simwrapper</code> in the parent project directory.</p></li>
+<li><p>Move all dashboard, viz, and template YAMLs into that folder</p></li>
+<li><p>Tweak any file paths as necessary, so that relative file names resolve properly.</p></li>
+<li><p>The base folder for a dashboard is the <em>folder you are viewing</em>, not the dashboard template folder.</p></li>
+<li><p>You can have multiple <code>simwrapper</code> folders all the way up your folder hierarchy; dashboard panels will be generated based on filename, and each found dashboard will be displayed as a tab on the folder view.</p></li>
+</ul>
+</span></div></article></div><div class="docLastUpdate"><em>Last updated on 6/21/2022</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/mini-file-server"><span class="arrow-prev">← </span><span>Mini File Server</span></a><a class="docs-next button" href="/docs/guide-dashboards"><span>2. Dashboards in depth</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#outline-of-getting-started-guide">Outline of Getting Started Guide</a><ul class="toc-headings"><li><a href="#1-get-and-start-up-simwrapper-in-your-data-folder">1. Get and start up SimWrapper in your data folder</a></li><li><a href="#2-area-maps-and-csv-data">2. Area maps and CSV data</a></li><li><a href="#3-create-a-dashboard-with-some-charts">3. Create a dashboard with some charts</a></li><li><a href="#4-add-maps-to-the-dashboard">4. Add maps to the dashboard</a></li><li><a href="#5-configuring-dashboard-templates-for-multiple-run-folders">5. Configuring dashboard templates for multiple run folders</a></li></ul></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/vsp-logo-300dpi.png" alt="SimWrapper"/></a><div><h5>Docs</h5><a href="/docs/simwrapper-intro">Getting Started</a><a href="/docs/simwrapper-installation">Developer Guide</a><a href="/blog">Latest Updates</a></div><div><h5>More</h5><a href="https://www.vsp.tu-berlin.de">VSP Home</a><a href="https://matsim.org">MATSim.org</a><a href="https://github.com/simwrapper/simwrapper.github.io">⭐ us on GitHub!</a></div></section><section class="copyright">Copyright © 2022 VSP, TU Berlin</section></footer></div></body></html>
