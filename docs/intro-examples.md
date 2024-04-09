@@ -195,6 +195,13 @@ These visualizations work with any dataset, generally using CSV text format or X
 <div class="visualization">
 <!--   -----------------------   -->
 
+#### Grid Layer
+[![Grid Layer](assets/thumb-hexagons.jpg)](ref-grid-layer.md)
+
+</div>
+<div class="visualization">
+<!--   -----------------------   -->
+
 #### X/Y/Time point data
 [![X/Y/Time](assets/thumb-xyt.jpg)](ref-xy-time.md)
 
