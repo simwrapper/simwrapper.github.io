@@ -1,0 +1,257 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Shapefiles: Area maps, network links, and GeoJSON · SimWrapper</title><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="generator" content="Docusaurus"/><meta name="description" content="![Examples of choropleth and dot-size maps](/docs/assets/area-maps.jpg)"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Shapefiles: Area maps, network links, and GeoJSON · SimWrapper"/><meta property="og:type" content="website"/><meta property="og:url" content="https://docs.simwrapper.app/"/><meta property="og:description" content="![Examples of choropleth and dot-size maps](/docs/assets/area-maps.jpg)"/><meta property="og:image" content="https://docs.simwrapper.app/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/img/SW_favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://docs.simwrapper.app/blog/atom.xml" title="SimWrapper Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://docs.simwrapper.app/blog/feed.xml" title="SimWrapper Blog RSS Feed"/><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Roboto+Slab:400,400i,700"/><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/SW_favicon.png" alt="SimWrapper"/><h2 class="headerTitleWithLogo">SimWrapper</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/docs/" target="_self">Documentation</a></li><li class="siteNavGroupActive"><a href="/docs/examples" target="_self">Examples</a></li><li class=""><a href="/blog/" target="_self">News</a></li><li class=""><a href="https://github.com/simwrapper/simwrapper" target="_blank">GitHub</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>API Reference / General</span></h2></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Introduction</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/">SimWrapper</a></li><li class="navListItem"><a class="navItem" href="/docs/examples">Examples</a></li><li class="navListItem"><a class="navItem" href="/docs/file-management">File management</a></li><li class="navListItem"><a class="navItem" href="/docs/help">Getting help</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Guides</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/guide-getting-started">1. Getting started tutorial</a></li><li class="navListItem"><a class="navItem" href="/docs/guide-dashboards">2. Dashboards in depth</a></li><li class="navListItem"><a class="navItem" href="/docs/guide-project-sites">3. Building a project site</a></li><li class="navListItem"><a class="navItem" href="/docs/guide-publishing">4. Publishing to the web</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">API Reference / MATSim</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/link-vols">MATSim Network link plots</a></li><li class="navListItem"><a class="navItem" href="/docs/carrier-viewer">MATSim Carrier viewer</a></li><li class="navListItem"><a class="navItem" href="/docs/drt-vehicles">MATSim DRT vehicle animation</a></li><li class="navListItem"><a class="navItem" href="/docs/logistics">MATSim Logistics Viewer</a></li><li class="navListItem"><a class="navItem" href="/docs/transit-supply">MATSim Public transit supply/demand</a></li><li class="navListItem"><a class="navItem" href="/docs/matsim-events">MATSim Events viewer</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">API Reference / General</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/aggregate-od">Aggregate O/D flows</a></li><li class="navListItem"><a class="navItem" href="/docs/bar-area-line">Bar, area, and line charts</a></li><li class="navListItem"><a class="navItem" href="/docs/calculation-tables">Calculation tables</a></li><li class="navListItem"><a class="navItem" href="/docs/csv">CSV table viewer</a></li><li class="navListItem"><a class="navItem" href="/docs/flow-map">Flow maps</a></li><li class="navListItem"><a class="navItem" href="/docs/gridmap">Gridmap</a></li><li class="navListItem"><a class="navItem" href="/docs/heatmap-charts">Heatmap chart</a></li><li class="navListItem"><a class="navItem" href="/docs/matrix">Matrix (HDF5) Viewer</a></li><li class="navListItem"><a class="navItem" href="/docs/pie-charts">Pie charts</a></li><li class="navListItem"><a class="navItem" href="/docs/plotly">Plotly</a></li><li class="navListItem"><a class="navItem" href="/docs/sankey">Sankey/Alluvial diagrams</a></li><li class="navListItem"><a class="navItem" href="/docs/xy-scatter-plots">Scatter plots</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docs/shapefiles">Shapefiles: Area maps, network links, and GeoJSON</a></li><li class="navListItem"><a class="navItem" href="/docs/text-block">Text blocks</a></li><li class="navListItem"><a class="navItem" href="/docs/tiles">Tiles</a></li><li class="navListItem"><a class="navItem" href="/docs/vega-lite">Vega-Lite charts</a></li><li class="navListItem"><a class="navItem" href="/docs/video">Video player</a></li><li class="navListItem"><a class="navItem" href="/docs/xml-viewer">XML Viewer</a></li><li class="navListItem"><a class="navItem" href="/docs/xy-hexagons">XY hexagons (aggregate)</a></li><li class="navListItem"><a class="navItem" href="/docs/xy-time">X/Y/Time point data</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">For Developers</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/scripts">Conversion scripts</a></li><li class="navListItem"><a class="navItem" href="/docs/dev-guide">Developing SimWrapper</a></li><li class="navListItem"><a class="navItem" href="/docs/plugin-guide">Plugin writing guide</a></li><li class="navListItem"><a class="navItem" href="/docs/changelog">SimWrapper Change Log</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Shapefiles: Area maps, network links, and GeoJSON</h1></header><article><div><span><p><img src="/docs/assets/area-maps.jpg" alt="Examples of choropleth and dot-size maps">
+<em>(1) Area map with &quot;choropleth&quot; color-filled areas; (2) Area map with circles instead of filled areas</em></p>
+<p>Area maps with filled colors are excellent for depicting spatial data in one dimension.</p>
+<p><strong>NOTE</strong> Both plots are created using the same configuration below. Click the UI button below the maps to switch between the two views.</p>
+<h2><a class="anchor" aria-hidden="true" id="creating-this-panel"></a><a href="#creating-this-panel" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Creating this panel</h2>
+<p>Properties are written in either a standalone <code>viz-map*.yaml</code> file, or in a dashboard file they go in the <code>layout:</code> section of a <code>dashboard-*.yaml</code> file. See the examples at the end of this document.</p>
+<p><strong>Standalone:</strong> Create a <code>viz-map*.yaml</code> file as described below</p>
+<p>-or-</p>
+<p><strong>Embed in Dashboard:</strong> Create a <code>dashboard-*.yaml</code> file and include a <code>type: map</code> section as described below.</p>
+<ul>
+<li>Each area map panel is defined inside a <strong>row</strong> in a <code>dashboard-*.yaml</code> file.</li>
+<li>Use panel <code>type: map</code> in the dashboard configuration. (Note this may change in the future as we add more map types)</li>
+<li>Standard title, description, and width fields define the frame.</li>
+<li>See <a href="dashboards">Dashboard documentation</a> for general tips on creating dashboard configurations.</li>
+</ul>
+<blockquote>
+<p>The <a href="">SimWrapper example project</a> includes sample data and YAML configurations that you can use as a starting point.</p>
+</blockquote>
+<h2><a class="anchor" aria-hidden="true" id="properties"></a><a href="#properties" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Properties</h2>
+<h3><a class="anchor" aria-hidden="true" id="dashboard-panel-properties"></a><a href="#dashboard-panel-properties" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Dashboard panel properties</h3>
+<table>
+<thead>
+<tr><th>Property</th><th>Usage</th></tr>
+</thead>
+<tbody>
+<tr><td><code>type</code></td><td>MUST be set to <strong>&quot;map&quot;</strong> in <code>dashboard-*.yaml</code> config files</td></tr>
+<tr><td><code>height</code></td><td>Relative height. Larger numbers create taller panels. (default: 5)</td></tr>
+<tr><td><code>width</code></td><td>Relative width. The widths of all panels on a single row are summed, and the layout of each panel is then relative to that total width. (default: 1)</td></tr>
+</tbody>
+</table>
+<h3><a class="anchor" aria-hidden="true" id="general-properties"></a><a href="#general-properties" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>General properties</h3>
+<table>
+<thead>
+<tr><th>Property</th><th>Usage</th></tr>
+</thead>
+<tbody>
+<tr><td><code>title</code>, <code>title_en</code>, <code>title_de</code></td><td>Title text for this panel; will be shown just above the map. The language-specific version will be used if provided.</td></tr>
+<tr><td><code>description</code>, <code>description_en</code>, <code>description_de</code></td><td>Second line of descriptive text, shown below the title line. The language-specific version will be used if provided.</td></tr>
+<tr><td><code>center</code></td><td>Coordinates that the map centers on. Can be provided as array or string. If it is not provided, a center is calculated using a sampling of the data.</td></tr>
+<tr><td><code>zoom</code></td><td>Zoom level of the map between 5 and 20. (default: 9)</td></tr>
+<tr><td><code>pitch</code></td><td>Map pitch (default: 0)</td></tr>
+<tr><td><code>bearing</code></td><td>Map bearing/direction (default:0)</td></tr>
+</tbody>
+</table>
+<hr>
+<h3><a class="anchor" aria-hidden="true" id="shapes-the-features-links-areas-etc-to-be-drawn"></a><a href="#shapes-the-features-links-areas-etc-to-be-drawn" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><strong>&quot;shapes:&quot;</strong> the features (links, areas, etc) to be drawn</h3>
+<pre><code class="hljs css language-yaml"><span class="hljs-attr">shapes:</span>
+  <span class="hljs-attr">file:</span> <span class="hljs-string">my-taz-shapefile.shp</span>
+  <span class="hljs-attr">join:</span> <span class="hljs-string">id</span>
+  <span class="hljs-attr">keep:</span> <span class="hljs-string">AB,LENGTH,TAZ,SQMILES</span>
+</code></pre>
+<p>There are <strong>two separate input types</strong> required for a shapefile/geojson map: (1) the boundaries or shapes themselves, which can be geojson or shapefile format; and (2) additional datasets in CSV/DBF tabular format which contain columns of data that can be attached to the features. These datasets are optional, if the shapefile self-contains all of the required data.</p>
+<p>All inputs must contain an <em>identification column</em> in order to <strong>join the datasets</strong> together. In other words, the feature IDs must be present in both datafiles. The names of the columns do not have to be identical, but it helps legibility. See below.</p>
+<p><strong>shapes</strong> section can have the following properties:</p>
+<table>
+<thead>
+<tr><th>Property</th><th>Usage</th></tr>
+</thead>
+<tbody>
+<tr><td><code>file</code></td><td>String. The filepath of the feature dataset. May include wildcards * and ?. File can be in <em>geojson</em> format, or a <em>shapefile</em>. File type is determined by the filename extension, which must end in either <code>.geojson</code> or <code>.shp</code> When loading shapefiles, an identically-named <code>.dbf</code> and <code>.prj</code> file will also be read from the same folder. Be sure to supply a .prj file containing a valid EPSG code if your data is not in lat/long format!</td></tr>
+<tr><td><code>join</code></td><td>String. The name of the property containing unique shape IDs, or set to <code>id</code> if it is in the id field of the geojson itself.</td></tr>
+<tr><td><code>keep</code></td><td>String (optional). Comma-separated list of fields to KEEP in memory from the shapefile properties. Some files are very large with many properties that you are not interested in. Use the <code>keep</code> property to list the only ones you actually need, in order to save memory and improve performance. If <code>keep</code> is not specified then all properties are retained.</td></tr>
+</tbody>
+</table>
+<h3><a class="anchor" aria-hidden="true" id="datasets-datasets-to-be-joined-to-the-features"></a><a href="#datasets-datasets-to-be-joined-to-the-features" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><strong>datasets:</strong> datasets to be joined to the features</h3>
+<pre><code class="hljs css language-yaml"><span class="hljs-attr">datasets:</span>
+  <span class="hljs-attr">population:</span> <span class="hljs-string">"../pop/2025/population.csv"</span>
+  <span class="hljs-attr">transit-trips:</span>
+    <span class="hljs-attr">file:</span> <span class="hljs-string">.summaries/transit-outputs.csv</span>
+    <span class="hljs-attr">drop:</span> <span class="hljs-string">bike,ped,MTCTAZ</span>
+    <span class="hljs-attr">keep:</span> <span class="hljs-string">TAZ,TIME,pm_vol,orig,dest</span>
+</code></pre>
+<p><code>datasets:</code> defines any additional tabular datasets that are linked to the feature dataset from above. Every dataset is defined by a short keyword name followed by a colon, and then the needed properties are provided. In the example above, <code>population</code> and <code>transit-trips</code> keywords are defined. Use the keyword to refer to the dataset when defining colors and widths (see below).</p>
+<ul>
+<li>In simple cases a filename can be given directly, as in the <code>population</code> example above.</li>
+<li>Other properties can be defined to keep/drop certain columns, as in <code>transit-trips</code>.</li>
+</ul>
+<p><strong>name of dataset:</strong> Give the dataset a simple name, which will be used in the display settings below. e.g. <code>tazdata:</code></p>
+<p>Each subsection can have the following properties:</p>
+<table>
+<thead>
+<tr><th>Property</th><th>Usage</th></tr>
+</thead>
+<tbody>
+<tr><td><code>file</code></td><td>String. The filepath containing the data. May include wildcards * and ?. File can be in <em>CSV or DBF</em> format. Any filename not ending in <code>.dbf</code> will be parsed as a CSV file, using either commas, tabs, or spaces as delimiters.</td></tr>
+<tr><td><code>drop</code></td><td>String (optional). Comma-separated list of column names to be dropped from memory; these columns will be unavailable to this visualization. This can save memory and improve performance.</td></tr>
+<tr><td><code>keep</code></td><td>String (optional). Comma-separated list of column names to be kept in memory for this visualization. This can save memory and improve performance.</td></tr>
+</tbody>
+</table>
+<h3><a class="anchor" aria-hidden="true" id="display-define-the-symbology-details-colors-widths-etc"></a><a href="#display-define-the-symbology-details-colors-widths-etc" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><strong>display:</strong> define the symbology details: colors, widths, etc</h3>
+<pre><code class="hljs css language-yaml"><span class="hljs-attr">display:</span>
+  <span class="hljs-attr">fill:</span>
+    <span class="hljs-attr">dataset:</span> <span class="hljs-string">transit-trips</span>
+    <span class="hljs-attr">join:</span> <span class="hljs-string">TAZ</span>
+    <span class="hljs-attr">filters:</span> <span class="hljs-string">operator,</span> <span class="hljs-string">income</span>
+    <span class="hljs-attr">columnName:</span> <span class="hljs-string">trip_origins,</span> <span class="hljs-string">trip_boards,</span> <span class="hljs-string">trip_reslocs</span>
+    <span class="hljs-attr">colorRamp:</span>
+      <span class="hljs-attr">ramp:</span> <span class="hljs-string">Plasma</span>
+      <span class="hljs-attr">reversed:</span> <span class="hljs-literal">true</span>
+      <span class="hljs-attr">steps:</span> <span class="hljs-number">5</span>
+</code></pre>
+<p>The <code>display</code> section is where you define the details of your map symbology: the line and fill colors, line widths, circle radii, difference calculations, and so on.</p>
+<p>Different map types allow different properties. This is an attempt at summarizing the capabilities; not all combinations work for every map type. There are many, many configuration options listed here, and they mimic the user interface options available in the configuration panel.</p>
+<p><strong>Instead of trying to write this YAML from scratch,</strong> try creating a map interactively on the SimWrapper site, and then choosing <code>EXPORT</code> from the configuration panel. SimWrapper will produce a YAML file with most/all of your settings and save it in your browser's Downloads folder. You can move this to your data folder and modify as necessary.</p>
+<table>
+<thead>
+<tr><th>Property</th><th>Usage</th></tr>
+</thead>
+<tbody>
+<tr><td><code>dataset</code></td><td>Name of the dataset from above which includes the data.</td></tr>
+<tr><td><code>columnName</code></td><td>The column name (or names) containing values to be plotted. If multiple rows have a matching shape ID, all values will be summed together.</td></tr>
+<tr><td><code>colorRamp</code></td><td>Describe the colors to be used:<br/><strong>ramp:</strong> Name of the color ramp to use.<br/>Sequential: <code>Viridis</code> <code>Plasma</code> <code>Blues</code> <code>Greens</code> <code>Purples</code> <code>Oranges</code><br/>Diverging: <code>PRGn</code> <code>RdBu</code><br/>Categorical: <code>Tableau10</code> <code>Paired</code>. Note categoricals only have ten or twelve categories.</td></tr>
+<tr><td></td><td><strong>reversed:</strong> true/false</td></tr>
+<tr><td></td><td><strong>steps:</strong> Number of steps in the ramp.</td></tr>
+<tr><td></td><td><strong>exponentColors:</strong> Optional true/false. If true, values will be scaled exponentially before being drawn. This is often useful if values are concentrated in small areas, and much higher in value than in typical areas.</td></tr>
+<tr><td></td><td><strong>diff:</strong> Example <code>col1 - col2</code> will activate diff mode</td></tr>
+<tr><td></td><td><strong>breakpoints:</strong> Work in progress, comma-separated list of manual breakpoints for data values.</td></tr>
+</tbody>
+</table>
+<!-- |`filters`| (optional) List of any columns which can be used as category filters by the user interactively. Note that _active filters_ will be shown in the URL bar, so curated maps can be shared via URL.|
+-->
+<h3><a class="anchor" aria-hidden="true" id="filters"></a><a href="#filters" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>filters</h3>
+<pre><code class="hljs css language-yaml"><span class="hljs-attr">filters:</span>
+   <span class="hljs-attr">dataset1.trips:</span> <span class="hljs-string">"&gt; 0"</span>
+   <span class="hljs-attr">shapes.TAZ:</span> <span class="hljs-string">"!=0"</span>
+</code></pre>
+<p>In the <code>filter</code> section, you can filter dataset with multiple expressions on numerical columns in any dataset.  Keys are of the format <code>dataset.column: &quot;filter&quot;</code> and filter can be <code>==, !=, &lt;, &lt;=, &gt;, &gt;=</code></p>
+<p><em>More filter examples needed!</em></p>
+<h3><a class="anchor" aria-hidden="true" id="tooltip"></a><a href="#tooltip" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Tooltip</h3>
+<pre><code class="hljs css language-yaml"><span class="hljs-attr">tooltip:</span>
+  <span class="hljs-bullet">-</span> <span class="hljs-string">AM:TOT_VOL</span>
+  <span class="hljs-bullet">-</span> <span class="hljs-string">AM:TNC</span>
+  <span class="hljs-bullet">-</span> <span class="hljs-string">freeflow.shp:FACILITY_TYPE</span>
+  <span class="hljs-bullet">-</span> <span class="hljs-string">freeflow.shp:SPEED</span>
+</code></pre>
+<p>By default, the tooltip shows all columns in the shapefile, as well as any columns that are actively being displayed as either a color or a width.</p>
+<p>You can customize the tooltip to just show what you are interested as follows:</p>
+<ul>
+<li>Add a <code>tooltip:</code> section to the properties, which will be an array of tooltip entries</li>
+<li>Each entry is of format <code>datasetname:columnname</code>, so for example <code>AM_FLOWS:VEHICLE_VOL</code> will display the AM_FLOWS dataset and VEHICLE_VOL column.</li>
+<li>Use the shapefile/network filename for its columnar data, or the dataset &quot;key&quot; for joined datasets.</li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="visualization-hints"></a><a href="#visualization-hints" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Visualization hints</h2>
+<p>Very large and very small areas on the same maps can create misleading visualizations; consider &quot;normalizing&quot; data by land area before plotting it. Alternatively, the circle-plots show exactly the same data in a different manner.</p>
+<ul>
+<li>Use the sequential color palettes for continuous data.</li>
+<li>Use diverging color palettes for difference plots and other situations where data is both positive and negative</li>
+<li>Use categorical colors when there are just a few categories or &quot;buckets&quot; in which the data resides.</li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="example-yaml-configurations-putting-it-all-together"></a><a href="#example-yaml-configurations-putting-it-all-together" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Example YAML configurations: putting it all together</h2>
+<h3><a class="anchor" aria-hidden="true" id="sample-viz-map-1yaml-standalone-configuration"></a><a href="#sample-viz-map-1yaml-standalone-configuration" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Sample viz-map-1.yaml standalone configuration</h3>
+<pre><code class="hljs css language-yaml"><span class="hljs-attr">title:</span> <span class="hljs-string">'VIZ-MAP 1'</span>
+<span class="hljs-attr">description:</span> <span class="hljs-string">'All day transit usage'</span>
+<span class="hljs-attr">center:</span> <span class="hljs-string">[6.9814,</span> <span class="hljs-number">51.57</span><span class="hljs-string">]</span>
+<span class="hljs-attr">zoom:</span> <span class="hljs-number">10</span>
+<span class="hljs-attr">shapes:</span>
+  <span class="hljs-attr">file:</span> <span class="hljs-string">'../../shapefiles/geoid.geojson'</span>
+  <span class="hljs-attr">join:</span> <span class="hljs-string">id</span>
+<span class="hljs-attr">datasets:</span>
+  <span class="hljs-attr">transit-trips:</span>
+    <span class="hljs-attr">file:</span> <span class="hljs-string">.dashboard/transit-data.csv</span>
+<span class="hljs-attr">display:</span>
+  <span class="hljs-attr">fill:</span>
+    <span class="hljs-attr">dataset:</span> <span class="hljs-string">transit-trips</span>
+    <span class="hljs-attr">join:</span> <span class="hljs-string">geoid</span>
+    <span class="hljs-attr">filters:</span> <span class="hljs-string">operator,</span> <span class="hljs-string">income</span>
+    <span class="hljs-attr">columnName:</span> <span class="hljs-string">trip_origins,</span> <span class="hljs-string">trip_boards,</span> <span class="hljs-string">trip_reslocs</span>
+    <span class="hljs-attr">colorRamp:</span>
+      <span class="hljs-attr">ramp:</span> <span class="hljs-string">Plasma</span>
+      <span class="hljs-attr">steps:</span> <span class="hljs-number">7</span>
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="sample-dashboard-1yaml-dashboard-with-an-area-map"></a><a href="#sample-dashboard-1yaml-dashboard-with-an-area-map" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Sample dashboard-1.yaml dashboard with an area map</h3>
+<pre><code class="hljs css language-yaml"><span class="hljs-attr">header:</span>
+  <span class="hljs-attr">title:</span> <span class="hljs-string">'Trip Destinations'</span>
+  <span class="hljs-attr">description:</span> <span class="hljs-string">'All day'</span>
+
+<span class="hljs-attr">layout:</span>
+  <span class="hljs-attr">row1:</span>
+    <span class="hljs-bullet">-</span> <span class="hljs-attr">type:</span> <span class="hljs-string">map</span>
+      <span class="hljs-attr">title:</span> <span class="hljs-string">'VIZ-MAP 1'</span>
+      <span class="hljs-attr">description:</span> <span class="hljs-string">'All day transit usage'</span>
+      <span class="hljs-attr">height:</span> <span class="hljs-number">10</span>
+      <span class="hljs-attr">center:</span> <span class="hljs-string">[6.9814,</span> <span class="hljs-number">51.57</span><span class="hljs-string">]</span>
+      <span class="hljs-attr">zoom:</span> <span class="hljs-number">10</span>
+      <span class="hljs-attr">shapes:</span>
+        <span class="hljs-attr">file:</span> <span class="hljs-string">'../../shapefiles/geoid.geojson'</span>
+        <span class="hljs-attr">join:</span> <span class="hljs-string">id</span>
+      <span class="hljs-attr">datasets:</span>
+        <span class="hljs-attr">transit-trips:</span>
+          <span class="hljs-attr">file:</span> <span class="hljs-string">.dashboard/transit-data.csv</span>
+      <span class="hljs-attr">display:</span>
+        <span class="hljs-attr">fill:</span>
+          <span class="hljs-attr">dataset:</span> <span class="hljs-string">transit-trips</span>
+          <span class="hljs-attr">join:</span> <span class="hljs-string">geoid</span>
+          <span class="hljs-attr">filters:</span> <span class="hljs-string">operator,</span> <span class="hljs-string">income</span>
+          <span class="hljs-attr">columnName:</span> <span class="hljs-string">trip_origins,</span> <span class="hljs-string">trip_boards,</span> <span class="hljs-string">trip_reslocs</span>
+          <span class="hljs-attr">colorRamp:</span>
+            <span class="hljs-attr">ramp:</span> <span class="hljs-string">Plasma</span>
+            <span class="hljs-attr">steps:</span> <span class="hljs-number">7</span>
+</code></pre>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/xy-scatter-plots"><span class="arrow-prev">← </span><span>Scatter plots</span></a><a class="docs-next button" href="/docs/text-block"><span>Text blocks</span><span class="arrow-next"> →</span></a></div></div></div></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/vsp-logo-300dpi.png" alt="SimWrapper"/></a><div><h5>Docs</h5><a href="/docs/guide-getting-started">Getting Started</a><a href="/docs/dev-guide">Developer Guide</a><a href="/blog">Latest Updates</a></div><div><h5>More</h5><a href="https://vsp.berlin">VSP Home</a><a href="https://matsim.org">MATSim.org</a><a href="https://github.com/simwrapper/simwrapper">⭐ us on GitHub!</a></div></section><section class="copyright">Copyright © 2025 VSP, TU Berlin</section></footer></div></body></html>

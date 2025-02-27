@@ -1,0 +1,197 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>4. Publishing to the web · SimWrapper</title><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="generator" content="Docusaurus"/><meta name="description" content="OK so you&#x27;ve curated your model runs, post-processed all your results, and built your pretty dashboards! Now you want to show them to people."/><meta name="docsearch:language" content="en"/><meta property="og:title" content="4. Publishing to the web · SimWrapper"/><meta property="og:type" content="website"/><meta property="og:url" content="https://docs.simwrapper.app/"/><meta property="og:description" content="OK so you&#x27;ve curated your model runs, post-processed all your results, and built your pretty dashboards! Now you want to show them to people."/><meta property="og:image" content="https://docs.simwrapper.app/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/img/SW_favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://docs.simwrapper.app/blog/atom.xml" title="SimWrapper Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://docs.simwrapper.app/blog/feed.xml" title="SimWrapper Blog RSS Feed"/><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Roboto+Slab:400,400i,700"/><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/SW_favicon.png" alt="SimWrapper"/><h2 class="headerTitleWithLogo">SimWrapper</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/docs/" target="_self">Documentation</a></li><li class="siteNavGroupActive"><a href="/docs/examples" target="_self">Examples</a></li><li class=""><a href="/blog/" target="_self">News</a></li><li class=""><a href="https://github.com/simwrapper/simwrapper" target="_blank">GitHub</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Guides</span></h2></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Introduction</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/">SimWrapper</a></li><li class="navListItem"><a class="navItem" href="/docs/examples">Examples</a></li><li class="navListItem"><a class="navItem" href="/docs/file-management">File management</a></li><li class="navListItem"><a class="navItem" href="/docs/help">Getting help</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Guides</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/guide-getting-started">1. Getting started tutorial</a></li><li class="navListItem"><a class="navItem" href="/docs/guide-dashboards">2. Dashboards in depth</a></li><li class="navListItem"><a class="navItem" href="/docs/guide-project-sites">3. Building a project site</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docs/guide-publishing">4. Publishing to the web</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">API Reference / MATSim</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/link-vols">MATSim Network link plots</a></li><li class="navListItem"><a class="navItem" href="/docs/carrier-viewer">MATSim Carrier viewer</a></li><li class="navListItem"><a class="navItem" href="/docs/drt-vehicles">MATSim DRT vehicle animation</a></li><li class="navListItem"><a class="navItem" href="/docs/logistics">MATSim Logistics Viewer</a></li><li class="navListItem"><a class="navItem" href="/docs/transit-supply">MATSim Public transit supply/demand</a></li><li class="navListItem"><a class="navItem" href="/docs/matsim-events">MATSim Events viewer</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">API Reference / General</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/aggregate-od">Aggregate O/D flows</a></li><li class="navListItem"><a class="navItem" href="/docs/bar-area-line">Bar, area, and line charts</a></li><li class="navListItem"><a class="navItem" href="/docs/calculation-tables">Calculation tables</a></li><li class="navListItem"><a class="navItem" href="/docs/csv">CSV table viewer</a></li><li class="navListItem"><a class="navItem" href="/docs/flow-map">Flow maps</a></li><li class="navListItem"><a class="navItem" href="/docs/gridmap">Gridmap</a></li><li class="navListItem"><a class="navItem" href="/docs/heatmap-charts">Heatmap chart</a></li><li class="navListItem"><a class="navItem" href="/docs/matrix">Matrix (HDF5) Viewer</a></li><li class="navListItem"><a class="navItem" href="/docs/pie-charts">Pie charts</a></li><li class="navListItem"><a class="navItem" href="/docs/plotly">Plotly</a></li><li class="navListItem"><a class="navItem" href="/docs/sankey">Sankey/Alluvial diagrams</a></li><li class="navListItem"><a class="navItem" href="/docs/xy-scatter-plots">Scatter plots</a></li><li class="navListItem"><a class="navItem" href="/docs/shapefiles">Shapefiles: Area maps, network links, and GeoJSON</a></li><li class="navListItem"><a class="navItem" href="/docs/text-block">Text blocks</a></li><li class="navListItem"><a class="navItem" href="/docs/tiles">Tiles</a></li><li class="navListItem"><a class="navItem" href="/docs/vega-lite">Vega-Lite charts</a></li><li class="navListItem"><a class="navItem" href="/docs/video">Video player</a></li><li class="navListItem"><a class="navItem" href="/docs/xml-viewer">XML Viewer</a></li><li class="navListItem"><a class="navItem" href="/docs/xy-hexagons">XY hexagons (aggregate)</a></li><li class="navListItem"><a class="navItem" href="/docs/xy-time">X/Y/Time point data</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">For Developers</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/scripts">Conversion scripts</a></li><li class="navListItem"><a class="navItem" href="/docs/dev-guide">Developing SimWrapper</a></li><li class="navListItem"><a class="navItem" href="/docs/plugin-guide">Plugin writing guide</a></li><li class="navListItem"><a class="navItem" href="/docs/changelog">SimWrapper Change Log</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">4. Publishing to the web</h1></header><article><div><span><p>OK so you've curated your model runs, post-processed all your results, and built your pretty dashboards! Now you want to show them to people.</p>
+<p>We are experimenting with several different ways of publishing results to the open web. Please send us feedback on which of these methods works best for you, or if some other way of getting things online would be better.</p>
+<h2><a class="anchor" aria-hidden="true" id="speedrun-host-your-site-on-flyio"></a><a href="#speedrun-host-your-site-on-flyio" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Speedrun: Host your site on fly.io</h2>
+<p>There are many, many hosting options on the web but we have found that <a href="https://fly.io">https://fly.io</a> is the most developer-friendly and has an extremely generous free tier, so it's a great place to start. They seem to have taken what Heroku used to be good at, and made it better.</p>
+<p>Fly.io free tier currently (May 2022) includes:</p>
+<ul>
+<li>5 Gb storage</li>
+<li>3 (or 10?) site URLs</li>
+<li>100 GB data transfer per month free, then $0.02/Gb over</li>
+</ul>
+<p>Thus, you only need to watch the outbound data transfer to keep your site free. This service doesn't have any redundancy or fault-tolerance, so keep local copies of all your files in case their data center explodes or catches on fire.</p>
+<h3><a class="anchor" aria-hidden="true" id="first-time-setup"></a><a href="#first-time-setup" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>First time setup</h3>
+<ol>
+<li><p>Install the <code>flyctl</code> utility with <a href="https://fly.io/docs/getting-started/installing-flyctl/">these instructions</a> but it is really this simple:</p>
+<ul>
+<li>Mac: <code>brew install flyctl</code></li>
+<li>Linux: <code>curl -L https://fly.io/install.sh | sh</code></li>
+<li>Windows: <code>iwr https://fly.io/install.ps1 -useb | iex</code></li>
+</ul></li>
+<li><p>Then run <strong><code>flyctl auth signup</code></strong> to open a browser and set up your account. Yes, you need a credit card but it's free if you stay within the limits above.</p></li>
+<li><p>No step 3!</p></li>
+</ol>
+<h3><a class="anchor" aria-hidden="true" id="push-your-site"></a><a href="#push-your-site" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Push your site</h3>
+<p>Now that <code>flyctl</code> is set up on your machine you can launch your first site!</p>
+<ol>
+<li>Clone the git repo at <code>https://github.com/simwrapper/simwrapper-example-project</code> which has the Dockerfile for SimWrapper ready to go</li>
+<li>Copy your project folder -- everything you want published -- into the local <code>data</code> folder inside that repo</li>
+<li>Run <code>flyctl launch</code> and answer the questions:
+<ul>
+<li>Give your site a useful name or it will give you something random</li>
+<li>Choose the datacenter; Frankfurt is a nice choice for Germany</li>
+<li>You do NOT need a database</li>
+<li>Yes, launch it now!</li>
+</ul></li>
+</ol>
+<p>That's it. It will take a few minutes to upload all your files and provision the site, and then... that's it; it's live at <strong>your-site-name.fly.dev</strong></p>
+<p>There are ways to give it your own domain name, etc. See the <a href="https://fly.io/docs">fly.io/docs</a> for all the details.</p>
+<h3><a class="anchor" aria-hidden="true" id="password-protect-your-site"></a><a href="#password-protect-your-site" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Password-protect your site</h3>
+<p>To password-protect a SimWrapper site using standard HTTP Basic authentication, use the program <code>htpasswd</code> to generate a username/password file named <code>.htpasswd</code> and copy that file into the root of the built site using Docker. Github Pages does not support this; you need to use a real web host such as Fly.io etc. that honors basic authentication.</p>
+<p><code>htpasswd</code> is installed by default on Mac OS and is part of <code>openssh</code> for other platforms.</p>
+<ol>
+<li>Use the program <code>htpasswd</code> to create username/password pairs you need:</li>
+</ol>
+<ul>
+<li><code>htpasswd -c .htpasswd [username]</code> and then enter the desired password. This will create/overwrite the file <code>.htpasswd</code></li>
+<li>If you need more than one user, drop the <code>-c</code> from the command and run again for each user: <code>htpasswd .htpasswd [anotheruser]</code></li>
+</ul>
+<ol start="2">
+<li>Add one line to the end of the Dockerfile, to copy the file into the root folder of the site:</li>
+</ol>
+<ul>
+<li><code>COPY .htpasswd /</code></li>
+</ul>
+<ol start="3">
+<li>Now run <code>flyctl launch</code> as above.</li>
+</ol>
+<h2><a class="anchor" aria-hidden="true" id="docker-based-sites"></a><a href="#docker-based-sites" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Docker-based sites</h2>
+<p>SimWrapper has been packed up into a Docker image at <code>simwrapper/site</code>, which is nothing more than the NGINX proxy server with the latest SimWrapper code embedded, all carefully configured to have the correct settings for serving the site and data you provide.</p>
+<p>On Docker Hub, we created the <code>simwrapper/site</code> docker image which can be used anywhere that supports Docker. If you have Docker installed on your local machine, or if you have a cloud provider that lets you run Docker images, then you don't need anything other than:</p>
+<p><code>docker run -p 8080:8080 -v ~/my/data/folder:/data simwrapper/site</code></p>
+<p>That's it! Note that in the command above we mount a local volume to the image at <code>/data</code> which is where SimWrapper expects your files to be. For a cloud site, you would need to put that in accessible storage somewhere. If you already know Docker, you already know how to do this.</p>
+<h2><a class="anchor" aria-hidden="true" id="github-pages"></a><a href="#github-pages" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>GitHub Pages</h2>
+<p>Github is not a great place to store large files; it has a hard limit of 100Mb on file sizes, and generally doesn't work well for files over 20Mb either. So, yes the SimWrapper website code and assets themselves can be served from any static site provider at all, such as Github Pages. But your model outputs might need to go somewhere else.</p>
+<h3><a class="anchor" aria-hidden="true" id="instructions-for-using-github-pages-by-itself"></a><a href="#instructions-for-using-github-pages-by-itself" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Instructions for using GitHub Pages by itself</h3>
+<p>You can make your own clone of the SimWrapper website and host it yourself on GitHub Pages, including all of your data files (if they are each &lt; 100Mb in size).</p>
+<p>It will be hosted at yourusername.github.io/simwrapper, or you can rename your clone to use a different endpoint slug other than &quot;/simwrapper&quot;.</p>
+<ul>
+<li>Clone the SimWrapper Repo at <a href="https://github.com/simwrapper/simwrapper.git">https://github.com/simwrapper/simwrapper.git</a></li>
+<li>Run <code>npm ci</code> to install all javascript dependencies</li>
+<li>Copy all of your data files and configuration YAMLs into the <code>public/data</code> subfolder</li>
+<li>You must edit two files, to tell GitHub what the endpoint of the URL is:
+<ul>
+<li><code>vite.config.js</code>: change the <code>base</code> to be whatever your repo name is. For example to host things at &quot;username.github.io/simwrapper&quot;, change this to <code>base: '/simwrapper/'</code>.</li>
+<li><code>public/404.html</code>: change the <code>meta</code> refresh content value to show <code>&quot;0;URL='/simwrapper/'&quot;</code></li>
+</ul></li>
+<li>Run <code>npm run build</code></li>
+<li>Your site is now built in the local <code>dist</code> subfolder.</li>
+<li>Push the content of that <code>dist</code> folder to a new <code>gh-pages</code> branch in your repo:</li>
+</ul>
+<pre><code class="hljs css language-bash"><span class="hljs-built_in">cd</span> dist
+git init .
+git add . &amp;&amp; git commit -m <span class="hljs-string">"gh-pages"</span>
+git remote add origin git@github.com:username/reponame.git <span class="hljs-comment"># Put your username/reponame here</span>
+git push --force origin master:gh-pages
+</code></pre>
+<p>Be sure to enable GitHub pages for your repo, and point it to the <code>gh-pages</code> branch.</p>
+<p>This worked as of fall 2021, if you have problems or things are broken let us know!</p>
+<h3><a class="anchor" aria-hidden="true" id="instructions-for-using-github-pages---your-own-file-server"></a><a href="#instructions-for-using-github-pages---your-own-file-server" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Instructions for using GitHub Pages ( + Your own file server)</h3>
+<ul>
+<li><p>At VSP, we have a departmental Subversion server that is set up and maintained for us. The only settings we needed to tweak were to add &quot;CORS Headers&quot; which allow unfettered access to the site from other websites (e.g. SimWrapper)</p></li>
+<li><p>An NGINX proxy server is probably a more common choice if you don't already have Subversion lying around for some reason.</p></li>
+<li><p><strong>For this to work,</strong> you need to create your own build of SimWrapper and edit the <code>src/fileSystems.ts</code> file to point to your file server URL. Push that build to Github Pages.</p></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="file-server-settings"></a><a href="#file-server-settings" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>File server settings</h2>
+<h3><a class="anchor" aria-hidden="true" id="cors-headers"></a><a href="#cors-headers" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>CORS Headers</h3>
+<p>These are the CORS headers needed for Apache or NGINX web servers. These allow external websites to access the files on your server over HTTP.</p>
+<p><strong>Your files will be visible on the Internet, so don't put things there that should not be public.</strong></p>
+<pre><code class="hljs"><span class="hljs-keyword">add_header </span>Access-Control-Allow-<span class="hljs-keyword">Origin </span><span class="hljs-string">"*"</span>;
+<span class="hljs-keyword">add_header </span>Access-Control-Allow-Headers <span class="hljs-string">"Accept-Ranges,Range,*"</span>;
+<span class="hljs-keyword">add_header </span>Accept-Ranges <span class="hljs-string">"bytes"</span>;
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="nginx-settings"></a><a href="#nginx-settings" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>NGINX Settings</h3>
+<p>Here is an example configuration for NGINX, which includes the correct CORS headers as well as the needed index.html redirection for single-page-app URLs to work properly.</p>
+<ul>
+<li>The commented out section kills all caching; this was helpful for SFCTA which had their files on internal Windows servers.</li>
+</ul>
+<pre><code class="hljs"><span class="hljs-section">server</span> {
+  <span class="hljs-comment"># ...</span>
+  <span class="hljs-comment"># you already have a server section</span>
+  <span class="hljs-comment"># ...</span>
+
+  <span class="hljs-attribute">location</span> / {
+   <span class="hljs-attribute">try_files</span> <span class="hljs-variable">$uri</span> <span class="hljs-variable">$uri</span>/ =<span class="hljs-number">404</span>;
+  }
+
+  <span class="hljs-attribute">location</span> /champ_runs/ {
+    <span class="hljs-comment"># Enable CORS and range requests for partial file downloads</span>
+    <span class="hljs-attribute">add_header</span> Access-Control-Allow-Origin <span class="hljs-string">"*"</span>;
+    <span class="hljs-attribute">add_header</span> Access-Control-Allow-Headers <span class="hljs-string">"Accept-Ranges,Range,*"</span>;
+    <span class="hljs-attribute">add_header</span> Accept-Ranges <span class="hljs-string">"bytes"</span>;
+    <span class="hljs-attribute">autoindex</span> <span class="hljs-literal">on</span>;
+
+    <span class="hljs-comment"># optional: kill cache for the champ_runs windows share</span>
+    <span class="hljs-comment"># add-header Last-Modified $date_gmt;</span>
+    <span class="hljs-comment"># add-header Cache-Control 'private no-store, no-cache, must-revalidate,</span>
+    <span class="hljs-comment"># proxy-revalidate, max-age=0';</span>
+    <span class="hljs-comment"># add-header Pragma 'no-cache';</span>
+    <span class="hljs-comment"># if_modified_since_off;</span>
+    <span class="hljs-comment"># expires 0;</span>
+    <span class="hljs-comment"># etag off;</span>
+  }
+
+  <span class="hljs-attribute">location</span> /simwrapper/ {
+    <span class="hljs-comment"># Redirect long URLs to the app index file which will handle them correctly</span>
+    <span class="hljs-attribute">try_files</span> <span class="hljs-variable">$uri</span> <span class="hljs-variable">$uri</span>/ /simwrapper/index.html;
+  }
+
+<span class="hljs-comment"># end server section</span>
+}
+</code></pre>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/guide-project-sites"><span class="arrow-prev">← </span><span>3. Building a project site</span></a><a class="docs-next button" href="/docs/link-vols"><span>MATSim Network link plots</span><span class="arrow-next"> →</span></a></div></div></div></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/vsp-logo-300dpi.png" alt="SimWrapper"/></a><div><h5>Docs</h5><a href="/docs/guide-getting-started">Getting Started</a><a href="/docs/dev-guide">Developer Guide</a><a href="/blog">Latest Updates</a></div><div><h5>More</h5><a href="https://vsp.berlin">VSP Home</a><a href="https://matsim.org">MATSim.org</a><a href="https://github.com/simwrapper/simwrapper">⭐ us on GitHub!</a></div></section><section class="copyright">Copyright © 2025 VSP, TU Berlin</section></footer></div></body></html>
