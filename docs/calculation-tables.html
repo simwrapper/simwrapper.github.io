@@ -1,0 +1,243 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Calculation tables · SimWrapper</title><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="generator" content="Docusaurus"/><meta name="description" content="![Topsheet banner](/docs/assets/topsheet.png)"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Calculation tables · SimWrapper"/><meta property="og:type" content="website"/><meta property="og:url" content="https://docs.simwrapper.app/"/><meta property="og:description" content="![Topsheet banner](/docs/assets/topsheet.png)"/><meta property="og:image" content="https://docs.simwrapper.app/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/img/SW_favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://docs.simwrapper.app/blog/atom.xml" title="SimWrapper Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://docs.simwrapper.app/blog/feed.xml" title="SimWrapper Blog RSS Feed"/><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Roboto+Slab:400,400i,700"/><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/SW_favicon.png" alt="SimWrapper"/><h2 class="headerTitleWithLogo">SimWrapper</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/docs/" target="_self">Documentation</a></li><li class="siteNavGroupActive"><a href="/docs/examples" target="_self">Examples</a></li><li class=""><a href="/blog/" target="_self">News</a></li><li class=""><a href="https://github.com/simwrapper/simwrapper" target="_blank">GitHub</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>API Reference / General</span></h2></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Introduction</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/">SimWrapper</a></li><li class="navListItem"><a class="navItem" href="/docs/examples">Examples</a></li><li class="navListItem"><a class="navItem" href="/docs/file-management">File management</a></li><li class="navListItem"><a class="navItem" href="/docs/help">Getting help</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Guides</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/guide-getting-started">1. Getting started tutorial</a></li><li class="navListItem"><a class="navItem" href="/docs/guide-dashboards">2. Dashboards in depth</a></li><li class="navListItem"><a class="navItem" href="/docs/guide-project-sites">3. Building a project site</a></li><li class="navListItem"><a class="navItem" href="/docs/guide-publishing">4. Publishing to the web</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">API Reference / MATSim</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/link-vols">MATSim Network link plots</a></li><li class="navListItem"><a class="navItem" href="/docs/carrier-viewer">MATSim Carrier viewer</a></li><li class="navListItem"><a class="navItem" href="/docs/drt-vehicles">MATSim DRT vehicle animation</a></li><li class="navListItem"><a class="navItem" href="/docs/logistics">MATSim Logistics Viewer</a></li><li class="navListItem"><a class="navItem" href="/docs/transit-supply">MATSim Public transit supply/demand</a></li><li class="navListItem"><a class="navItem" href="/docs/matsim-events">MATSim Events viewer</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">API Reference / General</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/aggregate-od">Aggregate O/D flows</a></li><li class="navListItem"><a class="navItem" href="/docs/bar-area-line">Bar, area, and line charts</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docs/calculation-tables">Calculation tables</a></li><li class="navListItem"><a class="navItem" href="/docs/csv">CSV table viewer</a></li><li class="navListItem"><a class="navItem" href="/docs/flow-map">Flow maps</a></li><li class="navListItem"><a class="navItem" href="/docs/gridmap">Gridmap</a></li><li class="navListItem"><a class="navItem" href="/docs/heatmap-charts">Heatmap chart</a></li><li class="navListItem"><a class="navItem" href="/docs/matrix">Matrix (HDF5) Viewer</a></li><li class="navListItem"><a class="navItem" href="/docs/pie-charts">Pie charts</a></li><li class="navListItem"><a class="navItem" href="/docs/plotly">Plotly</a></li><li class="navListItem"><a class="navItem" href="/docs/sankey">Sankey/Alluvial diagrams</a></li><li class="navListItem"><a class="navItem" href="/docs/xy-scatter-plots">Scatter plots</a></li><li class="navListItem"><a class="navItem" href="/docs/shapefiles">Shapefiles: Area maps, network links, and GeoJSON</a></li><li class="navListItem"><a class="navItem" href="/docs/text-block">Text blocks</a></li><li class="navListItem"><a class="navItem" href="/docs/tiles">Tiles</a></li><li class="navListItem"><a class="navItem" href="/docs/vega-lite">Vega-Lite charts</a></li><li class="navListItem"><a class="navItem" href="/docs/video">Video player</a></li><li class="navListItem"><a class="navItem" href="/docs/xml-viewer">XML Viewer</a></li><li class="navListItem"><a class="navItem" href="/docs/xy-hexagons">XY hexagons (aggregate)</a></li><li class="navListItem"><a class="navItem" href="/docs/xy-time">X/Y/Time point data</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">For Developers</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/scripts">Conversion scripts</a></li><li class="navListItem"><a class="navItem" href="/docs/dev-guide">Developing SimWrapper</a></li><li class="navListItem"><a class="navItem" href="/docs/plugin-guide">Plugin writing guide</a></li><li class="navListItem"><a class="navItem" href="/docs/changelog">SimWrapper Change Log</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Calculation tables</h1></header><article><div><span><p><img src="/docs/assets/topsheet.png" alt="Topsheet banner">
+<em>Example &quot;topsheet&quot; calculation table</em></p>
+<h2><a class="anchor" aria-hidden="true" id="introduction"></a><a href="#introduction" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Introduction</h2>
+<p>Calculation tables (formerly called &quot;topsheets&quot;) are for creating and displaying a simple table of calculations, based on the CSV and XML data files in run folders. This can be useful for generating summary statistics, key performance indicators, etc.</p>
+<ul>
+<li>A calculation table is defined in a YAML file which must be named <code>table-*.yaml</code>. (formerly <code>topsheet-*</code>.</li>
+<li>A separate table will be displayed for every topsheet*.yaml file found in a run folder.</li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="including-calculation-tables-in-dashboards"></a><a href="#including-calculation-tables-in-dashboards" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Including Calculation tables in dashboards</h2>
+<p>Use the dashboard <code>type: table</code> to include a calculation table in a dashboard. The table configuration is still stored in a separate file, and is reference in the <code>configFile</code> parameter. See below:</p>
+<pre><code class="hljs css language-yaml"><span class="hljs-attr">layout:</span>
+  <span class="hljs-attr">row1:</span>
+    <span class="hljs-bullet">-</span> <span class="hljs-attr">type:</span> <span class="hljs-string">table</span>
+      <span class="hljs-attr">title:</span> <span class="hljs-string">"Trips by Time of Day and Purpose"</span>
+      <span class="hljs-attr">description:</span> <span class="hljs-string">"Hourly summary"</span>
+      <span class="hljs-attr">configFile:</span> <span class="hljs-string">"topsheet-3-drt-Cost.yml"</span>
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="project-level-topsheets-folders"></a><a href="#project-level-topsheets-folders" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Project-level &quot;.topsheets&quot; folders</h2>
+<p>Table definition files can also be saved in a folder named <code>.topsheets</code> <strong>anywhere above the current run folder</strong> in the folder hierarchy.</p>
+<p>All topsheets found in the folder tree will be displayed if possible; if duplicate names are found in higher levels, the topsheet definition found in the closest level to the current folder will be the one created.</p>
+<h2><a class="anchor" aria-hidden="true" id="example-calculation-table"></a><a href="#example-calculation-table" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Example calculation table</h2>
+<pre><code class="hljs css language-yaml"><span class="hljs-comment"># Topsheet Test</span>
+<span class="hljs-attr">title: Summary:</span> <span class="hljs-string">Key</span> <span class="hljs-string">Performance</span> <span class="hljs-string">Indicators</span>
+
+<span class="hljs-comment"># Input files -------------------------</span>
+<span class="hljs-attr">files:</span>
+  <span class="hljs-attr">customers:</span>
+    <span class="hljs-attr">file:</span> <span class="hljs-string">"*customer_stats_drt.csv"</span>    <span class="hljs-comment"># note wildcard</span>
+    <span class="hljs-attr">useLastRow:</span> <span class="hljs-literal">true</span>                   <span class="hljs-comment"># useLastRow: only save the last row of this CSV;</span>
+                                       <span class="hljs-comment"># good for modestats.txt, etc</span>
+  <span class="hljs-attr">personMoneyEvents:</span>
+    <span class="hljs-attr">file:</span> <span class="hljs-string">"*personMoneyEventsSums.tsv"</span> <span class="hljs-comment"># The entire CSV is be saved as an array of</span>
+                                       <span class="hljs-comment"># key:value objects</span>
+  <span class="hljs-attr">drtVehicles:</span>
+    <span class="hljs-attr">file:</span> <span class="hljs-string">"*drt_vehicles.xml.gz"</span>       <span class="hljs-comment"># This is an XML file.</span>
+    <span class="hljs-attr">xmlElements:</span> <span class="hljs-string">'vehicles.vehicle'</span>    <span class="hljs-comment"># Create an array from all &lt;vehicle&gt; tags which</span>
+                                       <span class="hljs-comment"># are inside the &lt;vehicles&gt; tag</span>
+
+<span class="hljs-comment"># USER ENTRIES ------------------------</span>
+<span class="hljs-comment"># These are text entry boxes in the UI,</span>
+<span class="hljs-comment"># with default values that can be edited by the user</span>
+<span class="hljs-attr">userEntries:</span>
+  <span class="hljs-attr">vehCost_fix:</span>
+    <span class="hljs-attr">title_en:</span> <span class="hljs-string">Veh-Cost</span> <span class="hljs-string">(Fixed)</span>
+    <span class="hljs-attr">title_de:</span> <span class="hljs-string">Veh-Cost</span> <span class="hljs-string">(Fixed)</span>
+    <span class="hljs-attr">value:</span> <span class="hljs-number">1.0</span>
+  <span class="hljs-attr">vehCost_km:</span>
+    <span class="hljs-attr">title_en:</span> <span class="hljs-string">Veh-Cost</span> <span class="hljs-string">/</span> <span class="hljs-string">km</span>
+    <span class="hljs-attr">title_de:</span> <span class="hljs-string">Veh-Cost</span> <span class="hljs-string">/</span> <span class="hljs-string">km</span>
+    <span class="hljs-attr">value:</span> <span class="hljs-number">0.50</span>
+  <span class="hljs-attr">sampleSize:</span>
+    <span class="hljs-attr">title:</span> <span class="hljs-string">"Sample Size"</span>
+    <span class="hljs-attr">value:</span> <span class="hljs-number">0.10</span>
+
+<span class="hljs-comment"># Calculations --------------------------------------------</span>
+<span class="hljs-comment"># These are calculated as if in a script, from top to bottom.</span>
+<span class="hljs-comment"># The language is very simple, you generally can only</span>
+<span class="hljs-comment"># do one operation per line. Thus you will probably need</span>
+<span class="hljs-comment"># to calculate a few intermediate variables which can</span>
+<span class="hljs-comment"># be referenced in later lines. Then output the final</span>
+<span class="hljs-comment"># values in the "outputs" section, below.</span>
+
+<span class="hljs-attr">calculations:</span>
+  <span class="hljs-comment"># Constants first</span>
+  <span class="hljs-attr">userCost_km:</span> <span class="hljs-number">0.25</span>
+  <span class="hljs-attr">userCost_fix:</span> <span class="hljs-number">3.00</span>
+  <span class="hljs-comment"># {Brackets} refer to data value substitutions.</span>
+
+  <span class="hljs-comment"># rides: from the customers data, get the value of the rides column</span>
+  <span class="hljs-comment"># Note the customers file had "useLastRow" set to true, so it will only use the final</span>
+  <span class="hljs-comment"># values found in that CSV</span>
+  <span class="hljs-attr">rides:</span> <span class="hljs-string">'{customers.rides}'</span>
+
+  <span class="hljs-comment"># In general, if a calculation inside {brackets} refers to an array, the calculation will</span>
+  <span class="hljs-comment"># return the SUM of whatever values that expression refers to.</span>
+
+  <span class="hljs-comment"># opHours: the drtVehicles file is an array of elements that each have t_1 and t_0.</span>
+  <span class="hljs-comment"># This eqn takes the SUM of all t_1 values, subtracts the SUM of all t_0 values,</span>
+  <span class="hljs-comment"># and divides this by 3600</span>
+  <span class="hljs-comment"># Arrays can be reduced with @sum, @count, @min, @max, @mean, @first, @last.</span>
+  <span class="hljs-attr">opHours:</span> <span class="hljs-string">'( {@sum(drtVehicles.t_1)} - {@sum(drtVehicles.t_0)}) / 3600'</span>
+
+  <span class="hljs-comment"># operatingHours: this takes the value of opHours just calculated and</span>
+  <span class="hljs-comment"># multiplies it by the sampleSize found in the UI entry fields</span>
+  <span class="hljs-attr">operatingHours:</span> <span class="hljs-string">'opHours * sampleSize ^ (-0.662)'</span>
+
+  <span class="hljs-comment"># drtFares: This uses the @filter function to select a subset of the rows in the CSV.</span>
+  <span class="hljs-comment"># drtFares will be an array of rows from personMoneyEvents data where</span>
+  <span class="hljs-comment"># the purpose field equals the string "drtFare"</span>
+  <span class="hljs-attr">drtFares:</span> <span class="hljs-string">'@filter(personMoneyEvents.purpose == drtFare)'</span>
+
+  <span class="hljs-comment"># userFare: drtFares above is an array, so this will be the SUM of the values in the</span>
+  <span class="hljs-comment"># sumAmount column of that filtered dataset.</span>
+  <span class="hljs-attr">userFare:</span> <span class="hljs-string">'{drtFares.sumAmount}'</span>
+
+  <span class="hljs-comment"># the round() function does just that.</span>
+  <span class="hljs-comment"># Any functions from the Nerdamer library are valid:</span>
+  <span class="hljs-comment"># https://nerdamer.com/documentation.html</span>
+  <span class="hljs-attr">fleetMileage:</span> <span class="hljs-string">'round(totalDistance * sampleSize ^ (-0.928))'</span>
+
+  <span class="hljs-attr">expensesPerDay:</span> <span class="hljs-string">'fleetSize*vehCost_fix + fleetMileage*vehCost_km + operatingHours*vehCost_hour'</span>
+  <span class="hljs-attr">annualProfit:</span> <span class="hljs-string">'365 * (incomePerDay - expensesPerDay)'</span>
+
+<span class="hljs-comment"># Table rows ---------------------------</span>
+<span class="hljs-comment"># These values (calculated above) will actually be shown in the table.</span>
+<span class="hljs-comment"># Use "title" if you only need one language, otherwise set title_en and title_de</span>
+
+<span class="hljs-comment"># style can use any CSS property, most likely you will only need</span>
+<span class="hljs-comment"># color, backgroundColor, textDecoration, fontWeight</span>
+
+<span class="hljs-attr">outputs:</span>
+  <span class="hljs-bullet">-</span> <span class="hljs-attr">title_en:</span> <span class="hljs-string">Demand</span>
+    <span class="hljs-attr">title_de:</span> <span class="hljs-string">Nachfrage</span>
+    <span class="hljs-attr">value:</span> <span class="hljs-string">demand</span>
+    <span class="hljs-attr">style:</span> <span class="hljs-string">{</span> <span class="hljs-attr">color:</span> <span class="hljs-string">green}</span>
+
+  <span class="hljs-bullet">-</span> <span class="hljs-attr">title:</span> <span class="hljs-string">Fleet</span> <span class="hljs-string">size</span>
+    <span class="hljs-attr">value:</span> <span class="hljs-string">fleetSize</span>
+
+  <span class="hljs-bullet">-</span> <span class="hljs-attr">title_en:</span> <span class="hljs-string">Annual</span> <span class="hljs-string">profit</span>
+    <span class="hljs-attr">title_de:</span> <span class="hljs-string">Annual</span> <span class="hljs-string">profit</span>
+    <span class="hljs-attr">value:</span> <span class="hljs-string">annualProfit</span>
+    <span class="hljs-attr">style:</span> <span class="hljs-string">{</span> <span class="hljs-attr">textDecoration:</span> <span class="hljs-string">underline</span> <span class="hljs-string">}</span>
+
+  <span class="hljs-bullet">-</span> <span class="hljs-attr">title_en:</span> <span class="hljs-string">Effective</span> <span class="hljs-string">fleet</span> <span class="hljs-string">size</span>
+    <span class="hljs-attr">title_de:</span> <span class="hljs-string">Effective</span> <span class="hljs-string">fleet</span> <span class="hljs-string">size</span>
+    <span class="hljs-attr">value:</span> <span class="hljs-string">effectiveFleetSize</span>
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="detailed-usage-guide"></a><a href="#detailed-usage-guide" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Detailed usage guide</h2>
+<p>A topsheet config is specified in YAML and each top-level section has a specific purpose.</p>
+<p><strong>title:</strong> The title of the summary table. You can use <code>title</code> or a combination of <code>title_en</code> and <code>title_de</code>.</p>
+<p><strong>files:</strong> Each key in this section will be the name of a dataset that can be accessed in the calculations below.</p>
+<ul>
+<li>Specify the <code>file</code> name pattern, which can include an asterisk to select a pattern if necessary. The <em>first file that matches the pattern</em> will be used.</li>
+<li><code>useLastRow</code> can be used to drop all rows except the final row. This is useful for some standard MATSim output files such as <code>modestats.txt</code> if you only care about the values in the final iteration.</li>
+</ul>
+<p><strong>userEntries:</strong> Each key in this section is the name of a field that will appear at the top of the table, with a default value. The value of that field can then be used in the calculations below.</p>
+<ul>
+<li><code>title</code> or <code>title_en</code> and <code>title_de</code> will be the label for the input entry.</li>
+<li><code>value</code> is the default value, pre-filled in the form</li>
+</ul>
+<p><strong>calculations:</strong> is a top-down list of calculations that will be performed in the order they appear. You can perform calculations on the values in the files and input entries above. This language is not very sophisticated so you will probably need to create multiple intermediate calculations if you need something complex. See below for more details on the calculation engine.</p>
+<p>If you cannot specify your calculation using this language, perhaps you need to run your own post-processing script to generate a simple CSV with the values you need. And then read that CSV file in, instead!</p>
+<p><strong>outputs:</strong> each element of this list will be an output row in the UI table.</p>
+<ul>
+<li><code>value</code> should be the name of one of the calculated values, above. No calculations can be done here!</li>
+<li><code>title</code> or both <code>title_en</code> and <code>title_de</code> will be the label for this value</li>
+<li><code>style</code> can optionally include CSS styling properties, if you would like this row to be bold, green, etc. You can use any CSS valid styling properties in camelCase format, including typical values such as:
+<ul>
+<li><code>color: red</code> for text color. Color names and #hexcodes are valid</li>
+<li><code>backgroundColor: yellow</code> for highlighting the background color of the entire row</li>
+<li><code>fontWeight: bold</code> for bold text</li>
+<li><code>textAlign: right</code> for left, right, center aligned values</li>
+<li><code>textDecoration: underline</code> for underlining</li>
+<li>Feel free to experiment with other CSS styling!</li>
+</ul></li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="the-calculation-engine"></a><a href="#the-calculation-engine" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>The calculation engine</h3>
+<p>Calculations are based on the <a href="https://nerdamer.com/">Nerdamer javascript calculation engine</a>, which is pretty advanced but doesn't know anything about our datasets, so we built a simple substitute/replace language which grabs values from the data files before sending the equations to the Nerdamer engine for evaluation.</p>
+<p>Every line takes the form:</p>
+<pre><code class="hljs">variableName: 'equation + with + variables + etc'
+</code></pre>
+<p>where equation components can be constants, values retrieved from the UI form, variables already calculated, or lookups from the loaded data files. Typical math and logic operators such as <code>+,-,*,/,^</code> are all supported.</p>
+<p><strong>Constants:</strong> are simple, you define the name and the value.</p>
+<p><code>sampleRate: 0.25</code></p>
+<p><strong>UI Entry Fields:</strong> you can refer to values entered in any UI fields directly by name.</p>
+<p><code>ridership: 'sampleRate * totalRiders'</code></p>
+<p><strong>Filtering datasets:</strong> You can filter a dataset and save that selection as a new variable name using <strong>@filter()</strong>. Useful if you are only interested in a subset of rows.</p>
+<p><code>selectedRows: @filter(filename.column == value)</code></p>
+<p>will return an array of rows for which the value in the specified file's column matches the logical expression.</p>
+<ul>
+<li>The test value must always be a numeric or string constant. Do not use quotes around strings!</li>
+<li>Valid comparisons are <code>== != &gt;= &lt;= &lt; &gt;</code></li>
+<li>You cannot filter on multiple comparisons: no ANDs and no ORs. Sorry</li>
+<li>The output is stored as a new array with the name you specify, and can then be referenced in later calculations</li>
+</ul>
+<p><strong>Data lookups:</strong> Any elements enclosed in {curly brackets} will trigger a lookup from the loaded data files.</p>
+<p><code>myVar: {file.field}</code></p>
+<p>sets myVar to the value of the referenced <strong>file</strong> for the specified <strong>field</strong>.</p>
+<ul>
+<li>If <code>file</code> is just one row of data, such as from <code>useLastRow</code>, the value of the <code>field</code> column or property will be directly used.</li>
+</ul>
+<p><strong>Arrays</strong> can be reduced using several obvious functions: <strong>@sum</strong>, <strong>@count</strong>, <strong>@min</strong>, <strong>@max</strong>, <strong>@mean</strong>, <strong>@first</strong>, <strong>@last</strong>. If an array is found in an equation without one of these functions, the SUM of all values will be taken by default.</p>
+<p>See the example above for more hints on how this works.</p>
+<p><strong>Special functions: rounding, counting, etc</strong></p>
+<p>Any of the math functions in the <a href="https://nerdamer.com/documentation.html">Nerdamer documentation</a> can theoretically be used, even trigonometry if you like! But more typically, round(), floor(), int(), etc.</p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/bar-area-line"><span class="arrow-prev">← </span><span>Bar, area, and line charts</span></a><a class="docs-next button" href="/docs/csv"><span>CSV table viewer</span><span class="arrow-next"> →</span></a></div></div></div></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/vsp-logo-300dpi.png" alt="SimWrapper"/></a><div><h5>Docs</h5><a href="/docs/guide-getting-started">Getting Started</a><a href="/docs/dev-guide">Developer Guide</a><a href="/blog">Latest Updates</a></div><div><h5>More</h5><a href="https://vsp.berlin">VSP Home</a><a href="https://matsim.org">MATSim.org</a><a href="https://github.com/simwrapper/simwrapper">⭐ us on GitHub!</a></div></section><section class="copyright">Copyright © 2025 VSP, TU Berlin</section></footer></div></body></html>

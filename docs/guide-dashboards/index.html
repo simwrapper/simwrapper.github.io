@@ -1,0 +1,166 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>2. Dashboards in depth · SimWrapper</title><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="generator" content="Docusaurus"/><meta name="description" content="A dashboard is a page laid out with multiple charts, plots, and visualizations all together. You define the layout with a YAML configuration file which contains the types of plots and their configurations all in one place."/><meta name="docsearch:language" content="en"/><meta property="og:title" content="2. Dashboards in depth · SimWrapper"/><meta property="og:type" content="website"/><meta property="og:url" content="https://docs.simwrapper.app/"/><meta property="og:description" content="A dashboard is a page laid out with multiple charts, plots, and visualizations all together. You define the layout with a YAML configuration file which contains the types of plots and their configurations all in one place."/><meta property="og:image" content="https://docs.simwrapper.app/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/img/SW_favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://docs.simwrapper.app/blog/atom.xml" title="SimWrapper Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://docs.simwrapper.app/blog/feed.xml" title="SimWrapper Blog RSS Feed"/><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Roboto+Slab:400,400i,700"/><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/SW_favicon.png" alt="SimWrapper"/><h2 class="headerTitleWithLogo">SimWrapper</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/docs/" target="_self">Documentation</a></li><li class="siteNavGroupActive"><a href="/docs/examples" target="_self">Examples</a></li><li class=""><a href="/blog/" target="_self">News</a></li><li class=""><a href="https://github.com/simwrapper/simwrapper" target="_blank">GitHub</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Guides</span></h2></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Introduction</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/">SimWrapper</a></li><li class="navListItem"><a class="navItem" href="/docs/examples">Examples</a></li><li class="navListItem"><a class="navItem" href="/docs/file-management">File management</a></li><li class="navListItem"><a class="navItem" href="/docs/help">Getting help</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Guides</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/guide-getting-started">1. Getting started tutorial</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docs/guide-dashboards">2. Dashboards in depth</a></li><li class="navListItem"><a class="navItem" href="/docs/guide-project-sites">3. Building a project site</a></li><li class="navListItem"><a class="navItem" href="/docs/guide-publishing">4. Publishing to the web</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">API Reference / MATSim</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/link-vols">MATSim Network link plots</a></li><li class="navListItem"><a class="navItem" href="/docs/carrier-viewer">MATSim Carrier viewer</a></li><li class="navListItem"><a class="navItem" href="/docs/drt-vehicles">MATSim DRT vehicle animation</a></li><li class="navListItem"><a class="navItem" href="/docs/logistics">MATSim Logistics Viewer</a></li><li class="navListItem"><a class="navItem" href="/docs/transit-supply">MATSim Public transit supply/demand</a></li><li class="navListItem"><a class="navItem" href="/docs/matsim-events">MATSim Events viewer</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">API Reference / General</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/aggregate-od">Aggregate O/D flows</a></li><li class="navListItem"><a class="navItem" href="/docs/bar-area-line">Bar, area, and line charts</a></li><li class="navListItem"><a class="navItem" href="/docs/calculation-tables">Calculation tables</a></li><li class="navListItem"><a class="navItem" href="/docs/csv">CSV table viewer</a></li><li class="navListItem"><a class="navItem" href="/docs/flow-map">Flow maps</a></li><li class="navListItem"><a class="navItem" href="/docs/gridmap">Gridmap</a></li><li class="navListItem"><a class="navItem" href="/docs/heatmap-charts">Heatmap chart</a></li><li class="navListItem"><a class="navItem" href="/docs/matrix">Matrix (HDF5) Viewer</a></li><li class="navListItem"><a class="navItem" href="/docs/pie-charts">Pie charts</a></li><li class="navListItem"><a class="navItem" href="/docs/plotly">Plotly</a></li><li class="navListItem"><a class="navItem" href="/docs/sankey">Sankey/Alluvial diagrams</a></li><li class="navListItem"><a class="navItem" href="/docs/xy-scatter-plots">Scatter plots</a></li><li class="navListItem"><a class="navItem" href="/docs/shapefiles">Shapefiles: Area maps, network links, and GeoJSON</a></li><li class="navListItem"><a class="navItem" href="/docs/text-block">Text blocks</a></li><li class="navListItem"><a class="navItem" href="/docs/tiles">Tiles</a></li><li class="navListItem"><a class="navItem" href="/docs/vega-lite">Vega-Lite charts</a></li><li class="navListItem"><a class="navItem" href="/docs/video">Video player</a></li><li class="navListItem"><a class="navItem" href="/docs/xml-viewer">XML Viewer</a></li><li class="navListItem"><a class="navItem" href="/docs/xy-hexagons">XY hexagons (aggregate)</a></li><li class="navListItem"><a class="navItem" href="/docs/xy-time">X/Y/Time point data</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">For Developers</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/scripts">Conversion scripts</a></li><li class="navListItem"><a class="navItem" href="/docs/dev-guide">Developing SimWrapper</a></li><li class="navListItem"><a class="navItem" href="/docs/plugin-guide">Plugin writing guide</a></li><li class="navListItem"><a class="navItem" href="/docs/changelog">SimWrapper Change Log</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">2. Dashboards in depth</h1></header><article><div><span><p>A dashboard is a page laid out with multiple charts, plots, and visualizations all together. You define the layout with a YAML configuration file which contains the types of plots and their configurations all in one place.</p>
+<p><img src="/docs/assets/dashboard.jpg" alt="Dashboard example">
+<em>Dashboards usually show several at-a-glance summary metrics.</em></p>
+<h2><a class="anchor" aria-hidden="true" id="defining-dashboards-with-dashboard-yml-files"></a><a href="#defining-dashboards-with-dashboard-yml-files" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Defining dashboards with dashboard-*.yml files</h2>
+<p>A folder can contain any number of YAML configuration files named <code>dashboard-*.yml</code>. If these config files exist, SimWrapper will automatically generate and display the dashboards instead of the usual folder browser view.</p>
+<p>When multiple dashboard YAML files exist in a folder, each will be shown as a navigation tab at the top of the page.</p>
+<p>Start with the example below and edit as necessary. YAML is <em>extremely picky</em> about white space and indentation, like Python. Be careful!</p>
+<h2><a class="anchor" aria-hidden="true" id="dashboard-header"></a><a href="#dashboard-header" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Dashboard Header</h2>
+<p>A dashboard config requires a top-level <code>header</code> containing <em>tab</em> and <em>title</em> and some optional fields.</p>
+<pre><code class="hljs css language-yaml"><span class="hljs-attr">header:</span>
+  <span class="hljs-attr">tab:</span> <span class="hljs-string">'Summary'</span>
+  <span class="hljs-attr">title:</span> <span class="hljs-string">'Top-Level Summary Statistics'</span>
+  <span class="hljs-attr">description:</span> <span class="hljs-string">'At-a-glance figures we usually look at'</span> <span class="hljs-comment"># optional</span>
+  <span class="hljs-attr">fullscreen:</span> <span class="hljs-literal">true</span> <span class="hljs-comment"># optional</span>
+  <span class="hljs-attr">triggerPattern:</span> <span class="hljs-string">"*.drt.csv"</span> <span class="hljs-comment"># optional</span>
+</code></pre>
+<table>
+<thead>
+<tr><th><strong>Field</strong></th><th><strong>Description</strong></th><th><strong>Default</strong></th></tr>
+</thead>
+<tbody>
+<tr><td>title</td><td>Header title displayed at top of dashboard</td><td>--</td></tr>
+<tr><td>tab</td><td>Name shown on the tab</td><td>Same as title</td></tr>
+<tr><td>description</td><td>Longer text shown below dashboard title</td><td>--</td></tr>
+<tr><td>fullscreen</td><td>Fill the height of the window instead of assigning specific heights to each row</td><td>false</td></tr>
+<tr><td>triggerPattern</td><td>If specified, the dashboard defined in this YAML will only be generated when a filename matching the given triggerPattern exists in the current folder. For example, if it is set to <code>triggerPattern: &quot;*.drt.csv&quot;</code> and the file <code>output_mode.drt.csv</code> exists in the current folder, then this dashboard will be created. If no file matches the given pattern, then this dashboard will be skipped. If triggerPattern is not specified, then the dashboard will always be generated.</td><td>--</td></tr>
+</tbody>
+</table>
+<h2><a class="anchor" aria-hidden="true" id="dashboard-layout"></a><a href="#dashboard-layout" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Dashboard Layout</h2>
+<p>Below the header, a dashboard also requires a <code>layout</code> section which defines a set of named <strong>rows</strong>. The row names themselves are not displayed anywhere; they are just there to help you organize the file.</p>
+<h4><a class="anchor" aria-hidden="true" id="rows"></a><a href="#rows" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Rows</h4>
+<p>Each <code>row</code> can contain either (1) the properties of a full-width panel, or (2) a YAML <strong>list</strong> of properties for panels that will be laid out horizontally in the row. YAML lists have a strange syntax with <code>-</code> hyphens marking the beginning of a list item. It's best to just look at the example below.</p>
+<p>By default, multiple panels are laid out from left to right, in equal widths. (But see <em>width</em> option further below)</p>
+<pre><code class="hljs css language-yaml"><span class="hljs-attr">layout:</span>
+  <span class="hljs-attr">myRow1:</span> <span class="hljs-comment"># this row has one full-width chart</span>
+    <span class="hljs-attr">type:</span> <span class="hljs-string">bar</span>
+    <span class="hljs-attr">title:</span> <span class="hljs-string">'My Bar Chart'</span>
+    <span class="hljs-attr">dataset:</span> <span class="hljs-string">mycsvdata.csv</span>
+    <span class="hljs-comment"># ...</span>
+
+  <span class="hljs-comment"># next row has two charts, using the '-' YAML list syntax</span>
+  <span class="hljs-attr">myMultiRow:</span>
+    <span class="hljs-bullet">-</span> <span class="hljs-attr">type:</span> <span class="hljs-string">bar</span>
+      <span class="hljs-attr">title:</span> <span class="hljs-string">'My Bar Chart'</span>
+      <span class="hljs-attr">dataset:</span> <span class="hljs-string">mycsvdata.csv</span>
+      <span class="hljs-comment"># ...</span>
+
+    <span class="hljs-bullet">-</span> <span class="hljs-attr">type:</span> <span class="hljs-string">table</span>
+      <span class="hljs-attr">title:</span> <span class="hljs-string">'My Summary Table'</span>
+      <span class="hljs-attr">config:</span> <span class="hljs-string">summary-table.yaml</span>
+</code></pre>
+<p>That indentation in the example above is extremely important! Indentation is how YAML interprets the grouping of elements.</p>
+<h4><a class="anchor" aria-hidden="true" id="chartplot-details"></a><a href="#chartplot-details" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Chart/plot details</h4>
+<p>Each element in a row has the following properties. This defines both the how the panel will be featured in the dashboard, as well as the panel-specific properties themselves.</p>
+<table>
+<thead>
+<tr><th><strong>Field</strong></th><th><strong>Description</strong></th><th><strong>Default</strong></th></tr>
+</thead>
+<tbody>
+<tr><td>type</td><td>(required) The chart or plot type, e.g. <code>pie</code>, <code>bar</code>, <code>map</code>, etc. See the individual chart docs on the left-nav for all available plots.</td><td></td></tr>
+<tr><td>title</td><td>The name of the plot</td><td></td></tr>
+<tr><td>description</td><td>A brief description, displayed below the title</td><td></td></tr>
+<tr><td>height</td><td>Set the panel height here, 5 is default and larger numbers make taller panels</td><td>5</td></tr>
+<tr><td>width</td><td>Set <em>relative widths</em> of panels sharing space on the same row by specifying the width of each panel here. Panels have a default width of 1, and total row width is additive. For example in a row with 3 panels, if the width of the first panel is set to 2, then [2+1+1] is four, thus the first panel fills 50% of the row, and the remaining two fill 25% each.</td><td>1</td></tr>
+<tr><td><em>Other properties</em></td><td>Every panel type has its own set of properties. Include those as <code>key: value</code> lines in the configuration, as needed. See the individual chart docs in the API Reference.<br/> <em>The chart type determines the set of valid properties!</em></td><td></td></tr>
+</tbody>
+</table>
+<h2><a class="anchor" aria-hidden="true" id="full-example-dashboard-summaryyaml"></a><a href="#full-example-dashboard-summaryyaml" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Full example: dashboard-summary.yaml</h2>
+<p>Here is a full example dashboard, pulling all of the above together. Especially note the whitespace/indentation and the use of <code>-</code> to denote YAML lists.</p>
+<p><strong>dashboard-summary.yaml</strong></p>
+<pre><code class="hljs css language-yaml"><span class="hljs-attr">header:</span>
+  <span class="hljs-attr">tab:</span> <span class="hljs-string">"Summary"</span>
+  <span class="hljs-attr">title:</span> <span class="hljs-string">"My Summary Dashboard"</span>
+  <span class="hljs-attr">description:</span> <span class="hljs-string">"Examples of various chart types"</span>
+
+<span class="hljs-attr">layout:</span>
+  <span class="hljs-attr">row1:</span> <span class="hljs-comment"># this row has two charts</span>
+    <span class="hljs-bullet">-</span> <span class="hljs-attr">type:</span> <span class="hljs-string">pie</span>
+      <span class="hljs-attr">width:</span> <span class="hljs-number">1</span> <span class="hljs-comment"># this pie will be 1/3 of the row width</span>
+      <span class="hljs-attr">title:</span> <span class="hljs-string">"Mode Share - Final"</span>
+      <span class="hljs-attr">description:</span> <span class="hljs-string">"From modestats.txt summary"</span>
+      <span class="hljs-attr">dataset:</span> <span class="hljs-string">"*modestats.txt"</span>
+      <span class="hljs-attr">useLastRow:</span> <span class="hljs-literal">true</span>
+      <span class="hljs-attr">ignoreColumns:</span> <span class="hljs-string">["Iteration"]</span>
+
+    <span class="hljs-bullet">-</span> <span class="hljs-attr">type:</span> <span class="hljs-string">bar</span>
+      <span class="hljs-attr">width:</span> <span class="hljs-number">2</span> <span class="hljs-comment"># this barchart will be 2/3 of the row width</span>
+      <span class="hljs-attr">title:</span> <span class="hljs-string">"Example Bar Plot"</span>
+      <span class="hljs-attr">description:</span> <span class="hljs-string">"Distance over Iteration"</span>
+      <span class="hljs-attr">columns:</span> <span class="hljs-string">[distance_mean,</span> <span class="hljs-string">directDistance_mean]</span>
+      <span class="hljs-attr">legendName:</span> <span class="hljs-string">[Mean</span> <span class="hljs-string">Distance,</span> <span class="hljs-string">Mean</span> <span class="hljs-string">Direct</span> <span class="hljs-string">Distance]</span>
+      <span class="hljs-attr">skipFirstRow:</span> <span class="hljs-literal">true</span>
+      <span class="hljs-attr">dataset:</span> <span class="hljs-string">"*drt_customer_stats_drt_short.csv"</span>
+      <span class="hljs-attr">x:</span> <span class="hljs-string">"iteration"</span>
+      <span class="hljs-attr">yAxisName:</span> <span class="hljs-string">"Distanz"</span>
+      <span class="hljs-attr">xAxisName:</span> <span class="hljs-string">"Iteration"</span>
+
+  <span class="hljs-attr">secondRow:</span> <span class="hljs-comment"># this row has just one plot</span>
+    <span class="hljs-attr">type:</span> <span class="hljs-string">"line"</span>
+    <span class="hljs-attr">title:</span> <span class="hljs-string">"Example Line Plot"</span>
+    <span class="hljs-attr">description:</span> <span class="hljs-string">"Distance over Iteration"</span>
+    <span class="hljs-attr">columns:</span> <span class="hljs-string">[distance_mean,</span> <span class="hljs-string">directDistance_mean]</span>
+    <span class="hljs-attr">legendName:</span> <span class="hljs-string">[Mean</span> <span class="hljs-string">Distance,</span> <span class="hljs-string">Mean</span> <span class="hljs-string">Direct</span> <span class="hljs-string">Distance]</span>
+    <span class="hljs-attr">skipFirstRow:</span> <span class="hljs-literal">false</span>
+    <span class="hljs-attr">dataset:</span> <span class="hljs-string">"*drt_customer_stats_drt.csv"</span>
+    <span class="hljs-attr">x:</span> <span class="hljs-string">"iteration"</span>
+    <span class="hljs-attr">yAxisName:</span> <span class="hljs-string">"Distance"</span>
+    <span class="hljs-attr">xAxisName:</span> <span class="hljs-string">"Iteration"</span>
+</code></pre>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/guide-getting-started"><span class="arrow-prev">← </span><span>1. Getting started tutorial</span></a><a class="docs-next button" href="/docs/guide-project-sites"><span>3. Building a project site</span><span class="arrow-next"> →</span></a></div></div></div></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/vsp-logo-300dpi.png" alt="SimWrapper"/></a><div><h5>Docs</h5><a href="/docs/guide-getting-started">Getting Started</a><a href="/docs/dev-guide">Developer Guide</a><a href="/blog">Latest Updates</a></div><div><h5>More</h5><a href="https://vsp.berlin">VSP Home</a><a href="https://matsim.org">MATSim.org</a><a href="https://github.com/simwrapper/simwrapper">⭐ us on GitHub!</a></div></section><section class="copyright">Copyright © 2025 VSP, TU Berlin</section></footer></div></body></html>

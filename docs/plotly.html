@@ -1,0 +1,210 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Plotly · SimWrapper</title><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="generator" content="Docusaurus"/><meta name="description" content="![plotly example](/docs/assets/plotly.png)"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Plotly · SimWrapper"/><meta property="og:type" content="website"/><meta property="og:url" content="https://docs.simwrapper.app/"/><meta property="og:description" content="![plotly example](/docs/assets/plotly.png)"/><meta property="og:image" content="https://docs.simwrapper.app/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/img/SW_favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://docs.simwrapper.app/blog/atom.xml" title="SimWrapper Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://docs.simwrapper.app/blog/feed.xml" title="SimWrapper Blog RSS Feed"/><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Roboto+Slab:400,400i,700"/><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/SW_favicon.png" alt="SimWrapper"/><h2 class="headerTitleWithLogo">SimWrapper</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/docs/" target="_self">Documentation</a></li><li class="siteNavGroupActive"><a href="/docs/examples" target="_self">Examples</a></li><li class=""><a href="/blog/" target="_self">News</a></li><li class=""><a href="https://github.com/simwrapper/simwrapper" target="_blank">GitHub</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>API Reference / General</span></h2></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Introduction</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/">SimWrapper</a></li><li class="navListItem"><a class="navItem" href="/docs/examples">Examples</a></li><li class="navListItem"><a class="navItem" href="/docs/file-management">File management</a></li><li class="navListItem"><a class="navItem" href="/docs/help">Getting help</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Guides</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/guide-getting-started">1. Getting started tutorial</a></li><li class="navListItem"><a class="navItem" href="/docs/guide-dashboards">2. Dashboards in depth</a></li><li class="navListItem"><a class="navItem" href="/docs/guide-project-sites">3. Building a project site</a></li><li class="navListItem"><a class="navItem" href="/docs/guide-publishing">4. Publishing to the web</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">API Reference / MATSim</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/link-vols">MATSim Network link plots</a></li><li class="navListItem"><a class="navItem" href="/docs/carrier-viewer">MATSim Carrier viewer</a></li><li class="navListItem"><a class="navItem" href="/docs/drt-vehicles">MATSim DRT vehicle animation</a></li><li class="navListItem"><a class="navItem" href="/docs/logistics">MATSim Logistics Viewer</a></li><li class="navListItem"><a class="navItem" href="/docs/transit-supply">MATSim Public transit supply/demand</a></li><li class="navListItem"><a class="navItem" href="/docs/matsim-events">MATSim Events viewer</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">API Reference / General</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/aggregate-od">Aggregate O/D flows</a></li><li class="navListItem"><a class="navItem" href="/docs/bar-area-line">Bar, area, and line charts</a></li><li class="navListItem"><a class="navItem" href="/docs/calculation-tables">Calculation tables</a></li><li class="navListItem"><a class="navItem" href="/docs/csv">CSV table viewer</a></li><li class="navListItem"><a class="navItem" href="/docs/flow-map">Flow maps</a></li><li class="navListItem"><a class="navItem" href="/docs/gridmap">Gridmap</a></li><li class="navListItem"><a class="navItem" href="/docs/heatmap-charts">Heatmap chart</a></li><li class="navListItem"><a class="navItem" href="/docs/matrix">Matrix (HDF5) Viewer</a></li><li class="navListItem"><a class="navItem" href="/docs/pie-charts">Pie charts</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docs/plotly">Plotly</a></li><li class="navListItem"><a class="navItem" href="/docs/sankey">Sankey/Alluvial diagrams</a></li><li class="navListItem"><a class="navItem" href="/docs/xy-scatter-plots">Scatter plots</a></li><li class="navListItem"><a class="navItem" href="/docs/shapefiles">Shapefiles: Area maps, network links, and GeoJSON</a></li><li class="navListItem"><a class="navItem" href="/docs/text-block">Text blocks</a></li><li class="navListItem"><a class="navItem" href="/docs/tiles">Tiles</a></li><li class="navListItem"><a class="navItem" href="/docs/vega-lite">Vega-Lite charts</a></li><li class="navListItem"><a class="navItem" href="/docs/video">Video player</a></li><li class="navListItem"><a class="navItem" href="/docs/xml-viewer">XML Viewer</a></li><li class="navListItem"><a class="navItem" href="/docs/xy-hexagons">XY hexagons (aggregate)</a></li><li class="navListItem"><a class="navItem" href="/docs/xy-time">X/Y/Time point data</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">For Developers</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/scripts">Conversion scripts</a></li><li class="navListItem"><a class="navItem" href="/docs/dev-guide">Developing SimWrapper</a></li><li class="navListItem"><a class="navItem" href="/docs/plugin-guide">Plugin writing guide</a></li><li class="navListItem"><a class="navItem" href="/docs/changelog">SimWrapper Change Log</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Plotly</h1></header><article><div><span><p><img src="/docs/assets/plotly.png" alt="plotly example"></p>
+<p>With the Plotly plug-in it is possible to create any Plotly chart including all of the advanced stacked, 3D, and non-cartesian plot types.</p>
+<p>If you just need a simple bar/line/area chart, you might want to use the <a href="/docs/bar-area-line">basic chart plugin</a> instead.</p>
+<h2><a class="anchor" aria-hidden="true" id="usage"></a><a href="#usage" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Usage</h2>
+<p>See the <strong><a href="https://plotly.com/javascript/">Plotly documentation</a></strong> which catalogs all of the many chart types available, far too numerous to list here. From there, you can find the configuration details that are required for your chart, and you will write that config into a SimWrapper YAML file -- instead of writing the given Plotly javascript code.</p>
+<p>The SimWrapper plotly plug-in can be used to add panels in <strong>Dashboards</strong>. See the <a href="/docs/guide-dashboards">Dashboard documentation</a> for general tips on creating dashboard configurations.</p>
+<ul>
+<li>Each plotly panel is defined inside a <strong>row</strong> in a <code>dashboard-*.yaml</code> file.</li>
+<li>Use panel <code>type: plotly</code> in the dashboard configuration.</li>
+<li>Standard title, description, and width fields define the frame.</li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="plotly-configuration"></a><a href="#plotly-configuration" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Plotly configuration</h2>
+<p><strong>Data traces.</strong> The Plotly examples generally describe data <strong>traces</strong>, each of which can be defined in the <code>traces</code> section of the SimWrapper YAML configuration; see below for an example.</p>
+<p><strong>Datasets.</strong> You can specify arrays of data for your x and y data directly in the YAML file, e.g. <code>x: [1,3,5,10.0]</code>. More commonly, you will refer to external datasets such as CSV files. For this, create a <code>datasets:</code> section in your YAML config.</p>
+<p>For example, you could read trip data from a CSV file using <code>trips: &quot;tripData.csv&quot;</code>. Then, refer to the columns <code>timePeriod</code> and <code>totalTrips</code> in that dataset in the <code>traces</code> section by <strong>prefixing the key with a $</strong>:</p>
+<pre><code class="hljs css language-yaml"><span class="hljs-attr">datasets:</span>
+  <span class="hljs-attr">trips:</span> <span class="hljs-string">"tripData.csv"</span>
+<span class="hljs-attr">traces:</span>
+  <span class="hljs-bullet">-</span> <span class="hljs-attr">x:</span> <span class="hljs-string">$trips.timePeriod</span>
+    <span class="hljs-attr">y:</span> <span class="hljs-string">$trips.totalTrips</span>
+    <span class="hljs-string">...</span>
+</code></pre>
+<p>SimWrapper will read the file and insert the appropriate data columns into the configuration automatically. Note the <code>$</code> before the keyword that you used for identifying the dataset.</p>
+<ul>
+<li>You can read <em>multiple datasets</em> and refer to columns from each using <code>$key.column</code> for each.</li>
+</ul>
+<p><strong>Layout.</strong> Layout is handled by SimWrapper automatically; however if you want to override some layout defaults, you can include a <code>layout</code> section. The contents will be merged with the default layout values.</p>
+<h3><a class="anchor" aria-hidden="true" id="additional-properties"></a><a href="#additional-properties" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Additional properties</h3>
+<p>SimWrapper can preprocess datasets with the following special properties for use with the Plotly plug-in. Note, these are not part of the official Plotly library, but are SimWrapper-specific additions.</p>
+<p>These are all specified at the plugin level; so at the same indentation level as <code>traces</code>, <code>dataset</code> etc.</p>
+<table>
+<thead>
+<tr><th><strong>Field</strong></th><th><strong>Description</strong></th><th><strong>Default</strong></th></tr>
+</thead>
+<tbody>
+<tr><td>colorRamp</td><td>String. Set the color ramp that is applied if multiple traces are present. Available color ramp values are on the Plotly docs: see <a href="https://plotly.com/python/discrete-color/#color-sequences-in-plotly-express">Discrete</a> and <a href="https://plotly.com/python/builtin-colorscales/#builtin-sequential-color-scales">Sequential</a> color ramps. Note colorRamp can also be specified for a specific trace.</td><td></td></tr>
+<tr><td>fixedRatio</td><td>Boolean. Define a fixed ratio for x and y axes domain.</td><td>false</td></tr>
+<tr><td>interactive</td><td>String [none, dropdown, slider]. Create an interactive dropdown menu or slider for selecting individual traces.</td><td>none</td></tr>
+<tr><td>mergeDatasets</td><td>Boolean. Merge all given <code>datasets</code> into one.</td><td>false</td></tr>
+<tr><td>multiIndex</td><td>Map&lt;String, String&gt;. Merge two columns as index. Column name as key will be merged with the column name value. This allows building multi-level indices for certain plot types.</td><td></td></tr>
+</tbody>
+</table>
+<hr>
+<h3><a class="anchor" aria-hidden="true" id="detailed-dashboard-example"></a><a href="#detailed-dashboard-example" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Detailed dashboard example</h3>
+<p>To generate the plot from the title image, the following code was used. The .csv file does not contain all the data, but is only meant to explain the structure.</p>
+<pre><code class="hljs css language-yaml"><span class="hljs-attr">header:</span>
+  <span class="hljs-attr">title:</span> <span class="hljs-string">Plotly</span> <span class="hljs-string">example</span>
+<span class="hljs-attr">layout:</span>
+  <span class="hljs-attr">arrivals:</span>
+    <span class="hljs-bullet">-</span> <span class="hljs-attr">type:</span> <span class="hljs-string">plotly</span>
+      <span class="hljs-attr">height:</span> <span class="hljs-number">10</span>
+      <span class="hljs-attr">title:</span> <span class="hljs-string">Departures</span>
+      <span class="hljs-attr">description:</span> <span class="hljs-string">by</span> <span class="hljs-string">hour</span> <span class="hljs-string">and</span> <span class="hljs-string">purpose</span>
+      <span class="hljs-attr">datasets:</span>
+        <span class="hljs-attr">dataset:</span> <span class="hljs-string">"analysis/population/trip_purposes_by_hour.csv"</span>
+      <span class="hljs-attr">traces:</span>
+        <span class="hljs-bullet">-</span> <span class="hljs-attr">type:</span> <span class="hljs-string">bar</span>
+          <span class="hljs-attr">x:</span> <span class="hljs-string">$dataset.h</span>
+          <span class="hljs-attr">y:</span> <span class="hljs-string">$dataset.arrival</span>
+          <span class="hljs-attr">name:</span> <span class="hljs-string">$dataset.purpose</span>
+          <span class="hljs-attr">orientation:</span> <span class="hljs-string">v</span>
+          <span class="hljs-attr">colorRamp:</span> <span class="hljs-string">Spectral</span>
+      <span class="hljs-attr">layout:</span>
+        <span class="hljs-attr">xaxis:</span>
+          <span class="hljs-attr">title:</span> <span class="hljs-string">Hour</span>
+          <span class="hljs-attr">color:</span> <span class="hljs-string">'#444'</span>
+          <span class="hljs-attr">type:</span> <span class="hljs-string">'-'</span>
+        <span class="hljs-attr">barmode:</span> <span class="hljs-string">stack</span>
+        <span class="hljs-attr">yaxis:</span>
+          <span class="hljs-attr">title:</span> <span class="hljs-string">Share</span>
+          <span class="hljs-attr">color:</span> <span class="hljs-string">'#444'</span>
+          <span class="hljs-attr">type:</span> <span class="hljs-string">'-'</span>
+</code></pre>
+<h4><a class="anchor" aria-hidden="true" id="example-data-snippet-trip_purposes_by_hourcsv"></a><a href="#example-data-snippet-trip_purposes_by_hourcsv" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Example data snippet: trip_purposes_by_hour.csv</h4>
+<table>
+<thead>
+<tr><th style="text-align:center">purpose</th><th style="text-align:left">h</th><th style="text-align:center">arrival</th><th style="text-align:left">departure</th></tr>
+</thead>
+<tbody>
+<tr><td style="text-align:center">accomp_children</td><td style="text-align:left">9</td><td style="text-align:center">0.0</td><td style="text-align:left">2.587991718426501E-4</td></tr>
+<tr><td style="text-align:center">accomp_children</td><td style="text-align:left">10</td><td style="text-align:center">2.587991718426501E-4</td><td style="text-align:left">0.0</td></tr>
+<tr><td style="text-align:center">...</td><td style="text-align:left">...</td><td style="text-align:center">...</td><td style="text-align:left">...</td></tr>
+<tr><td style="text-align:center">business</td><td style="text-align:left">3</td><td style="text-align:center">2.587991718426501E-4</td><td style="text-align:left">5.175983436853002E-4</td></tr>
+<tr><td style="text-align:center">business</td><td style="text-align:left">4</td><td style="text-align:center">0.0010351966873706005</td><td style="text-align:left">7.763975155279503E-4</td></tr>
+<tr><td style="text-align:center">...</td><td style="text-align:left">...</td><td style="text-align:center">...</td><td style="text-align:left">...</td></tr>
+<tr><td style="text-align:center">educ_higher</td><td style="text-align:left">6</td><td style="text-align:center">2.587991718426501E-4</td><td style="text-align:left">2.587991718426501E-4</td></tr>
+<tr><td style="text-align:center">educ_higher</td><td style="text-align:left">7</td><td style="text-align:center">2.587991718426501E-4</td><td style="text-align:left">5.175983436853002E-4</td></tr>
+<tr><td style="text-align:center">...</td><td style="text-align:left">...</td><td style="text-align:center">...</td><td style="text-align:left">...</td></tr>
+</tbody>
+</table>
+<h3><a class="anchor" aria-hidden="true" id="pivot"></a><a href="#pivot" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Pivot</h3>
+<p>With the pivot attribute, you can modify the dataset by converting it from wide to long format.</p>
+<table>
+<thead>
+<tr><th><strong>Field</strong></th><th><strong>Description</strong></th></tr>
+</thead>
+<tbody>
+<tr><td>exclude</td><td>Array of column names which should be ignored by the converting</td></tr>
+<tr><td>namesTo</td><td>name of the new column that contains the attributes</td></tr>
+<tr><td>valuesTo</td><td>name of the new column that contains the values</td></tr>
+</tbody>
+</table>
+<p>Besides converting, it is also possible to rename columns and normalize values. These two options can also be configured in the dataset attribute.</p>
+<table>
+<thead>
+<tr><th><strong>Field</strong></th><th><strong>Description</strong></th></tr>
+</thead>
+<tbody>
+<tr><td>rename</td><td>The rename Object contains a map where the keys specify the old column name and the values specify the new column name</td></tr>
+<tr><td>normalize</td><td>The normalize Object contains two entries. The <code>target</code> entry accepts a column name as a <code>String</code> for the columns that should be normalized, while the <code>groupBy</code> attribute takes an array of column names as <code>Strings</code>. The values will be normalized for the rows where the values from the <code>groupBy</code> attribute are identical.</td></tr>
+</tbody>
+</table>
+<h4><a class="anchor" aria-hidden="true" id="example-pivot-data-snippet"></a><a href="#example-pivot-data-snippet" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Example pivot data snippet</h4>
+<pre><code class="hljs css language-yaml"><span class="hljs-attr">dataset:</span>
+  <span class="hljs-attr">pivot:</span>
+    <span class="hljs-attr">exclude:</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-string">age</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-string">dist_group</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-string">main_mode</span>
+    <span class="hljs-attr">namesTo:</span> <span class="hljs-string">names</span>
+    <span class="hljs-attr">valuesTo:</span> <span class="hljs-string">values</span>
+  <span class="hljs-attr">rename:</span>
+      <span class="hljs-attr">ref_share:</span> <span class="hljs-string">Ref.</span>
+      <span class="hljs-attr">sim_share:</span> <span class="hljs-string">Sim.</span>
+  <span class="hljs-attr">normalize:</span>
+      <span class="hljs-attr">target:</span> <span class="hljs-string">values</span>
+      <span class="hljs-attr">groupBy:</span>
+        <span class="hljs-bullet">-</span> <span class="hljs-string">names</span>
+        <span class="hljs-bullet">-</span> <span class="hljs-string">dist_group</span>
+        <span class="hljs-bullet">-</span> <span class="hljs-string">age</span>
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="facets"></a><a href="#facets" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Facets</h3>
+<p><img src="/docs/assets/plotly_facet.png" alt="plotly example"></p>
+<p>To create facets you have to specify the facet_col/facet_row attribute inside the traces array</p>
+<table>
+<thead>
+<tr><th><strong>Field</strong></th><th><strong>Description</strong></th><th><strong>Example</strong></th></tr>
+</thead>
+<tbody>
+<tr><td>facet_col</td><td>Defines which values in wich row in the dataset should be seperated into facet columns</td><td><code>$dataset.age</code></td></tr>
+<tr><td>facet_row</td><td>Defines which values in wich row in the dataset should be seperated into facet rows</td><td><code>$dataset.mode</code></td></tr>
+</tbody>
+</table>
+<h4><a class="anchor" aria-hidden="true" id="example-facets-data-snippet"></a><a href="#example-facets-data-snippet" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Example facets data snippet</h4>
+<pre><code class="hljs css language-yaml"><span class="hljs-attr">traces:</span>
+<span class="hljs-bullet">-</span> <span class="hljs-attr">x:</span> <span class="hljs-string">$dataset.distance_group</span>
+  <span class="hljs-attr">y:</span> <span class="hljs-string">$dataset.share</span>
+  <span class="hljs-attr">orientation:</span> <span class="hljs-string">v</span>
+  <span class="hljs-attr">type:</span> <span class="hljs-string">bar</span>
+  <span class="hljs-attr">name:</span> <span class="hljs-string">$dataset.vehicle</span>
+  <span class="hljs-attr">facet_col:</span> <span class="hljs-string">$dataset.sex</span>
+  <span class="hljs-attr">facet_row:</span> <span class="hljs-string">$dataset.monthly_pass</span>
+</code></pre>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/pie-charts"><span class="arrow-prev">← </span><span>Pie charts</span></a><a class="docs-next button" href="/docs/sankey"><span>Sankey/Alluvial diagrams</span><span class="arrow-next"> →</span></a></div></div></div></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/vsp-logo-300dpi.png" alt="SimWrapper"/></a><div><h5>Docs</h5><a href="/docs/guide-getting-started">Getting Started</a><a href="/docs/dev-guide">Developer Guide</a><a href="/blog">Latest Updates</a></div><div><h5>More</h5><a href="https://vsp.berlin">VSP Home</a><a href="https://matsim.org">MATSim.org</a><a href="https://github.com/simwrapper/simwrapper">⭐ us on GitHub!</a></div></section><section class="copyright">Copyright © 2025 VSP, TU Berlin</section></footer></div></body></html>

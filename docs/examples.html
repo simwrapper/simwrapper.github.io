@@ -1,0 +1,195 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Examples · SimWrapper</title><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="generator" content="Docusaurus"/><meta name="description" content="The thumbnails below depict each visualization type that is available in SimWrapper. Click on a thumbnail for the detailed guide on parameters and an explanation of how to include that visualization in your analysis or dashboard."/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Examples · SimWrapper"/><meta property="og:type" content="website"/><meta property="og:url" content="https://docs.simwrapper.app/"/><meta property="og:description" content="The thumbnails below depict each visualization type that is available in SimWrapper. Click on a thumbnail for the detailed guide on parameters and an explanation of how to include that visualization in your analysis or dashboard."/><meta property="og:image" content="https://docs.simwrapper.app/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/img/SW_favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://docs.simwrapper.app/blog/atom.xml" title="SimWrapper Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://docs.simwrapper.app/blog/feed.xml" title="SimWrapper Blog RSS Feed"/><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Roboto+Slab:400,400i,700"/><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/SW_favicon.png" alt="SimWrapper"/><h2 class="headerTitleWithLogo">SimWrapper</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/docs/" target="_self">Documentation</a></li><li class="siteNavGroupActive siteNavItemActive"><a href="/docs/examples" target="_self">Examples</a></li><li class=""><a href="/blog/" target="_self">News</a></li><li class=""><a href="https://github.com/simwrapper/simwrapper" target="_blank">GitHub</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Introduction</span></h2></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Introduction</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/">SimWrapper</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docs/examples">Examples</a></li><li class="navListItem"><a class="navItem" href="/docs/file-management">File management</a></li><li class="navListItem"><a class="navItem" href="/docs/help">Getting help</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Guides</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/guide-getting-started">1. Getting started tutorial</a></li><li class="navListItem"><a class="navItem" href="/docs/guide-dashboards">2. Dashboards in depth</a></li><li class="navListItem"><a class="navItem" href="/docs/guide-project-sites">3. Building a project site</a></li><li class="navListItem"><a class="navItem" href="/docs/guide-publishing">4. Publishing to the web</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">API Reference / MATSim</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/link-vols">MATSim Network link plots</a></li><li class="navListItem"><a class="navItem" href="/docs/carrier-viewer">MATSim Carrier viewer</a></li><li class="navListItem"><a class="navItem" href="/docs/drt-vehicles">MATSim DRT vehicle animation</a></li><li class="navListItem"><a class="navItem" href="/docs/logistics">MATSim Logistics Viewer</a></li><li class="navListItem"><a class="navItem" href="/docs/transit-supply">MATSim Public transit supply/demand</a></li><li class="navListItem"><a class="navItem" href="/docs/matsim-events">MATSim Events viewer</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">API Reference / General</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/aggregate-od">Aggregate O/D flows</a></li><li class="navListItem"><a class="navItem" href="/docs/bar-area-line">Bar, area, and line charts</a></li><li class="navListItem"><a class="navItem" href="/docs/calculation-tables">Calculation tables</a></li><li class="navListItem"><a class="navItem" href="/docs/csv">CSV table viewer</a></li><li class="navListItem"><a class="navItem" href="/docs/flow-map">Flow maps</a></li><li class="navListItem"><a class="navItem" href="/docs/gridmap">Gridmap</a></li><li class="navListItem"><a class="navItem" href="/docs/heatmap-charts">Heatmap chart</a></li><li class="navListItem"><a class="navItem" href="/docs/matrix">Matrix (HDF5) Viewer</a></li><li class="navListItem"><a class="navItem" href="/docs/pie-charts">Pie charts</a></li><li class="navListItem"><a class="navItem" href="/docs/plotly">Plotly</a></li><li class="navListItem"><a class="navItem" href="/docs/sankey">Sankey/Alluvial diagrams</a></li><li class="navListItem"><a class="navItem" href="/docs/xy-scatter-plots">Scatter plots</a></li><li class="navListItem"><a class="navItem" href="/docs/shapefiles">Shapefiles: Area maps, network links, and GeoJSON</a></li><li class="navListItem"><a class="navItem" href="/docs/text-block">Text blocks</a></li><li class="navListItem"><a class="navItem" href="/docs/tiles">Tiles</a></li><li class="navListItem"><a class="navItem" href="/docs/vega-lite">Vega-Lite charts</a></li><li class="navListItem"><a class="navItem" href="/docs/video">Video player</a></li><li class="navListItem"><a class="navItem" href="/docs/xml-viewer">XML Viewer</a></li><li class="navListItem"><a class="navItem" href="/docs/xy-hexagons">XY hexagons (aggregate)</a></li><li class="navListItem"><a class="navItem" href="/docs/xy-time">X/Y/Time point data</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">For Developers</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/scripts">Conversion scripts</a></li><li class="navListItem"><a class="navItem" href="/docs/dev-guide">Developing SimWrapper</a></li><li class="navListItem"><a class="navItem" href="/docs/plugin-guide">Plugin writing guide</a></li><li class="navListItem"><a class="navItem" href="/docs/changelog">SimWrapper Change Log</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Examples</h1></header><article><div><span><p>The thumbnails below depict each visualization type that is available in SimWrapper. Click on a thumbnail for the detailed guide on parameters and an explanation of how to include that visualization in your analysis or dashboard.</p>
+<p>For general help on getting started with SimWrapper, see the <a href="guide-getting-started">Getting Started Guide</a>.</p>
+<hr>
+<h2><a class="anchor" aria-hidden="true" id="matsim-visualizations"></a><a href="#matsim-visualizations" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>MATSim visualizations</h2>
+<p>These visualizations are for MATSim-specific outputs.</p>
+<div class="visualization-gallery">
+<div class="visualization">
+<h4><a class="anchor" aria-hidden="true" id="matsim-network-linknbspplot"></a><a href="#matsim-network-linknbspplot" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>MATSim network link plot</h4>
+<p><a href="/docs/link-vols"><img src="/docs/assets/links.jpg" alt="MATSim network links"></a></p>
+</div>
+<div class="visualization">
+<!--   -----------------------   -->
+<h4><a class="anchor" aria-hidden="true" id="matsim-transit-network"></a><a href="#matsim-transit-network" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>MATSim transit network</h4>
+<p><a href="/docs/transit-supply"><img src="/docs/assets/thumb-transit.jpg" alt="MATSim transit"></a></p>
+</div>
+<div class="visualization">
+<!--   -----------------------   -->
+<h4><a class="anchor" aria-hidden="true" id="matsim-carriersfreight"></a><a href="#matsim-carriersfreight" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>MATSim Carriers/Freight</h4>
+<p><a href="/docs/carrier-viewer"><img src="/docs/assets/thumb-carriers.jpg" alt="MATSim Carriers"></a></p>
+</div>
+<div class="visualization">
+<!--   -----------------------   -->
+<h4><a class="anchor" aria-hidden="true" id="matsim-vehicle-animation-drt"></a><a href="#matsim-vehicle-animation-drt" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>MATSim vehicle animation (DRT)</h4>
+<p><a href="/docs/drt-vehicles"><img src="/docs/assets/drt.jpg" alt="MATSim vehicles"></a></p>
+</div>
+<div class="visualization">
+<!--   -----------------------   -->
+<h4><a class="anchor" aria-hidden="true" id="matsim-event-viewer-experimental"></a><a href="#matsim-event-viewer-experimental" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>MATSim Event viewer (experimental)</h4>
+<p><a href="/docs/matsim-events"><img src="/docs/assets/thumb-events.jpg" alt="MATSim events"></a></p>
+</div>
+<div class="visualization">
+<!--   -----------------------   -->
+</div>
+</div>
+<hr>
+<h2><a class="anchor" aria-hidden="true" id="statistical-charts-and-maps"></a><a href="#statistical-charts-and-maps" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Statistical charts and maps</h2>
+<p>These visualizations work with any dataset, generally using CSV text format or XML files.</p>
+<div class="visualization-gallery">
+<div class="visualization">
+<h4><a class="anchor" aria-hidden="true" id="aggregate-od-flow"></a><a href="#aggregate-od-flow" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Aggregate O/D flow</h4>
+<p><a href="/docs/aggregate-od"><img src="/docs/assets/aggregate-od.jpg" alt="aggregate o/d flow"></a></p>
+</div>
+<div class="visualization">
+<!--   -----------------------   -->
+<h4><a class="anchor" aria-hidden="true" id="bar-area-line-charts"></a><a href="#bar-area-line-charts" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Bar, area, line charts</h4>
+<p><a href="/docs/bar-area-line"><img src="/docs/assets/thumb-bars.png" alt="bar area line charts"></a></p>
+</div>
+<div class="visualization">
+<!--   -----------------------   -->
+<h4><a class="anchor" aria-hidden="true" id="calculation-table"></a><a href="#calculation-table" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Calculation table</h4>
+<p><a href="/docs/calculation-tables"><img src="/docs/assets/thumb-table.png" alt="Calculation tables"></a></p>
+</div>
+<div class="visualization">
+<!--   -----------------------   -->
+<h4><a class="anchor" aria-hidden="true" id="csv-table-viewer"></a><a href="#csv-table-viewer" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>CSV table viewer</h4>
+<p><a href="/docs/csv"><img src="/docs/assets/thumb-csv.jpg" alt="CSV Viewer"></a></p>
+</div>
+<div class="visualization">
+<!--   -----------------------   -->
+<h4><a class="anchor" aria-hidden="true" id="flow-map"></a><a href="#flow-map" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Flow map</h4>
+<p><a href="/docs/flow-map"><img src="/docs/assets/flow-map.jpg" alt="Flow maps"></a></p>
+</div>
+<div class="visualization">
+<!--   -----------------------   -->
+<h4><a class="anchor" aria-hidden="true" id="gridmap"></a><a href="#gridmap" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Gridmap</h4>
+<p><a href="/docs/gridmap"><img src="/docs/assets/gridmap.png" alt="Gridmap"></a></p>
+</div>
+<div class="visualization">
+<!--   -----------------------   -->
+<h4><a class="anchor" aria-hidden="true" id="heat-map-plot"></a><a href="#heat-map-plot" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Heat map plot</h4>
+<p><a href="/docs/heatmap-charts"><img src="/docs/assets/thumb-heatmap.png" alt=""></a></p>
+</div>
+<div class="visualization">
+<!--   -----------------------   -->
+<h4><a class="anchor" aria-hidden="true" id="pie-charts"></a><a href="#pie-charts" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Pie charts</h4>
+<p><a href="/docs/pie-charts"><img src="/docs/assets/pie.png" alt="Pie charts"></a></p>
+</div>
+<div class="visualization">
+<!--   -----------------------   -->
+<h4><a class="anchor" aria-hidden="true" id="plotly-chart"></a><a href="#plotly-chart" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Plotly chart</h4>
+<p><a href="/docs/plotly"><img src="/docs/assets/plotly.png" alt="Plotly charts"></a></p>
+</div>
+<div class="visualization">
+<!--   -----------------------   -->
+<h4><a class="anchor" aria-hidden="true" id="sankey-flow-diagram"></a><a href="#sankey-flow-diagram" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Sankey flow diagram</h4>
+<p><a href="/docs/sankey"><img src="/docs/assets/sankey.jpg" alt="Sankey flow diagrams"></a></p>
+</div>
+<div class="visualization">
+<!--   -----------------------   -->
+<h4><a class="anchor" aria-hidden="true" id="scatter-plots"></a><a href="#scatter-plots" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Scatter plots</h4>
+<p><a href="/docs/xy-scatter-plots"><img src="/docs/assets/bubbles.png" alt="Scatter plots"></a></p>
+</div>
+<div class="visualization">
+<!--   -----------------------   -->
+<h4><a class="anchor" aria-hidden="true" id="shapefiles-area"></a><a href="#shapefiles-area" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Shapefiles: area</h4>
+<p><a href="/docs/shapefiles"><img src="/docs/assets/thumb-area.png" alt="Shapefiles"></a></p>
+</div>
+<div class="visualization">
+<!--   -----------------------   -->
+<h4><a class="anchor" aria-hidden="true" id="shapefiles-networks"></a><a href="#shapefiles-networks" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Shapefiles: networks</h4>
+<p><a href="/docs/shapefiles"><img src="/docs/assets/links.jpg" alt="Shapefiles"></a></p>
+</div>
+<div class="visualization">
+<!--   -----------------------   -->
+<h4><a class="anchor" aria-hidden="true" id="textmarkdown"></a><a href="#textmarkdown" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Text/Markdown</h4>
+<p><a href="/docs/text-block"><img src="/docs/assets/thumb-text.png" alt="Text blocks"></a></p>
+</div>
+<div class="visualization">
+<!--   -----------------------   -->
+<h4><a class="anchor" aria-hidden="true" id="tiles-single-metrics"></a><a href="#tiles-single-metrics" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Tiles: single metrics</h4>
+<p><a href="/docs/tiles"><img src="/docs/assets/thumb-tiles.png" alt="Ttiles"></a></p>
+</div>
+<div class="visualization">
+<!--   -----------------------   -->
+<h4><a class="anchor" aria-hidden="true" id="vega-lite-charts"></a><a href="#vega-lite-charts" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Vega-lite charts</h4>
+<p><a href="/docs/vega-lite"><img src="/docs/assets/vega-chart.jpg" alt="Vega-lite charts"></a></p>
+</div>
+<div class="visualization">
+<!--   -----------------------   -->
+<h4><a class="anchor" aria-hidden="true" id="video-player"></a><a href="#video-player" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Video player</h4>
+<p><a href="/docs/video"><img src="/docs/assets/thumb-video.png" alt="Video player"></a></p>
+</div>
+<div class="visualization">
+<!--   -----------------------   -->
+<h4><a class="anchor" aria-hidden="true" id="xml-config-viewer"></a><a href="#xml-config-viewer" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>XML Config viewer</h4>
+<p><a href="/docs/xml-viewer"><img src="/docs/assets/thumb-xml-viewer.png" alt="XML Viewer"></a></p>
+</div>
+<div class="visualization">
+<!--   -----------------------   -->
+<h4><a class="anchor" aria-hidden="true" id="xy-hexagons"></a><a href="#xy-hexagons" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>X/Y hexagons</h4>
+<p><a href="/docs/xy-hexagons"><img src="/docs/assets/thumb-hexagons.jpg" alt="XY Hexagons"></a></p>
+</div>
+<div class="visualization">
+<!--   -----------------------   -->
+<h4><a class="anchor" aria-hidden="true" id="xytime-point-data"></a><a href="#xytime-point-data" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>X/Y/Time point data</h4>
+<p><a href="/docs/xy-time"><img src="/docs/assets/thumb-xyt.jpg" alt="X/Y/Time"></a></p>
+</div>
+</div>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/index"><span class="arrow-prev">← </span><span class="function-name-prevnext">SimWrapper</span></a><a class="docs-next button" href="/docs/file-management"><span>File management</span><span class="arrow-next"> →</span></a></div></div></div></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/vsp-logo-300dpi.png" alt="SimWrapper"/></a><div><h5>Docs</h5><a href="/docs/guide-getting-started">Getting Started</a><a href="/docs/dev-guide">Developer Guide</a><a href="/blog">Latest Updates</a></div><div><h5>More</h5><a href="https://vsp.berlin">VSP Home</a><a href="https://matsim.org">MATSim.org</a><a href="https://github.com/simwrapper/simwrapper">⭐ us on GitHub!</a></div></section><section class="copyright">Copyright © 2025 VSP, TU Berlin</section></footer></div></body></html>

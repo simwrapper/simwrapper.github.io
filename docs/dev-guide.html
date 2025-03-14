@@ -1,0 +1,130 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Developing SimWrapper · SimWrapper</title><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="generator" content="Docusaurus"/><meta name="description" content="This page details **build instructions** for setting up your own instance of a SimWrapper website. This is for developers who want to build and extend SimWrapper."/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Developing SimWrapper · SimWrapper"/><meta property="og:type" content="website"/><meta property="og:url" content="https://docs.simwrapper.app/"/><meta property="og:description" content="This page details **build instructions** for setting up your own instance of a SimWrapper website. This is for developers who want to build and extend SimWrapper."/><meta property="og:image" content="https://docs.simwrapper.app/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/img/SW_favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://docs.simwrapper.app/blog/atom.xml" title="SimWrapper Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://docs.simwrapper.app/blog/feed.xml" title="SimWrapper Blog RSS Feed"/><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Roboto+Slab:400,400i,700"/><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/SW_favicon.png" alt="SimWrapper"/><h2 class="headerTitleWithLogo">SimWrapper</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/docs/" target="_self">Documentation</a></li><li class="siteNavGroupActive"><a href="/docs/examples" target="_self">Examples</a></li><li class=""><a href="/blog/" target="_self">News</a></li><li class=""><a href="https://github.com/simwrapper/simwrapper" target="_blank">GitHub</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>For Developers</span></h2></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Introduction</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/">SimWrapper</a></li><li class="navListItem"><a class="navItem" href="/docs/examples">Examples</a></li><li class="navListItem"><a class="navItem" href="/docs/file-management">File management</a></li><li class="navListItem"><a class="navItem" href="/docs/help">Getting help</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Guides</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/guide-getting-started">1. Getting started tutorial</a></li><li class="navListItem"><a class="navItem" href="/docs/guide-dashboards">2. Dashboards in depth</a></li><li class="navListItem"><a class="navItem" href="/docs/guide-project-sites">3. Building a project site</a></li><li class="navListItem"><a class="navItem" href="/docs/guide-publishing">4. Publishing to the web</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">API Reference / MATSim</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/link-vols">MATSim Network link plots</a></li><li class="navListItem"><a class="navItem" href="/docs/carrier-viewer">MATSim Carrier viewer</a></li><li class="navListItem"><a class="navItem" href="/docs/drt-vehicles">MATSim DRT vehicle animation</a></li><li class="navListItem"><a class="navItem" href="/docs/logistics">MATSim Logistics Viewer</a></li><li class="navListItem"><a class="navItem" href="/docs/transit-supply">MATSim Public transit supply/demand</a></li><li class="navListItem"><a class="navItem" href="/docs/matsim-events">MATSim Events viewer</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">API Reference / General</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/aggregate-od">Aggregate O/D flows</a></li><li class="navListItem"><a class="navItem" href="/docs/bar-area-line">Bar, area, and line charts</a></li><li class="navListItem"><a class="navItem" href="/docs/calculation-tables">Calculation tables</a></li><li class="navListItem"><a class="navItem" href="/docs/csv">CSV table viewer</a></li><li class="navListItem"><a class="navItem" href="/docs/flow-map">Flow maps</a></li><li class="navListItem"><a class="navItem" href="/docs/gridmap">Gridmap</a></li><li class="navListItem"><a class="navItem" href="/docs/heatmap-charts">Heatmap chart</a></li><li class="navListItem"><a class="navItem" href="/docs/matrix">Matrix (HDF5) Viewer</a></li><li class="navListItem"><a class="navItem" href="/docs/pie-charts">Pie charts</a></li><li class="navListItem"><a class="navItem" href="/docs/plotly">Plotly</a></li><li class="navListItem"><a class="navItem" href="/docs/sankey">Sankey/Alluvial diagrams</a></li><li class="navListItem"><a class="navItem" href="/docs/xy-scatter-plots">Scatter plots</a></li><li class="navListItem"><a class="navItem" href="/docs/shapefiles">Shapefiles: Area maps, network links, and GeoJSON</a></li><li class="navListItem"><a class="navItem" href="/docs/text-block">Text blocks</a></li><li class="navListItem"><a class="navItem" href="/docs/tiles">Tiles</a></li><li class="navListItem"><a class="navItem" href="/docs/vega-lite">Vega-Lite charts</a></li><li class="navListItem"><a class="navItem" href="/docs/video">Video player</a></li><li class="navListItem"><a class="navItem" href="/docs/xml-viewer">XML Viewer</a></li><li class="navListItem"><a class="navItem" href="/docs/xy-hexagons">XY hexagons (aggregate)</a></li><li class="navListItem"><a class="navItem" href="/docs/xy-time">X/Y/Time point data</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">For Developers</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/scripts">Conversion scripts</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docs/dev-guide">Developing SimWrapper</a></li><li class="navListItem"><a class="navItem" href="/docs/plugin-guide">Plugin writing guide</a></li><li class="navListItem"><a class="navItem" href="/docs/changelog">SimWrapper Change Log</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Developing SimWrapper</h1></header><article><div><span><p>This page details <strong>build instructions</strong> for setting up your own instance of a SimWrapper website. This is for developers who want to build and extend SimWrapper.</p>
+<ul>
+<li>If you are only interested in <em>using SimWrapper</em> -- whether the official <a href="https://vsp.berlin/simwrapper">TU Berlin SimWrapper</a> or your own team's version of it -- then <em>you do not need to read this page.</em></li>
+<li>Read <a href="/docs/">this introduction</a> instead, or go straight to the <a href="/docs/guide-dashboards">dashboard guide</a>.</li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="foundational-technologies"></a><a href="#foundational-technologies" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Foundational technologies</h2>
+<p>You will need to know this tech in order to hack on this website. If you already know Python, learning TypeScript/Javascript is not that huge of a leap, but it will definitely take some time to learn the full stack.</p>
+<ul>
+<li><a href="https://typescriptlang.org">TypeScript</a> - typesafe Javascript. And if you don't know Javascript, you probably want to learn that first</li>
+<li><a href="https://vuejs.org">Vue</a> - the glue that connects UI elements to code. Similar to React but lightweight and awesome</li>
+<li><a href="https://pugjs.org/">Pug</a> - the template language used in our Vue files, far easier than writing bare HTML. You really only need Pug <a href="https://pugjs.org/language/tags.html">tags</a> and <a href="https://pugjs.org/language/attributes.html">attributes</a></li>
+<li><a href="https://deck.gl">Deck.gl</a> - WebGL library for the fancy animations.</li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="setting-up-your-development-environment"></a><a href="#setting-up-your-development-environment" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Setting up your development environment</h2>
+<p>All tooling and source code is entirely free! You can build and hack on SimWrapper without purchasing anything. The site uses <a href="https://nodejs.org">Node.js</a> for build &amp; dependency management, and was developed using <a href="https://code.visualstudio.com/">VS Code</a>.</p>
+<ol>
+<li>Install <a href="https://nodejs.org/en/">the latest &quot;LTS&quot; Version of Node.js</a></li>
+<li>Install <a href="https://code.visualstudio.com/">VS Code</a></li>
+<li>The following VS Code plugins are required. Find them in the VS Code plugin directory.
+<ul>
+<li><strong>Vue Official</strong>, the official Vue plugin.</li>
+<li><strong>Prettier</strong> to force code-style consistency</li>
+</ul></li>
+</ol>
+<h2><a class="anchor" aria-hidden="true" id="first-time-build"></a><a href="#first-time-build" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>First time build</h2>
+<p>Fork or clone the Github source repository, and then use the <code>npm</code> node package manager to install all of the javascript dependency libraries. The main SimWrapper source repo is at <a href="https://github.com/simwrapper/simwrapper">https://github.com/simwrapper/simwrapper</a> but <em>you may want to clone a different repo</em> if you are working on a different project such as <a href="https://github.com/ActivitySim/dashboard">ActivitySim</a> or the <a href="https://github.com/sfcta/simwrapper">SFCTA model</a></p>
+<ol>
+<li>Clone the repo:</li>
+</ol>
+<ul>
+<li><code>git clone https://github.com/simwrapper/simwrapper # or your fork</code></li>
+<li><code>cd simwrapper</code></li>
+</ul>
+<ol start="2">
+<li>Install node dependencies</li>
+</ol>
+<ul>
+<li><code>npm ci</code></li>
+<li>This will spew lots of warnings but should ultimately finish without hard errors</li>
+</ul>
+<p>Congrats! You now have SimWrapper installed and you are ready to start hacking! 🎉✨</p>
+<h2><a class="anchor" aria-hidden="true" id="development-commands"></a><a href="#development-commands" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Development Commands</h2>
+<p><strong>npm run dev</strong> -- Build and run a local copy of the site. This is the main command you will use to start up the dev server, hack on your changes in VS Code, and see the results. <code>npm run dev</code> runs a local server with hot reload for testing, which usually listens on <a href="http://localhost:5173">http://localhost:5173</a></p>
+<p><strong>npm run build</strong> -- Compile and minify the build for production. This command builds in &quot;production mode&quot;, which performs some optimizations, shakes out unused libraries, and catches some build-time errors. You want to run this before you push anything live.</p>
+<p><strong>npm run test:unit</strong> -- Run unit tests. Ahahaha well... I have not written tests 👽 but the infrastructure is there to use <code>jest</code>.</p>
+<h2><a class="anchor" aria-hidden="true" id="hosting-on-github-and-other-places"></a><a href="#hosting-on-github-and-other-places" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Hosting on Github (and other places)</h2>
+<p>You've done all this work and you want your copy of SimWrapper to be live on the internet? Yay that is exciting!</p>
+<p><strong>Github Pages:</strong> Here's how to use Github Pages to publish the site.</p>
+<p>Github pages allows you to publish static content (like SimWrapper) from any repository you own. You place the built files in a special <code>gh-pages</code> branch; the existence of that branch triggers Github to start serving the files from your repository at the url <code>my-github-userid.github.io/myrepo</code>. Thus if you were Github user &quot;billyc&quot; and you forked the repo into a repo called 'simwrapper' then it will be hosted at {billyc}.github.io/simwrapper</p>
+<p>We wrote a deploy script that builds and pushes to Github Pages. Follow these instructions to use it:</p>
+<ol>
+<li><p>First, edit the file <code>package.json</code> and modify the <code>deploy</code> line in the &quot;scripts&quot; section to make it match your userid/repository, e.g. <code>billyc/simwrapper</code> -- DO NOT try to push to simwrapper/simwrapper thx :-)</p></li>
+<li><p>Run <code>npm run build</code> to ensure that your site builds without any hard errors. The build goes into a folder named <code>dist</code>. Fix any errors and keep running this until it builds!</p></li>
+<li><p>Run <code>npm run deploy</code> to rebuild the <code>dist</code> folder and, if successful, it will then force-push the contents to the <code>gh-pages</code> branch of your repository, overwriting any previous copy of the built site (don't worry the source code will remain safe on the master branch). In a couple moments your site will be live! Woot.</p></li>
+</ol>
+<p><strong>Non-Github Pages:</strong> If you want to deploy somewhere other than Github Pages, use <code>npm run build</code> to create the production build in <code>dist</code> as above. You can push the entirety of that folder to any static web host that you like, using their publishing tools.</p>
+<h2><a class="anchor" aria-hidden="true" id="project-layout"></a><a href="#project-layout" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Project Layout</h2>
+<ul>
+<li><code>/scripts</code>: Housekeeping scripts go here. Most of these are used for postprocessing model results, written in Python, and also some build scripts are found here.</li>
+<li><code>/src</code>: all TypeScript and Vue files go here
+<ul>
+<li><code>/src/assets</code>: images, .CSVs, etc that get packaged by the build process go here</li>
+<li><code>/src/dash-panels</code>: Dashboard chart types go here. Each chart type is a separate Vue component.</li>
+<li><code>/src/components</code>: shared Vue components go here, there are lots of them</li>
+<li><code>/src/js</code>: some typscript utility classes</li>
+<li><code>/src/layers</code>: shared deck.gl layer files go here. These are generally written in JSX.</li>
+<li><code>/src/plugins</code>: Each visualization plugin type gets its own folder here. To create your own plugin, copy one of these, rename its folder and main .vue file, and register it in <code>pluginRegistry.ts</code>. Read the plugin developer guide for details.</li>
+<li><code>/src/views</code>: The Vue pages that render various site pages such as the home page. Vue pages are registered in <code>/src/router.ts</code></li>
+</ul></li>
+<li><code>/public</code>: These files are pushed as-is by the build process; they are not packaged in any way. They end up in the root folder '/' of the built site.</li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="thanks-for-your-interest"></a><a href="#thanks-for-your-interest" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Thanks for your interest!</h3>
+<p>Good luck and thanks for the help! -- <a href="https://github.com/billyc">Billy</a></p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/scripts"><span class="arrow-prev">← </span><span>Conversion scripts</span></a><a class="docs-next button" href="/docs/plugin-guide"><span>Plugin writing guide</span><span class="arrow-next"> →</span></a></div></div></div></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/vsp-logo-300dpi.png" alt="SimWrapper"/></a><div><h5>Docs</h5><a href="/docs/guide-getting-started">Getting Started</a><a href="/docs/dev-guide">Developer Guide</a><a href="/blog">Latest Updates</a></div><div><h5>More</h5><a href="https://vsp.berlin">VSP Home</a><a href="https://matsim.org">MATSim.org</a><a href="https://github.com/simwrapper/simwrapper">⭐ us on GitHub!</a></div></section><section class="copyright">Copyright © 2025 VSP, TU Berlin</section></footer></div></body></html>

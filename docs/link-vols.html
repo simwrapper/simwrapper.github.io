@@ -1,0 +1,181 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>MATSim Network link plots · SimWrapper</title><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="generator" content="Docusaurus"/><meta name="description" content="![bandwidth banner](/docs/assets/links.jpg)"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="MATSim Network link plots · SimWrapper"/><meta property="og:type" content="website"/><meta property="og:url" content="https://docs.simwrapper.app/"/><meta property="og:description" content="![bandwidth banner](/docs/assets/links.jpg)"/><meta property="og:image" content="https://docs.simwrapper.app/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/img/SW_favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://docs.simwrapper.app/blog/atom.xml" title="SimWrapper Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://docs.simwrapper.app/blog/feed.xml" title="SimWrapper Blog RSS Feed"/><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Roboto+Slab:400,400i,700"/><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/SW_favicon.png" alt="SimWrapper"/><h2 class="headerTitleWithLogo">SimWrapper</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/docs/" target="_self">Documentation</a></li><li class="siteNavGroupActive"><a href="/docs/examples" target="_self">Examples</a></li><li class=""><a href="/blog/" target="_self">News</a></li><li class=""><a href="https://github.com/simwrapper/simwrapper" target="_blank">GitHub</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>API Reference / MATSim</span></h2></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Introduction</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/">SimWrapper</a></li><li class="navListItem"><a class="navItem" href="/docs/examples">Examples</a></li><li class="navListItem"><a class="navItem" href="/docs/file-management">File management</a></li><li class="navListItem"><a class="navItem" href="/docs/help">Getting help</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Guides</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/guide-getting-started">1. Getting started tutorial</a></li><li class="navListItem"><a class="navItem" href="/docs/guide-dashboards">2. Dashboards in depth</a></li><li class="navListItem"><a class="navItem" href="/docs/guide-project-sites">3. Building a project site</a></li><li class="navListItem"><a class="navItem" href="/docs/guide-publishing">4. Publishing to the web</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">API Reference / MATSim</h3><ul class=""><li class="navListItem navListItemActive"><a class="navItem" href="/docs/link-vols">MATSim Network link plots</a></li><li class="navListItem"><a class="navItem" href="/docs/carrier-viewer">MATSim Carrier viewer</a></li><li class="navListItem"><a class="navItem" href="/docs/drt-vehicles">MATSim DRT vehicle animation</a></li><li class="navListItem"><a class="navItem" href="/docs/logistics">MATSim Logistics Viewer</a></li><li class="navListItem"><a class="navItem" href="/docs/transit-supply">MATSim Public transit supply/demand</a></li><li class="navListItem"><a class="navItem" href="/docs/matsim-events">MATSim Events viewer</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">API Reference / General</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/aggregate-od">Aggregate O/D flows</a></li><li class="navListItem"><a class="navItem" href="/docs/bar-area-line">Bar, area, and line charts</a></li><li class="navListItem"><a class="navItem" href="/docs/calculation-tables">Calculation tables</a></li><li class="navListItem"><a class="navItem" href="/docs/csv">CSV table viewer</a></li><li class="navListItem"><a class="navItem" href="/docs/flow-map">Flow maps</a></li><li class="navListItem"><a class="navItem" href="/docs/gridmap">Gridmap</a></li><li class="navListItem"><a class="navItem" href="/docs/heatmap-charts">Heatmap chart</a></li><li class="navListItem"><a class="navItem" href="/docs/matrix">Matrix (HDF5) Viewer</a></li><li class="navListItem"><a class="navItem" href="/docs/pie-charts">Pie charts</a></li><li class="navListItem"><a class="navItem" href="/docs/plotly">Plotly</a></li><li class="navListItem"><a class="navItem" href="/docs/sankey">Sankey/Alluvial diagrams</a></li><li class="navListItem"><a class="navItem" href="/docs/xy-scatter-plots">Scatter plots</a></li><li class="navListItem"><a class="navItem" href="/docs/shapefiles">Shapefiles: Area maps, network links, and GeoJSON</a></li><li class="navListItem"><a class="navItem" href="/docs/text-block">Text blocks</a></li><li class="navListItem"><a class="navItem" href="/docs/tiles">Tiles</a></li><li class="navListItem"><a class="navItem" href="/docs/vega-lite">Vega-Lite charts</a></li><li class="navListItem"><a class="navItem" href="/docs/video">Video player</a></li><li class="navListItem"><a class="navItem" href="/docs/xml-viewer">XML Viewer</a></li><li class="navListItem"><a class="navItem" href="/docs/xy-hexagons">XY hexagons (aggregate)</a></li><li class="navListItem"><a class="navItem" href="/docs/xy-time">X/Y/Time point data</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">For Developers</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/scripts">Conversion scripts</a></li><li class="navListItem"><a class="navItem" href="/docs/dev-guide">Developing SimWrapper</a></li><li class="navListItem"><a class="navItem" href="/docs/plugin-guide">Plugin writing guide</a></li><li class="navListItem"><a class="navItem" href="/docs/changelog">SimWrapper Change Log</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">MATSim Network link plots</h1></header><article><div><span><p><img src="/docs/assets/links.jpg" alt="bandwidth banner">
+<em>Bandwidth plot. Colors and widths can specify different data,</em></p>
+<p>The network link plot supports typical transport &quot;bandwidth plots&quot; as well as many other types of data. If your data can be attached to link via the link ID, you can use this plot!</p>
+<p>Supports display of data from multiple datasets, including &quot;difference plots&quot; which can compare two datasets, e.g. base vs. build.</p>
+<h2><a class="anchor" aria-hidden="true" id="usage"></a><a href="#usage" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Usage</h2>
+<p>You can create a link visualization as a standalone view, as part of a dashboard, or you can create it interactively from a raw network file.</p>
+<ol>
+<li><p>A standalone visualization is defined with a file named <code>viz-links-*.yaml</code> in your working folder. Each yaml file matching that pattern will produce a separate link volume diagram.</p></li>
+<li><p>Link plots can be included in <a href="dashboards">dashboards</a> using <code>type: links</code>. See the example YAML config below.</p></li>
+<li><p>Or, you can open a network file directly by browsing to it from the SimWrapper site, and then click <strong>Add Data</strong> in the configuration panel in the upper right to attache CSV data files to it. Once you have added data and configured the colors and widths, use the <strong>Export</strong> button to download the YAML file. Your browser will probably place the file in your Downloads folder; you'll need to move it to your data folder name it appropriately.</p></li>
+</ol>
+<p><strong>Standalone: viz-links-example.yaml</strong></p>
+<pre><code class="hljs css language-yaml"><span class="hljs-attr">title:</span> <span class="hljs-string">'Passagiers in DRT Vehicles'</span>
+<span class="hljs-attr">description:</span> <span class="hljs-string">'Hourly passengers, build scenario'</span>
+<span class="hljs-attr">csvFile:</span> <span class="hljs-string">'hourlyTrafficVolume-drt-vehicles.csv'</span>
+<span class="hljs-attr">csvBase:</span> <span class="hljs-string">'../base/hourlyTrafficVolume-drt-vehicles.csv'</span>
+<span class="hljs-attr">network:</span> <span class="hljs-string">'*output_network.xml.gz'</span>
+<span class="hljs-attr">thumbnail:</span> <span class="hljs-string">thumbnail-roads.jpg</span>
+</code></pre>
+<p><strong>Dashboard: dashboard-example.yaml</strong></p>
+<pre><code class="hljs css language-yaml"><span class="hljs-attr">header:</span>
+  <span class="hljs-attr">title:</span> <span class="hljs-string">My</span> <span class="hljs-string">Dashboard</span>
+
+<span class="hljs-attr">layout:</span>
+  <span class="hljs-attr">row1:</span>
+    <span class="hljs-bullet">-</span> <span class="hljs-attr">title:</span> <span class="hljs-string">'Link example'</span>
+      <span class="hljs-attr">description:</span> <span class="hljs-string">'Sample data'</span>
+      <span class="hljs-attr">type:</span> <span class="hljs-string">links</span>
+      <span class="hljs-attr">height:</span> <span class="hljs-number">8</span>
+      <span class="hljs-attr">props:</span>
+        <span class="hljs-attr">network:</span> <span class="hljs-string">'../input/baseCase/hamburg-v2.0-network-with-pt-hvvArea.geo.json.gz'</span>
+        <span class="hljs-attr">projection:</span> <span class="hljs-string">EPSG:25832</span>
+        <span class="hljs-attr">center:</span> <span class="hljs-number">13.4684</span><span class="hljs-string">,</span> <span class="hljs-number">56.6787</span>
+        <span class="hljs-attr">zoom:</span> <span class="hljs-number">9</span>
+        <span class="hljs-attr">showDifferences:</span> <span class="hljs-literal">true</span>
+        <span class="hljs-attr">datasets:</span>
+          <span class="hljs-attr">csvFile:</span> <span class="hljs-string">'output/reallab2030/accidentCosts.csv.gz'</span>
+          <span class="hljs-attr">csvBase:</span> <span class="hljs-string">'../base/output/accidentCosts.csv.gz'</span>
+        <span class="hljs-attr">display:</span>
+          <span class="hljs-attr">color:</span>
+            <span class="hljs-attr">dataset:</span> <span class="hljs-string">csvFile</span>
+            <span class="hljs-attr">columnName:</span> <span class="hljs-number">18</span><span class="hljs-string">:00-20:00_Costs[EUR]</span>
+            <span class="hljs-attr">colorRamp:</span>
+              <span class="hljs-attr">ramp:</span> <span class="hljs-string">Viridis</span>
+              <span class="hljs-attr">steps:</span> <span class="hljs-number">9</span>
+          <span class="hljs-attr">width:</span>
+            <span class="hljs-attr">dataset:</span> <span class="hljs-string">csvFile</span>
+            <span class="hljs-attr">columnName:</span> <span class="hljs-string">CostsperYear[EUR]</span>
+            <span class="hljs-attr">scaleFactor:</span> <span class="hljs-number">100</span>
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="attaching-csv-data-to-your-network-link-visualization"></a><a href="#attaching-csv-data-to-your-network-link-visualization" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Attaching CSV data to your network link visualization</h2>
+<p>Any CSV datafile can be used to attach data to the network visualization. Each link in your network must have a unique ID, and the CSV file must have one row per link, with the link ID as the first column. No other arrangement will work.</p>
+<p>Use whatever method you like to produce a CSV for your data; most of us either build the dataset from event listeners within MATSim, or through post-processing using Python or R. But as long as you can create a CSV file with link IDs and values that you need, the method doesn't matter.</p>
+<p><strong>Column names</strong> The CSV file should have a header line as the first line of the file. This header should contain column names, or labels, for every column. E.g. hour of the day, type of pollutant, etc.</p>
+<ul>
+<li>First column <strong>must be</strong> the link ID, identical to the link IDs in the network file</li>
+<li>All remaining columns will be available and will be labeled according to the file header.</li>
+<li><strong>Note:</strong> older versions of SimWrapper used to autogenerate a &quot;sum&quot; column. This has been removed. If you want to show a &quot;sum&quot; total column, you will have to calculate it yourself as a separate column in your data file.</li>
+</ul>
+<hr>
+<h2><a class="anchor" aria-hidden="true" id="yaml-fields-explained"></a><a href="#yaml-fields-explained" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>YAML fields explained</h2>
+<p>*Filename fields** can refer to subfolders and to parent folders using <code>&quot;../&quot;</code>.</p>
+<ul>
+<li>example: <code>network: : &quot;../networks/base.json.gz&quot;</code></li>
+</ul>
+<p>This works as far up the hierarchy as the base of the filesystem, specified in <code>fileConfig.js</code> but no further.</p>
+<h3><a class="anchor" aria-hidden="true" id="field-descriptions"></a><a href="#field-descriptions" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Field descriptions</h3>
+<p><strong>title:</strong> (optional) title of the visualization, appears right on top of the map. If a title is specified both under <code>general</code> and under <code>props</code>, the one under <code>general</code> will be used.</p>
+<p><strong>description:</strong> (optional) description of the visualization, appears between title and map. If a description is specified both under <code>general</code> and under <code>props</code>, the one under <code>general</code> will be used.</p>
+<p><strong>csvFile:</strong> dataset in CSV or TSV format.</p>
+<ul>
+<li>Columns are autodetected and will split at commas, semicolons, or tabs.</li>
+<li>Numbers <strong>must be in 1234.56 format</strong> -- European &quot;1.234.567,00&quot; formats will not work.</li>
+</ul>
+<p><strong>csvBase:</strong> (optional) &quot;base&quot; dataset for difference plots. If <code>csvBase</code> is specified, &quot;diff mode&quot; will be enabled and difference plots can be automatically generated.</p>
+<ul>
+<li>Differences are always calculated as <code>'csvFile - csvBase'</code></li>
+</ul>
+<p><strong>network:</strong> Specify either at MATSim <code>output_network.xml.gz</code> network file, or a geojson-format network file. The geojson format loads much faster, but requires that you create it first.</p>
+<ul>
+<li>Use the python script <a href="https://raw.githubusercontent.com/simwrapper/simwrapper/master/scripts/create-geojson-network.py">create-geojson-network.py</a> to create a geojson network from a MATSim network.xml.gz file.</li>
+<li>Command is <code>python create-geojson-network.py [my_output_network.xml.gz] [Projection]</code></li>
+<li>and will create a file with the name <code>mynetwork.geo.json.gz</code>.</li>
+</ul>
+<p><strong>projection:</strong> projection must be given! Format <code>EPSG:25832</code> etc.</p>
+<p><strong>geojsonFile:</strong> (deprecated) - same as <code>network</code>.</p>
+<p><strong>thumbnail:</strong> (optional) file path to a thumbnail in jpg format</p>
+<p><strong>center:</strong> (optional) coordinates that the map centers on. Can be provided as array or string. If it is not provided, a center is calculated using a sampling of the data.</p>
+<p><strong>zoom:</strong> (optional) zoom level of the map. If it is not provided, the zoom level 9 is used.</p>
+<p><strong>showDifference:</strong> allows difference plots to be created if a base case is provided. Should be <code>true</code>.</p>
+<p><strong>display:</strong> The optional display section includes details of the color and width data specifications.</p>
+<h2><a class="anchor" aria-hidden="true" id="defining-colors-and-widths"></a><a href="#defining-colors-and-widths" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Defining Colors and Widths</h2>
+<p>Both colors and widths can be based on the CSV data. They are defined in the <code>display:</code> section of the YAML; see the example above.</p>
+<h3><a class="anchor" aria-hidden="true" id="color"></a><a href="#color" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Color</h3>
+<p>The <code>color</code> section may include the following properties:</p>
+<ul>
+<li><strong>dataset</strong> required. The ID of the csv datafile itself; in the example above, <code>csvFile</code> is one key and <code>csvBase</code> is another. This tells SimWrapper which dataset you want to use.</li>
+<li><strong>columnName</strong> The name of the column containing color values</li>
+<li><strong>colorRamp</strong> This section can have multiple settings:
+<ul>
+<li><code>ramp</code>: The name of the color progression; can be <code>Viridis</code>, <code>Plasma</code>, <code>Blues</code>, <code>Purples</code>, <code>Oranges</code>, <code>PRGn</code>, <code>RdBu</code>, <code>Tableau10</code>, <code>Paired</code>. Note that <code>PRGn</code> and <code>RdBu</code> are <strong>diverging scales</strong>, while <code>Tableau10</code> and <code>Paired</code> are appropriate for <strong>categorical</strong> instead of sequential data.</li>
+<li><code>reversed</code> true or false, flips the order of colors</li>
+<li><code>steps</code> the number of different colors in the progression; default is 9.</li>
+</ul></li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="width"></a><a href="#width" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Width</h3>
+<p>The <code>width</code> section includes the following properties:</p>
+<ul>
+<li><strong>dataset</strong> required. The ID of the csv datafile itself; in the example above, <code>csvFile</code> is one key and <code>csvBase</code> is another. This tells SimWrapper which dataset you want to use.</li>
+<li><strong>columnName</strong> The name of the column containing width values</li>
+<li><strong>scaleFactor</strong> Values will be <strong>divided by</strong> this scaling factor. Set this to <code>0</code> to have constant, paper-thin widths.</li>
+</ul>
+<hr>
+<p><strong>example-data.csv</strong></p>
+<pre><code class="hljs">link;<span class="hljs-number">01</span>:<span class="hljs-number">00</span>:<span class="hljs-number">00</span>;<span class="hljs-number">02</span>:<span class="hljs-number">00</span>:<span class="hljs-number">00</span>;<span class="hljs-number">03</span>:<span class="hljs-number">00</span>:<span class="hljs-number">00</span>;<span class="hljs-number">04</span>:<span class="hljs-number">00</span>:<span class="hljs-number">00</span>;<span class="hljs-number">05</span>:<span class="hljs-number">00</span>:<span class="hljs-number">00</span>;<span class="hljs-number">06</span>:<span class="hljs-number">00</span>:<span class="hljs-number">00</span>;<span class="hljs-number">07</span>:<span class="hljs-number">00</span>:<span class="hljs-number">00</span>;<span class="hljs-number">08</span>:<span class="hljs-number">00</span>:<span class="hljs-number">00</span>;<span class="hljs-number">09</span>:<span class="hljs-number">00</span>:<span class="hljs-number">00</span>;<span class="hljs-number">10</span>:<span class="hljs-number">00</span>:<span class="hljs-number">00</span>;<span class="hljs-number">11</span>:<span class="hljs-number">00</span>:<span class="hljs-number">00</span>;<span class="hljs-number">12</span>:<span class="hljs-number">00</span>:<span class="hljs-number">00</span>;<span class="hljs-number">13</span>:<span class="hljs-number">00</span>:<span class="hljs-number">00</span>;<span class="hljs-number">14</span>:<span class="hljs-number">00</span>:<span class="hljs-number">00</span>;<span class="hljs-number">15</span>:<span class="hljs-number">00</span>:<span class="hljs-number">00</span>;<span class="hljs-number">16</span>:<span class="hljs-number">00</span>:<span class="hljs-number">00</span>;<span class="hljs-number">17</span>:<span class="hljs-number">00</span>:<span class="hljs-number">00</span>;<span class="hljs-number">18</span>:<span class="hljs-number">00</span>:<span class="hljs-number">00</span>;<span class="hljs-number">19</span>:<span class="hljs-number">00</span>:<span class="hljs-number">00</span>;<span class="hljs-number">20</span>:<span class="hljs-number">00</span>:<span class="hljs-number">00</span>;<span class="hljs-number">21</span>:<span class="hljs-number">00</span>:<span class="hljs-number">00</span>;<span class="hljs-number">22</span>:<span class="hljs-number">00</span>:<span class="hljs-number">00</span>;<span class="hljs-number">23</span>:<span class="hljs-number">00</span>:<span class="hljs-number">00</span>;<span class="hljs-number">24</span>:<span class="hljs-number">00</span>:<span class="hljs-number">00</span>;<span class="hljs-number">25</span>:<span class="hljs-number">00</span>:<span class="hljs-number">00</span>;<span class="hljs-number">26</span>:<span class="hljs-number">00</span>:<span class="hljs-number">00</span>;<span class="hljs-number">27</span>:<span class="hljs-number">00</span>:<span class="hljs-number">00</span>;<span class="hljs-number">28</span>:<span class="hljs-number">00</span>:<span class="hljs-number">00</span>;<span class="hljs-number">30</span>:<span class="hljs-number">00</span>:<span class="hljs-number">00</span>
+<span class="hljs-number">72539930</span>;<span class="hljs-number">0</span>;<span class="hljs-number">0</span>;<span class="hljs-number">0</span>;<span class="hljs-number">0</span>;<span class="hljs-number">7</span>;<span class="hljs-number">13</span>;<span class="hljs-number">20</span>;<span class="hljs-number">16</span>;<span class="hljs-number">13</span>;<span class="hljs-number">15</span>;<span class="hljs-number">18</span>;<span class="hljs-number">17</span>;<span class="hljs-number">32</span>;<span class="hljs-number">25</span>;<span class="hljs-number">29</span>;<span class="hljs-number">55</span>;<span class="hljs-number">53</span>;<span class="hljs-number">43</span>;<span class="hljs-number">48</span>;<span class="hljs-number">12</span>;<span class="hljs-number">12</span>;<span class="hljs-number">10</span>;<span class="hljs-number">4</span>;<span class="hljs-number">4</span>;<span class="hljs-number">4</span>;<span class="hljs-number">0</span>;<span class="hljs-number">0</span>;<span class="hljs-number">0</span>;<span class="hljs-number">0</span>
+<span class="hljs-number">42868713</span>;<span class="hljs-number">0</span>;<span class="hljs-number">0</span>;<span class="hljs-number">0</span>;<span class="hljs-number">0</span>;<span class="hljs-number">0</span>;<span class="hljs-number">0</span>;<span class="hljs-number">0</span>;<span class="hljs-number">0</span>;<span class="hljs-number">0</span>;<span class="hljs-number">0</span>;<span class="hljs-number">0</span>;<span class="hljs-number">0</span>;<span class="hljs-number">0</span>;<span class="hljs-number">1</span>;<span class="hljs-number">0</span>;<span class="hljs-number">0</span>;<span class="hljs-number">1</span>;<span class="hljs-number">1</span>;<span class="hljs-number">0</span>;<span class="hljs-number">0</span>;<span class="hljs-number">0</span>;<span class="hljs-number">0</span>;<span class="hljs-number">0</span>;<span class="hljs-number">0</span>;<span class="hljs-number">0</span>;<span class="hljs-number">0</span>;<span class="hljs-number">0</span>;<span class="hljs-number">0</span>;<span class="hljs-number">0</span>
+<span class="hljs-number">72539936</span>;<span class="hljs-number">0</span>;<span class="hljs-number">1</span>;<span class="hljs-number">0</span>;<span class="hljs-number">0</span>;<span class="hljs-number">17</span>;<span class="hljs-number">57</span>;<span class="hljs-number">63</span>;<span class="hljs-number">52</span>;<span class="hljs-number">51</span>;<span class="hljs-number">47</span>;<span class="hljs-number">49</span>;<span class="hljs-number">59</span>;<span class="hljs-number">78</span>;<span class="hljs-number">67</span>;<span class="hljs-number">73</span>;<span class="hljs-number">113</span>;<span class="hljs-number">99</span>;<span class="hljs-number">98</span>;<span class="hljs-number">107</span>;<span class="hljs-number">47</span>;<span class="hljs-number">38</span>;<span class="hljs-number">36</span>;<span class="hljs-number">24</span>;<span class="hljs-number">13</span>;<span class="hljs-number">4</span>;<span class="hljs-number">0</span>;<span class="hljs-number">0</span>;<span class="hljs-number">0</span>;<span class="hljs-number">0</span>
+<span class="hljs-number">6173553</span>;<span class="hljs-number">0</span>;<span class="hljs-number">1</span>;<span class="hljs-number">0</span>;<span class="hljs-number">3</span>;<span class="hljs-number">5</span>;<span class="hljs-number">1</span>;<span class="hljs-number">10</span>;<span class="hljs-number">10</span>;<span class="hljs-number">9</span>;<span class="hljs-number">3</span>;<span class="hljs-number">8</span>;<span class="hljs-number">4</span>;<span class="hljs-number">6</span>;<span class="hljs-number">3</span>;<span class="hljs-number">4</span>;<span class="hljs-number">9</span>;<span class="hljs-number">5</span>;<span class="hljs-number">7</span>;<span class="hljs-number">4</span>;<span class="hljs-number">2</span>;<span class="hljs-number">1</span>;<span class="hljs-number">1</span>;<span class="hljs-number">1</span>;<span class="hljs-number">2</span>;<span class="hljs-number">0</span>;<span class="hljs-number">1</span>;<span class="hljs-number">0</span>;<span class="hljs-number">0</span>;<span class="hljs-number">0</span>
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="deprecated-fields-do-not-use"></a><a href="#deprecated-fields-do-not-use" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Deprecated fields, do not use:</h2>
+<p><strong>shpFile,dbfFile, shpFileIdProperty:</strong> (deprecated) filenames for the alternative, slower network file in shapefile format. Don't use this if you have created the geojson network file above.</p>
+<p><strong>widthFactor:</strong> (deprecated) Width values used to be uniformly scaled by this value. See <strong>Colors and Widths</strong> on this page.</p>
+<p><strong>sampleRate:</strong> (deprecated) This option used to specify the MATSim simulation sample rate; i.e. a 1% sample would use <code>0.01</code> here so that volumes were scaled properly. This is NOW IGNORED; you must scale your CSV data appropriately.</p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/guide-publishing"><span class="arrow-prev">← </span><span>4. Publishing to the web</span></a><a class="docs-next button" href="/docs/carrier-viewer"><span>MATSim Carrier viewer</span><span class="arrow-next"> →</span></a></div></div></div></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/vsp-logo-300dpi.png" alt="SimWrapper"/></a><div><h5>Docs</h5><a href="/docs/guide-getting-started">Getting Started</a><a href="/docs/dev-guide">Developer Guide</a><a href="/blog">Latest Updates</a></div><div><h5>More</h5><a href="https://vsp.berlin">VSP Home</a><a href="https://matsim.org">MATSim.org</a><a href="https://github.com/simwrapper/simwrapper">⭐ us on GitHub!</a></div></section><section class="copyright">Copyright © 2025 VSP, TU Berlin</section></footer></div></body></html>

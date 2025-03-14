@@ -1,0 +1,120 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Matrix (HDF5) Viewer · SimWrapper</title><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="generator" content="Docusaurus"/><meta name="description" content="![Heatmap chart example](/docs/assets/matrix.jpg)"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Matrix (HDF5) Viewer · SimWrapper"/><meta property="og:type" content="website"/><meta property="og:url" content="https://docs.simwrapper.app/"/><meta property="og:description" content="![Heatmap chart example](/docs/assets/matrix.jpg)"/><meta property="og:image" content="https://docs.simwrapper.app/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/img/SW_favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://docs.simwrapper.app/blog/atom.xml" title="SimWrapper Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://docs.simwrapper.app/blog/feed.xml" title="SimWrapper Blog RSS Feed"/><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Roboto+Slab:400,400i,700"/><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/SW_favicon.png" alt="SimWrapper"/><h2 class="headerTitleWithLogo">SimWrapper</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/docs/" target="_self">Documentation</a></li><li class="siteNavGroupActive"><a href="/docs/examples" target="_self">Examples</a></li><li class=""><a href="/blog/" target="_self">News</a></li><li class=""><a href="https://github.com/simwrapper/simwrapper" target="_blank">GitHub</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>API Reference / General</span></h2></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Introduction</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/">SimWrapper</a></li><li class="navListItem"><a class="navItem" href="/docs/examples">Examples</a></li><li class="navListItem"><a class="navItem" href="/docs/file-management">File management</a></li><li class="navListItem"><a class="navItem" href="/docs/help">Getting help</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Guides</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/guide-getting-started">1. Getting started tutorial</a></li><li class="navListItem"><a class="navItem" href="/docs/guide-dashboards">2. Dashboards in depth</a></li><li class="navListItem"><a class="navItem" href="/docs/guide-project-sites">3. Building a project site</a></li><li class="navListItem"><a class="navItem" href="/docs/guide-publishing">4. Publishing to the web</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">API Reference / MATSim</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/link-vols">MATSim Network link plots</a></li><li class="navListItem"><a class="navItem" href="/docs/carrier-viewer">MATSim Carrier viewer</a></li><li class="navListItem"><a class="navItem" href="/docs/drt-vehicles">MATSim DRT vehicle animation</a></li><li class="navListItem"><a class="navItem" href="/docs/logistics">MATSim Logistics Viewer</a></li><li class="navListItem"><a class="navItem" href="/docs/transit-supply">MATSim Public transit supply/demand</a></li><li class="navListItem"><a class="navItem" href="/docs/matsim-events">MATSim Events viewer</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">API Reference / General</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/aggregate-od">Aggregate O/D flows</a></li><li class="navListItem"><a class="navItem" href="/docs/bar-area-line">Bar, area, and line charts</a></li><li class="navListItem"><a class="navItem" href="/docs/calculation-tables">Calculation tables</a></li><li class="navListItem"><a class="navItem" href="/docs/csv">CSV table viewer</a></li><li class="navListItem"><a class="navItem" href="/docs/flow-map">Flow maps</a></li><li class="navListItem"><a class="navItem" href="/docs/gridmap">Gridmap</a></li><li class="navListItem"><a class="navItem" href="/docs/heatmap-charts">Heatmap chart</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docs/matrix">Matrix (HDF5) Viewer</a></li><li class="navListItem"><a class="navItem" href="/docs/pie-charts">Pie charts</a></li><li class="navListItem"><a class="navItem" href="/docs/plotly">Plotly</a></li><li class="navListItem"><a class="navItem" href="/docs/sankey">Sankey/Alluvial diagrams</a></li><li class="navListItem"><a class="navItem" href="/docs/xy-scatter-plots">Scatter plots</a></li><li class="navListItem"><a class="navItem" href="/docs/shapefiles">Shapefiles: Area maps, network links, and GeoJSON</a></li><li class="navListItem"><a class="navItem" href="/docs/text-block">Text blocks</a></li><li class="navListItem"><a class="navItem" href="/docs/tiles">Tiles</a></li><li class="navListItem"><a class="navItem" href="/docs/vega-lite">Vega-Lite charts</a></li><li class="navListItem"><a class="navItem" href="/docs/video">Video player</a></li><li class="navListItem"><a class="navItem" href="/docs/xml-viewer">XML Viewer</a></li><li class="navListItem"><a class="navItem" href="/docs/xy-hexagons">XY hexagons (aggregate)</a></li><li class="navListItem"><a class="navItem" href="/docs/xy-time">X/Y/Time point data</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">For Developers</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/scripts">Conversion scripts</a></li><li class="navListItem"><a class="navItem" href="/docs/dev-guide">Developing SimWrapper</a></li><li class="navListItem"><a class="navItem" href="/docs/plugin-guide">Plugin writing guide</a></li><li class="navListItem"><a class="navItem" href="/docs/changelog">SimWrapper Change Log</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Matrix (HDF5) Viewer</h1></header><article><div><span><p><img src="/docs/assets/matrix.jpg" alt="Heatmap chart example">
+<em>Matrix viewer showing matrix data on a zonal map and as a tabular heatmap</em></p>
+<p>The matrix viewer can display HDF5 matrix data as a table or tabular heatmap. In addition, data can be mapped onto a zonal GeoJSON boundary file for the common use cases of viewing aggregate zonal data such as skims and trip tables.</p>
+<h2><a class="anchor" aria-hidden="true" id="usage"></a><a href="#usage" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Usage</h2>
+<ul>
+<li>From the front page of SimWrapper, you can choose &quot;Matrix Viewer&quot; and then drag/drop your HDF5 files directly into the viewer</li>
+</ul>
+<p>The matrix viewer can also be preconfigured using YAML, and embedded in dashboards or displayed full-screen as such. See Dashboard documentation for general tips on creating dashboard configurations.</p>
+<ul>
+<li>Use panel <code>type: matrix</code> in the dashboard configuration.</li>
+<li>Each matrix panel is defined inside a <strong>row</strong> in a <code>dashboard-*.yaml</code> file.</li>
+<li>Standard title, description, and width fields define the frame.</li>
+<li>Alternatively a file of the pattern <code>viz-matrix-[more].yaml</code> can define a standalone matrix viewer</li>
+</ul>
+<hr>
+<h3><a class="anchor" aria-hidden="true" id="sample-dashboardyaml-config-snippet-with-a-heatmap"></a><a href="#sample-dashboardyaml-config-snippet-with-a-heatmap" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Sample dashboard.yaml config snippet with a heatmap</h3>
+<pre><code class="hljs css language-yaml"><span class="hljs-attr">layout:</span>
+  <span class="hljs-attr">row1:</span>
+    <span class="hljs-bullet">-</span> <span class="hljs-attr">type:</span> <span class="hljs-string">matrix</span>
+      <span class="hljs-attr">title:</span> <span class="hljs-string">"HIGHWAY skims 2020 AM comparison"</span>
+      <span class="hljs-attr">dataset:</span> <span class="hljs-string">"HWYAMSKIM.project.h5"</span>
+      <span class="hljs-attr">basedata:</span> <span class="hljs-string">"HWYAMSKIM.baseyear.h5"</span>
+      <span class="hljs-attr">shapes:</span>
+        <span class="hljs-attr">file:</span> <span class="hljs-string">'./geojson/zones1454.geojson'</span>
+        <span class="hljs-attr">id:</span> <span class="hljs-string">'TAZ'</span>       <span class="hljs-comment"># The geojson property field containing the TAZ column number</span>
+      <span class="hljs-attr">colors:</span>
+        <span class="hljs-attr">ramp:</span> <span class="hljs-string">'RdBu'</span>    <span class="hljs-comment"># Viridis, Rainbow, etc</span>
+        <span class="hljs-attr">inverted:</span> <span class="hljs-literal">false</span>
+        <span class="hljs-attr">scale:</span> <span class="hljs-string">'SymLog'</span> <span class="hljs-comment"># Linear, Log, SymLog, Sqrt.</span>
+                        <span class="hljs-comment"># SymLog is like Log, but works for scales that cross zero (diffs!)</span>
+</code></pre>
+<hr>
+<p><strong>dataset:</strong> The HDF5-format file to be viewed</p>
+<p><strong>basedata:</strong> An optional base from which to compare.  Calculations are always <code>dataset - base</code>.</p>
+<p><strong>shapes:</strong> The <code>file</code> filename of the GeoJSON data set (optionally .gzipped), and the <code>id</code> name of the property containing the TAZ/Column number.</p>
+<p><em>This viewer is a work in progress, more docs to come!</em></p>
+<h2><a class="anchor" aria-hidden="true" id="mapping-matrix-sizes-to-a-specified-geojson"></a><a href="#mapping-matrix-sizes-to-a-specified-geojson" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Mapping matrix sizes to a specified GeoJSON</h2>
+<p>Most users of SimWrapper have just a few zonal boundary systems and all of their matrix data corresponds to one of these boundaries.</p>
+<p>If you have your own install of SimWrapper, you can specific this relationship directly, so that you only need to tell it once that matrices with 2518 columns always get viewed in the 2518-zone system.  Unfortunately I can't include all of your zone systems in the general build of SimWrapper so this only works if you've got SimWrapper running locally.</p>
+<p>The file <code>/zones/zones.yaml</code> defines this as follows:</p>
+<p><strong>/zones/zones.yaml</strong> - example</p>
+<pre><code class="hljs css language-yaml"><span class="hljs-comment"># Zone system configurations for matrix plugin -- San Francisco example</span>
+<span class="hljs-comment">#</span>
+<span class="hljs-comment"># Only GeoJSON files are supported. Shapefiles are too slow and often have coordinate problems.</span>
+<span class="hljs-comment"># Use GeoJSON and pre-convert all coordinates to long/lat (WGS84 or EPSG:4326)</span>
+<span class="hljs-comment">#</span>
+<span class="hljs-comment"># URLs can be</span>
+<span class="hljs-comment"># - `/zones/filename.geojson` if you place the file in the /zones folder of the SimWrapper build</span>
+<span class="hljs-comment"># - full HTTP urls if the remote server allows external access</span>
+
+<span class="hljs-comment"># 'sizes' helps SimWrapper guess which zone systems are appropriate for which matrix sizes.</span>
+
+<span class="hljs-attr">SF-2454:</span>
+  <span class="hljs-attr">url:</span> <span class="hljs-string">/zones/dist15.geojson.gz</span>
+  <span class="hljs-attr">lookup:</span> <span class="hljs-string">TAZ</span>
+  <span class="hljs-attr">sizes:</span> <span class="hljs-number">981</span><span class="hljs-string">,2454,2475,3681,3717</span>
+
+<span class="hljs-attr">MTC-1454:</span>
+  <span class="hljs-attr">url:</span> <span class="hljs-string">/zones/mtc1454.geojson.gz</span>
+  <span class="hljs-attr">lookup:</span> <span class="hljs-string">TAZ1454</span>
+  <span class="hljs-attr">sizes:</span> <span class="hljs-number">1454</span><span class="hljs-string">,1475</span>
+
+</code></pre>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/heatmap-charts"><span class="arrow-prev">← </span><span>Heatmap chart</span></a><a class="docs-next button" href="/docs/pie-charts"><span>Pie charts</span><span class="arrow-next"> →</span></a></div></div></div></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/vsp-logo-300dpi.png" alt="SimWrapper"/></a><div><h5>Docs</h5><a href="/docs/guide-getting-started">Getting Started</a><a href="/docs/dev-guide">Developer Guide</a><a href="/blog">Latest Updates</a></div><div><h5>More</h5><a href="https://vsp.berlin">VSP Home</a><a href="https://matsim.org">MATSim.org</a><a href="https://github.com/simwrapper/simwrapper">⭐ us on GitHub!</a></div></section><section class="copyright">Copyright © 2025 VSP, TU Berlin</section></footer></div></body></html>
