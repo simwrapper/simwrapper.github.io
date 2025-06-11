@@ -1,0 +1,61 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>SimWrapper version 2.5 · SimWrapper</title><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="generator" content="Docusaurus"/><meta name="description" content="Version 2.5 is now live on [simwrapper.github.io](https://simwrapper.github.io) and also on [vsp.berlin/simwrapper](https://vsp.berlin/simwrapper)!"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="SimWrapper version 2.5 · SimWrapper"/><meta property="og:type" content="website"/><meta property="og:url" content="https://docs.simwrapper.app/blog/2023/08/22/version-2.5"/><meta property="og:description" content="Version 2.5 is now live on [simwrapper.github.io](https://simwrapper.github.io) and also on [vsp.berlin/simwrapper](https://vsp.berlin/simwrapper)!"/><meta property="og:image" content="https://docs.simwrapper.app/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/img/SW_favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://docs.simwrapper.app/blog/atom.xml" title="SimWrapper Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://docs.simwrapper.app/blog/feed.xml" title="SimWrapper Blog RSS Feed"/><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Roboto+Slab:400,400i,700"/><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/SW_favicon.png" alt="SimWrapper"/><h2 class="headerTitleWithLogo">SimWrapper</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/docs/" target="_self">Documentation</a></li><li class=""><a href="/docs/examples" target="_self">Examples</a></li><li class="siteNavGroupActive"><a href="/blog/" target="_self">News</a></li><li class=""><a href="https://github.com/simwrapper/simwrapper" target="_blank">GitHub</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Recent Posts</span></h2></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Recent Posts</h3><ul class=""><li class="navListItem"><a class="navItem" href="/blog/2025/03/03/simwrapper-app">simwrapper.app - the new home for SimWrapper</a></li><li class="navListItem"><a class="navItem" href="/blog/2025/02/10/version-3.6">SimWrapper version 3.6</a></li><li class="navListItem"><a class="navItem" href="/blog/2024/07/11/version-3.3">SimWrapper version 3.3</a></li><li class="navListItem"><a class="navItem" href="/blog/2024/05/16/version-3.1">SimWrapper version 3.1</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/blog/2023/08/22/version-2.5">SimWrapper version 2.5</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer postContainer blogContainer"><div class="wrapper"><div class="lonePost"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle"><a href="/blog/2023/08/22/version-2.5">SimWrapper version 2.5</a></h1><p class="post-meta">August 22, 2023</p><div class="authorBlock"><p class="post-authorName"><a href="https://github.com/billyc" target="_blank" rel="noreferrer noopener">Billy Charlton</a></p><div class="authorPhoto"><a href="https://github.com/billyc" target="_blank" rel="noreferrer noopener"><img src="https://avatars0.githubusercontent.com/u/1427526?v=4" alt="Billy Charlton"/></a></div></div></header><div><span><p>Version 2.5 is now live on <a href="https://simwrapper.github.io">simwrapper.github.io</a> and also on <a href="https://vsp.berlin/simwrapper">vsp.berlin/simwrapper</a>!</p>
+<p><strong>X/Y/Time</strong> supports custom breakpoints now. See <a href="../docs/xy-time">X-Y-T Plots</a></p>
+<p><strong>XML Viewer:</strong> Review your MATSim XML configuration files with the new hierarchical, searchable <a href="../docs/xml-viewer">XML Viewer</a>.</p>
+<p>See the <a href="../docs/changelog">Change Log</a> for the full list of updates.</p>
+</span></div></div><div class="blogSocialSection"></div></div><div class="blog-recent"><a class="button" href="/blog/">Recent Posts</a></div></div></div></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/vsp-logo-300dpi.png" alt="SimWrapper"/></a><div><h5>Docs</h5><a href="/docs/guide-getting-started">Getting Started</a><a href="/docs/dev-guide">Developer Guide</a><a href="/blog">Latest Updates</a></div><div><h5>More</h5><a href="https://vsp.berlin">VSP Home</a><a href="https://matsim.org">MATSim.org</a><a href="https://github.com/simwrapper/simwrapper">⭐ us on GitHub!</a></div></section><section class="copyright">Copyright © 2025 VSP, TU Berlin</section></footer></div></body></html>

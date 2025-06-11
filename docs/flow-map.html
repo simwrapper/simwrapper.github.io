@@ -1,0 +1,155 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Flow maps · SimWrapper</title><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="generator" content="Docusaurus"/><meta name="description" content="![flow map example](/docs/assets/flow-map.jpg)"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Flow maps · SimWrapper"/><meta property="og:type" content="website"/><meta property="og:url" content="https://docs.simwrapper.app/"/><meta property="og:description" content="![flow map example](/docs/assets/flow-map.jpg)"/><meta property="og:image" content="https://docs.simwrapper.app/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/img/SW_favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://docs.simwrapper.app/blog/atom.xml" title="SimWrapper Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://docs.simwrapper.app/blog/feed.xml" title="SimWrapper Blog RSS Feed"/><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Roboto+Slab:400,400i,700"/><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/SW_favicon.png" alt="SimWrapper"/><h2 class="headerTitleWithLogo">SimWrapper</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/docs/" target="_self">Documentation</a></li><li class="siteNavGroupActive"><a href="/docs/examples" target="_self">Examples</a></li><li class=""><a href="/blog/" target="_self">News</a></li><li class=""><a href="https://github.com/simwrapper/simwrapper" target="_blank">GitHub</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>API Reference / General</span></h2></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Introduction</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/">SimWrapper</a></li><li class="navListItem"><a class="navItem" href="/docs/examples">Examples</a></li><li class="navListItem"><a class="navItem" href="/docs/file-management">File management</a></li><li class="navListItem"><a class="navItem" href="/docs/help">Getting help</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Guides</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/guide-getting-started">1. Getting started tutorial</a></li><li class="navListItem"><a class="navItem" href="/docs/guide-dashboards">2. Dashboards in depth</a></li><li class="navListItem"><a class="navItem" href="/docs/guide-project-sites">3. Building a project site</a></li><li class="navListItem"><a class="navItem" href="/docs/guide-publishing">4. Publishing to the web</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">API Reference / MATSim</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/link-vols">MATSim Network link plots</a></li><li class="navListItem"><a class="navItem" href="/docs/carrier-viewer">MATSim Carrier viewer</a></li><li class="navListItem"><a class="navItem" href="/docs/drt-vehicles">MATSim DRT vehicle animation</a></li><li class="navListItem"><a class="navItem" href="/docs/logistics">MATSim Logistics Viewer</a></li><li class="navListItem"><a class="navItem" href="/docs/transit-supply">MATSim Public transit supply/demand</a></li><li class="navListItem"><a class="navItem" href="/docs/matsim-events">MATSim Events viewer</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">API Reference / General</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/aggregate-od">Aggregate O/D flows</a></li><li class="navListItem"><a class="navItem" href="/docs/bar-area-line">Bar, area, and line charts</a></li><li class="navListItem"><a class="navItem" href="/docs/calculation-tables">Calculation tables</a></li><li class="navListItem"><a class="navItem" href="/docs/csv">CSV table viewer</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docs/flow-map">Flow maps</a></li><li class="navListItem"><a class="navItem" href="/docs/gridmap">Gridmap</a></li><li class="navListItem"><a class="navItem" href="/docs/heatmap-charts">Heatmap chart</a></li><li class="navListItem"><a class="navItem" href="/docs/matrix">Matrix (HDF5) Viewer</a></li><li class="navListItem"><a class="navItem" href="/docs/pie-charts">Pie charts</a></li><li class="navListItem"><a class="navItem" href="/docs/plotly">Plotly</a></li><li class="navListItem"><a class="navItem" href="/docs/sankey">Sankey/Alluvial diagrams</a></li><li class="navListItem"><a class="navItem" href="/docs/xy-scatter-plots">Scatter plots</a></li><li class="navListItem"><a class="navItem" href="/docs/shapefiles">Shapefiles: Area maps, network links, and GeoJSON</a></li><li class="navListItem"><a class="navItem" href="/docs/text-block">Text blocks</a></li><li class="navListItem"><a class="navItem" href="/docs/tiles">Tiles</a></li><li class="navListItem"><a class="navItem" href="/docs/vega-lite">Vega-Lite charts</a></li><li class="navListItem"><a class="navItem" href="/docs/video">Video player</a></li><li class="navListItem"><a class="navItem" href="/docs/xml-viewer">XML Viewer</a></li><li class="navListItem"><a class="navItem" href="/docs/xy-hexagons">XY hexagons (aggregate)</a></li><li class="navListItem"><a class="navItem" href="/docs/xy-time">X/Y/Time point data</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">For Developers</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/scripts">Conversion scripts</a></li><li class="navListItem"><a class="navItem" href="/docs/dev-guide">Developing SimWrapper</a></li><li class="navListItem"><a class="navItem" href="/docs/plugin-guide">Plugin writing guide</a></li><li class="navListItem"><a class="navItem" href="/docs/changelog">SimWrapper Change Log</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Flow maps</h1></header><article><div><span><p><img src="/docs/assets/flow-map.jpg" alt="flow map example">
+<em>A flow map of San Francisco</em></p>
+<p>Flowmaps depict <em>aggregate movements</em> between origins and destinations.</p>
+<h2><a class="anchor" aria-hidden="true" id="usage"></a><a href="#usage" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Usage</h2>
+<p>Flow maps can be included as panels in <strong>Dashboards</strong> or used as a <strong>standalone map</strong>. See <a href="guide-dashboards">Dashboard Guide</a> for general tips on creating dashboard configurations.</p>
+<p><strong>Standalone:</strong> Create a <code>viz-flowmap*.yaml</code> file as described below</p>
+<p>-or-</p>
+<p><strong>Embed in Dashboard:</strong> <code>Create a dashboard-*.yaml</code> file and include a <code>type:flowmap</code> section as desccribed below.</p>
+<ul>
+<li>Each chart panel is defined inside a <strong>row</strong> in a <code>dashboard-*.yaml</code> file.</li>
+<li>Standard title, description, height, and width fields define the frame.</li>
+</ul>
+<hr>
+<h3><a class="anchor" aria-hidden="true" id="configuration-reference-properties"></a><a href="#configuration-reference-properties" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Configuration reference properties</h3>
+<p>NOTE: These properties all go into a <code>viz-flowmap*.yaml</code> file as-is, or, in a dashboard file they all go under the <code>props:</code> section of a layout row. See the examples at the end of this document.</p>
+<h4><a class="anchor" aria-hidden="true" id="general"></a><a href="#general" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>General</h4>
+<ul>
+<li><strong>title:</strong> (optional) title of the visualization, appears right on top of the map. In the case of a dashboard: if a title is specified both under <code>general</code> and under <code>props</code>, the one under <code>general</code> will be used.</li>
+<li><strong>description:</strong> (optional) description of the visualization, appears between title and map. In the case of a dashboard: if a description is specified both under <code>general</code> and under <code>props</code>, the one under <code>general</code> will be used.</li>
+</ul>
+<h4><a class="anchor" aria-hidden="true" id="data"></a><a href="#data" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Data</h4>
+<p>Two sets of data are needed: geographical data in the form of a .geojson file and a .csv file containing the the flow data. The .geojson file can contain polygons or points. To make a join between the .geojson file and the .csv file possible, the feature IDs in the columns <code>boundariesJoinCol</code>, <code>origin</code> and <code>destination</code> need to match.</p>
+<ul>
+<li><strong>boundaries:</strong> Geojson file with feature element boundaries.</li>
+<li><strong>boundariesJoinCol:</strong> The property in the boundary file containing the feature ID</li>
+<li><strong>boundariesLabels:</strong> The human readable name for the boundary ID column</li>
+<li><strong>dataset:</strong> CSV file containing at least three columns: origin, destination, and flow.</li>
+<li><strong>origin:</strong> The column name containing origin IDs</li>
+<li><strong>destination:</strong> The column name containing destination IDs</li>
+<li><strong>flow:</strong> The column name containing flow values</li>
+</ul>
+<h4><a class="anchor" aria-hidden="true" id="general-map-settings"></a><a href="#general-map-settings" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>General Map Settings</h4>
+<p>These settings are optional. Depending on the data used and the focus of the work, adjustments may be helpful though.</p>
+<ul>
+<li><strong>center:</strong> (optional) coordinates that the map centers on. Can be provided as array or string. If it is not provided, a center is calculated using a sample of the data.</li>
+<li><strong>zoom:</strong> (optional) zoom level of the map between 5 and 20. If it is not provided, the zoom level 9 is used.</li>
+<li><strong>pitch:</strong> (optional) If it is not provided, the pitch is 0.</li>
+<li><strong>bearing:</strong> (optional) If it is not provided, the bearing is 0.</li>
+</ul>
+<h4><a class="anchor" aria-hidden="true" id="labels"></a><a href="#labels" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Labels</h4>
+<ul>
+<li><strong>locationLabelsEnabled:</strong> (optional) <code>true</code> or <code>false</code>. Turns the location labels on and off. If it is not provided, it is <code>true</code>.</li>
+<li><strong>pickable:</strong> (optional) <code>true</code> or <code>false</code>. When <code>true</code>, hovering over a flow highlights it. If it is not provided, it is <code>true</code>.</li>
+</ul>
+<h4><a class="anchor" aria-hidden="true" id="flows"></a><a href="#flows" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Flows</h4>
+<ul>
+<li><strong>animationEnabled:</strong> (optional) <code>true</code> or <code>false</code>. Turns the animation of the flows on and off. If it is not provided, it is <code>true</code>.</li>
+<li><strong>opacity:</strong> (optional) value between <code>0</code> and <code>1</code>, describes the opacity of the flows. If it is not provided, the opacity is <code>0</code>.</li>
+</ul>
+<h4><a class="anchor" aria-hidden="true" id="clustering"></a><a href="#clustering" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Clustering</h4>
+<p>Unless otherwise specified clustering is turned on, meaning the flows aggregate based on the zoom level. This is recommended for most datasets. When vizualising smaller datasets, where there is less overlap of the flows or trying to show specific details clustering can be turned off and a specific clustering level can be used instead.</p>
+<ul>
+<li><strong>clusteringEnabled:</strong> (optional) <code>true</code> or <code>false</code>. Turns the aggregation of the flows on and off. The standard value used is <code>true</code>.</li>
+<li><strong>clusteringAuto:</strong> (optional) <code>true</code>or <code>false</code>. Turns the automatic scaling of the clustering on and off. If turned off, a value for <strong>clusteringLevel</strong> should be provided. The standard value used is <code>true</code>.</li>
+<li><strong>clusteringLevel:</strong> (optional) The aggregation level of the flows. Relevant if <strong>clusteringAuto</strong> is <code>false</code>. Integers between 1 and 20.</li>
+</ul>
+<hr>
+<h3><a class="anchor" aria-hidden="true" id="sample-dashboardyaml-config-snippet"></a><a href="#sample-dashboardyaml-config-snippet" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Sample dashboard.yaml config snippet</h3>
+<pre><code class="hljs css language-yaml"><span class="hljs-attr">layout:</span>
+  <span class="hljs-bullet">-</span> <span class="hljs-attr">type:</span> <span class="hljs-string">'flowmap'</span>
+    <span class="hljs-attr">title:</span> <span class="hljs-string">'Trip Origin/Destination Flows'</span>
+    <span class="hljs-attr">description:</span> <span class="hljs-string">'Major flows shown'</span>
+    <span class="hljs-attr">height:</span> <span class="hljs-number">10</span>
+    <span class="hljs-attr">boundaries:</span> <span class="hljs-string">'taz1454.geojson'</span>
+    <span class="hljs-attr">boundariesJoinCol:</span> <span class="hljs-string">'TAZ1454'</span>
+    <span class="hljs-attr">boundariesLabels:</span> <span class="hljs-string">'TAZ'</span>
+    <span class="hljs-attr">dataset:</span> <span class="hljs-string">'trip-od-flows.csv'</span>
+    <span class="hljs-attr">origin:</span> <span class="hljs-string">'origin'</span>
+    <span class="hljs-attr">destination:</span> <span class="hljs-string">'destination'</span>
+    <span class="hljs-attr">flow:</span> <span class="hljs-string">'trips'</span>
+    <span class="hljs-attr">animationEnabled:</span> <span class="hljs-literal">false</span>
+    <span class="hljs-attr">clusteringEnabled:</span> <span class="hljs-literal">true</span>
+    <span class="hljs-attr">clusteringAuto:</span> <span class="hljs-literal">true</span>
+    <span class="hljs-attr">clusteringLevel:</span> <span class="hljs-number">20</span>
+    <span class="hljs-attr">locationLabelsEnabled:</span> <span class="hljs-literal">true</span>
+    <span class="hljs-attr">pickable:</span> <span class="hljs-literal">true</span>
+    <span class="hljs-attr">opacity:</span> <span class="hljs-number">1</span>
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="sample-viz-flowmapyaml-config-snippet"></a><a href="#sample-viz-flowmapyaml-config-snippet" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Sample viz-flowmap.yaml config snippet</h3>
+<pre><code class="hljs css language-yaml"><span class="hljs-attr">title:</span> <span class="hljs-string">'Trip Origin/Destination Flows'</span>
+<span class="hljs-attr">description:</span> <span class="hljs-string">'Major flows shown'</span>
+<span class="hljs-attr">boundaries:</span> <span class="hljs-string">'taz1454.geojson'</span>
+<span class="hljs-attr">boundariesJoinCol:</span> <span class="hljs-string">'TAZ1454'</span>
+<span class="hljs-attr">boundariesLabels:</span> <span class="hljs-string">'TAZ1454'</span>
+<span class="hljs-attr">dataset:</span> <span class="hljs-string">'trip-od-flows.csv'</span>
+<span class="hljs-attr">origin:</span> <span class="hljs-string">'origin'</span>
+<span class="hljs-attr">destination:</span> <span class="hljs-string">'destination'</span>
+<span class="hljs-attr">flow:</span> <span class="hljs-string">'trips'</span>
+<span class="hljs-attr">zoom:</span> <span class="hljs-number">9</span>
+<span class="hljs-attr">adaptiveScalesEnabled:</span> <span class="hljs-literal">true</span>
+<span class="hljs-attr">animationEnabled:</span> <span class="hljs-literal">true</span>
+<span class="hljs-attr">clusteringEnabled:</span> <span class="hljs-literal">true</span>
+<span class="hljs-attr">clusteringAuto:</span> <span class="hljs-literal">true</span>
+<span class="hljs-attr">clusteringLevel:</span> <span class="hljs-number">20</span>
+<span class="hljs-attr">locationLabelsEnabled:</span> <span class="hljs-literal">true</span>
+<span class="hljs-attr">pickable:</span> <span class="hljs-literal">true</span>
+<span class="hljs-attr">opacity:</span> <span class="hljs-number">1</span>
+</code></pre>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/csv"><span class="arrow-prev">← </span><span>CSV table viewer</span></a><a class="docs-next button" href="/docs/gridmap"><span>Gridmap</span><span class="arrow-next"> →</span></a></div></div></div></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/vsp-logo-300dpi.png" alt="SimWrapper"/></a><div><h5>Docs</h5><a href="/docs/guide-getting-started">Getting Started</a><a href="/docs/dev-guide">Developer Guide</a><a href="/blog">Latest Updates</a></div><div><h5>More</h5><a href="https://vsp.berlin">VSP Home</a><a href="https://matsim.org">MATSim.org</a><a href="https://github.com/simwrapper/simwrapper">⭐ us on GitHub!</a></div></section><section class="copyright">Copyright © 2025 VSP, TU Berlin</section></footer></div></body></html>
