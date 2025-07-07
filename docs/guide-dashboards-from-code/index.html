@@ -1,0 +1,231 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>MATSim dashboards as code · SimWrapper</title><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="generator" content="Docusaurus"/><meta name="description" content="MATSim users should take advantage of the [MATSim SimWrapper Contrib](https://github.com/matsim-org/matsim-libs/tree/main/contribs/simwrapper) which makes building SimWrapper dashboards very easy."/><meta name="docsearch:language" content="en"/><meta property="og:title" content="MATSim dashboards as code · SimWrapper"/><meta property="og:type" content="website"/><meta property="og:url" content="https://docs.simwrapper.app/"/><meta property="og:description" content="MATSim users should take advantage of the [MATSim SimWrapper Contrib](https://github.com/matsim-org/matsim-libs/tree/main/contribs/simwrapper) which makes building SimWrapper dashboards very easy."/><meta property="og:image" content="https://docs.simwrapper.app/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/img/SW_favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://docs.simwrapper.app/blog/atom.xml" title="SimWrapper Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://docs.simwrapper.app/blog/feed.xml" title="SimWrapper Blog RSS Feed"/><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Roboto+Slab:400,400i,700"/><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/SW_favicon.png" alt="SimWrapper"/><h2 class="headerTitleWithLogo">SimWrapper</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/docs/" target="_self">Documentation</a></li><li class="siteNavGroupActive"><a href="/docs/examples" target="_self">Examples</a></li><li class=""><a href="/blog/" target="_self">News</a></li><li class=""><a href="https://github.com/simwrapper/simwrapper" target="_blank">GitHub</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Guides</span></h2></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Introduction</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/">SimWrapper</a></li><li class="navListItem"><a class="navItem" href="/docs/examples">Examples</a></li><li class="navListItem"><a class="navItem" href="/docs/file-management">File management</a></li><li class="navListItem"><a class="navItem" href="/docs/running-locally">Running locally/offline</a></li><li class="navListItem"><a class="navItem" href="/docs/help">Getting help</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Guides</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/guide-getting-started">Getting started tutorial</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docs/guide-dashboards-from-code">MATSim dashboards as code</a></li><li class="navListItem"><a class="navItem" href="/docs/guide-dashboards">Dashboards in depth</a></li><li class="navListItem"><a class="navItem" href="/docs/guide-cloud-storage">Network/cloud storage</a></li><li class="navListItem"><a class="navItem" href="/docs/guide-project-sites">Building a project site</a></li><li class="navListItem"><a class="navItem" href="/docs/guide-publishing">Publishing to the web</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">API Reference / MATSim</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/link-vols">MATSim Network link plots</a></li><li class="navListItem"><a class="navItem" href="/docs/carrier-viewer">MATSim Carrier viewer</a></li><li class="navListItem"><a class="navItem" href="/docs/drt-vehicles">MATSim DRT vehicle animation</a></li><li class="navListItem"><a class="navItem" href="/docs/logistics">MATSim Logistics Viewer</a></li><li class="navListItem"><a class="navItem" href="/docs/transit-supply">MATSim Public transit supply/demand</a></li><li class="navListItem"><a class="navItem" href="/docs/matsim-events">MATSim Events viewer</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">API Reference / General</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/aggregate-od">Aggregate O/D flows</a></li><li class="navListItem"><a class="navItem" href="/docs/bar-area-line">Bar, area, and line charts</a></li><li class="navListItem"><a class="navItem" href="/docs/calculation-tables">Calculation tables</a></li><li class="navListItem"><a class="navItem" href="/docs/csv">CSV table viewer</a></li><li class="navListItem"><a class="navItem" href="/docs/flow-map">Flow maps</a></li><li class="navListItem"><a class="navItem" href="/docs/gridmap">Gridmap</a></li><li class="navListItem"><a class="navItem" href="/docs/heatmap-charts">Heatmap chart</a></li><li class="navListItem"><a class="navItem" href="/docs/matrix">Matrix (HDF5) Viewer</a></li><li class="navListItem"><a class="navItem" href="/docs/pie-charts">Pie charts</a></li><li class="navListItem"><a class="navItem" href="/docs/plotly">Plotly</a></li><li class="navListItem"><a class="navItem" href="/docs/sankey">Sankey/Alluvial diagrams</a></li><li class="navListItem"><a class="navItem" href="/docs/xy-scatter-plots">Scatter plots</a></li><li class="navListItem"><a class="navItem" href="/docs/shapefiles">Shapefiles: Area maps, network links, and GeoJSON</a></li><li class="navListItem"><a class="navItem" href="/docs/text-block">Text blocks</a></li><li class="navListItem"><a class="navItem" href="/docs/tiles">Tiles</a></li><li class="navListItem"><a class="navItem" href="/docs/vega-lite">Vega-Lite charts</a></li><li class="navListItem"><a class="navItem" href="/docs/video">Video player</a></li><li class="navListItem"><a class="navItem" href="/docs/xml-viewer">XML Viewer</a></li><li class="navListItem"><a class="navItem" href="/docs/xy-hexagons">XY hexagons (aggregate)</a></li><li class="navListItem"><a class="navItem" href="/docs/xy-time">X/Y/Time point data</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">For Developers</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/scripts">Conversion scripts</a></li><li class="navListItem"><a class="navItem" href="/docs/dev-guide">Developing SimWrapper</a></li><li class="navListItem"><a class="navItem" href="/docs/plugin-guide">Plugin writing guide</a></li><li class="navListItem"><a class="navItem" href="/docs/changelog">SimWrapper Change Log</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">MATSim dashboards as code</h1></header><article><div><span><p>MATSim users should take advantage of the <a href="https://github.com/matsim-org/matsim-libs/tree/main/contribs/simwrapper">MATSim SimWrapper Contrib</a> which makes building SimWrapper dashboards very easy.</p>
+<p>Including the simwrapper contrib allows you to write Java code directly in your simulation that builds dashboards for you -- in most cases you don't need to write any YAML at all.</p>
+<p>By adding a single line to your MATSim project config, you will get a <em>default SimWrapper dashboard</em> that gets built automatically when you run your simulation. From there, you can add further project-specific dashboards as needed.</p>
+<h2><a class="anchor" aria-hidden="true" id="including-the-simwrapper-contrib"></a><a href="#including-the-simwrapper-contrib" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Including the SimWrapper contrib</h2>
+<p>First, make sure the simwrapper contrib is included and activated in your project <code>pom.xml</code>:</p>
+<pre><code class="hljs css language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">dependencies</span>&gt;</span>
+  <span class="hljs-comment">&lt;!-- ... --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.matsim.contrib<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>simwrapper<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>${matsim.version}<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">dependencies</span>&gt;</span>
+</code></pre>
+<p>Then, in your run class, add this one line wherever you add your other project modules:</p>
+<pre><code class="hljs css language-java">controler.addOverridingModule(<span class="hljs-keyword">new</span> SimWrapperModule())
+</code></pre>
+<p>That's it. When you run your simulation, the contrib will automatically generate the necessary <code>dashboard-*.yaml</code> files in your output folder.<br/>Open <a href="https://simwrapper.app">simwrapper.app</a>, open your local output folder, and the dashboards should be there.</p>
+<p><img src="/docs/assets/default-dashboard.png" alt="default dashboard"></p>
+<h2><a class="anchor" aria-hidden="true" id="creating-your-own-dashboards-from-code"></a><a href="#creating-your-own-dashboards-from-code" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Creating your own dashboards from code</h2>
+<p>Now that you have the default dashboard working, you can start adding your own dashboards.</p>
+<p>There are fully-executed examples in the following open scenarios:</p>
+<ul>
+<li><a href="https://github.com/matsim-scenarios/matsim-berlin">https://github.com/matsim-scenarios/matsim-berlin</a></li>
+<li><a href="https://github.com/matsim-scenarios/matsim-leipzig">https://github.com/matsim-scenarios/matsim-leipzig</a></li>
+</ul>
+<p>Explore the files in <code>src/main/java/org/matsim/dashboard</code> for examples on creating post-processed CSV outputs and the dashboard configurations.</p>
+<ul>
+<li>In particular this example dashboard is very feature-rich: <a href="https://github.com/matsim-scenarios/matsim-leipzig/blob/main/src/main/java/org/matsim/dashboard/CycleHighwayDashboard.java">https://github.com/matsim-scenarios/matsim-leipzig/blob/main/src/main/java/org/matsim/dashboard/CycleHighwayDashboard.java</a></li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="intellij-autocomplete"></a><a href="#intellij-autocomplete" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>IntelliJ autocomplete</h3>
+<p>While writing your dashboard code, take advantage of IntelliJ's autocomplete feature. At each step of writing the code below, pressing <code>Tab</code> after any of the dots will drop down an autocomplete with all of the YAML parameters available on that object. This is far less error-prone than trying to decipher the YAML configuration options from the SimWrapper documentation itself.</p>
+<p>The SimWrapper docs are the primary source of truth, however. If you find discrepancies between what IntelliJ thinks and what the SimWrapper docs say, try both and report back to us if there are problems!</p>
+<p><strong>Example dashboard-building Java code:</strong></p>
+<pre><code class="hljs css language-java">Config config = ConfigUtils.createConfig();
+
+SimWrapper sw = SimWrapper.create(config);
+
+SimWrapperConfigGroup simwrapperCfg = ConfigUtils.addOrGetModule(config, SimWrapperConfigGroup<span class="hljs-class">.<span class="hljs-keyword">class</span>)</span>;
+simwrapperCfg.defaultDashboards = SimWrapperConfigGroup.Mode.disabled;
+simwrapperCfg.sampleSize = <span class="hljs-number">0.25</span>;
+simwrapperCfg.defaultParams().mapCenter = <span class="hljs-string">"12.38,51.34"</span>;
+simwrapperCfg.defaultParams().mapZoomLevel = <span class="hljs-number">6.8</span>;
+
+<span class="hljs-comment">//skip default dashboards</span>
+simwrapperCfg.defaultDashboards = SimWrapperConfigGroup.Mode.disabled;
+
+<span class="hljs-comment">//add dashboards according to command line parameters</span>
+<span class="hljs-keyword">if</span> (cycleHighwayAnalysis == CycleHighwayAnalysis.ENABLED) {
+  sw.addDashboard(Dashboard.customize(<span class="hljs-keyword">new</span> CycleHighwayDashboard(baseDir, shp.getShapeFile(), highwaysShpPath)).context(<span class="hljs-string">"cycle-highway"</span>));
+}
+
+<span class="hljs-keyword">try</span> {
+  sw.generate(runDirectory);
+  sw.run(runDirectory);
+} <span class="hljs-keyword">catch</span> (IOException e) {
+  <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> InterruptedIOException();
+}
+</code></pre>
+<p><strong>Snippet from CycleHighwayDashboard.java:</strong></p>
+<pre><code class="hljs css language-java">package org.matsim.dashboard;
+
+import org.matsim.analysis.CycleHighwayAnalysis;
+import org.matsim.application.analysis.traffic.TrafficAnalysis;
+import org.matsim.application.prepare.network.CreateGeoJsonNetwork;
+import org.matsim.simwrapper.Dashboard;
+import org.matsim.simwrapper.Header;
+import org.matsim.simwrapper.Layout;
+import org.matsim.simwrapper.viz.*;
+import tech.tablesaw.plotly.traces.BarTrace;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * Shows information about an optional policy case, which implements cycle highways in Leipzig.
+ * It also compares the agents and their trips using the cycle highways with their respective trips in the base case.
+ */
+public class CycleHighwayDashboard implements Dashboard {
+    private final String basePath;
+    private final String shp;
+    private final String highwaysShp;
+
+    CycleHighwayDashboard(String basePath, String shp, String highwaysShp) {
+        if (!basePath.endsWith("/"))            basePath += "/";
+        this.basePath = basePath;
+        this.shp = shp;
+        this.highwaysShp = highwaysShp;
+    }
+
+    @Override
+    public void configure(Header header, Layout layout) {
+        header.title = "Cycle Highways Dashboard";
+        header.description = "Shows statistics about agents, who used the newly implemented cycle highway " +
+            "and compares to the corresponding trips in the base case.";
+
+        String[] args = new ArrayList&lt;&gt;(List.of("--base-path", basePath, "--shp", shp, "--highways-shp-path", highwaysShp)).toArray(new String[0]);
+
+        layout.row("first")
+            .el(Tile.class, (viz, data) -&gt; {
+                viz.dataset = data.compute(CycleHighwayAnalysis.class, "mean_travel_stats.csv", args);
+                viz.height = 0.1;
+            });
+
+        layout.row("modalSplit")
+            .el(Plotly.class, (viz, data) -&gt; {
+                viz.title = "Modal split";
+
+                viz.layout = tech.tablesaw.plotly.components.Layout.builder()
+                    .barMode(tech.tablesaw.plotly.components.Layout.BarMode.STACK)
+                    .build();
+
+                Plotly.DataSet ds = viz.addDataset(data.compute(CycleHighwayAnalysis.class, "mode_share.csv", args))
+                    .constant(SOURCE, "Policy")
+                    .aggregate(List.of(MAIN_MODE), SHARE, Plotly.AggrFunc.SUM);
+
+                Plotly.DataSet dsBase = viz.addDataset(data.compute(CycleHighwayAnalysis.class, "mode_share_base.csv", args))
+                    .constant(SOURCE, "Base")
+                    .aggregate(List.of(MAIN_MODE), SHARE, Plotly.AggrFunc.SUM);
+
+                viz.mergeDatasets = true;
+
+                viz.addTrace(BarTrace.builder(Plotly.OBJ_INPUT, Plotly.INPUT).orientation(BarTrace.Orientation.HORIZONTAL).build(),
+                    ds.mapping()
+                        .name(MAIN_MODE)
+                        .y(SOURCE)
+                        .x(SHARE)
+                );
+
+        layout.row("locations")
+            .el(Hexagons.class, (viz, data) -&gt; {
+
+                viz.title = "Cycle highway trips - Origins";
+                viz.center = data.context().getCenter();
+                viz.zoom = data.context().mapZoomLevel;
+                viz.height = 7.5;
+                viz.width = 2.0;
+                viz.file = data.compute(CycleHighwayAnalysis.class, "cycle_highway_agents_trip_start_end.csv");
+                viz.projection = CRS;
+                viz.addAggregation("trip origins", "person", "start_x", "start_y");
+            })
+            .el(Hexagons.class, (viz, data) -&gt; {
+                viz.title = "Cycle highway trips - Destinations";
+                viz.center = data.context().getCenter();
+                viz.zoom = data.context().mapZoomLevel;
+                viz.height = 7.5;
+                viz.width = 2.0;
+                viz.file = data.compute(CycleHighwayAnalysis.class, "cycle_highway_agents_trip_start_end.csv");
+                viz.projection = CRS;
+                viz.addAggregation("trip destinations", "person", "end_x", "end_y");
+            })
+
+        layout.row("volumes")
+            .el(MapPlot.class, (viz, data) -&gt; {
+                viz.title = "Simulated traffic volume by bike";
+                viz.center = data.context().getCenter();
+                viz.zoom = data.context().mapZoomLevel;
+                viz.height = 7.5;
+                viz.width = 2.0;
+                viz.setShape(data.compute(CreateGeoJsonNetwork.class, "network.geojson", "--with-properties", "--mode-filter", "car,freight,drt,bike"), "id");
+                viz.addDataset(TRAFFIC, data.compute(TrafficAnalysis.class, "traffic_stats_by_link_daily.csv", "--transport-modes" , "car,bike,freight"));
+
+                viz.display.lineColor.dataset = TRAFFIC;
+                viz.display.lineColor.columnName = "vol_bike";
+                viz.display.lineColor.join = "link_id";
+                viz.display.lineColor.setColorRamp(ColorScheme.RdYlBu, 5, true);
+                viz.display.lineWidth.dataset = TRAFFIC;
+                viz.display.lineWidth.columnName = "vol_bike";
+                viz.display.lineWidth.scaleFactor = 20000d;
+                viz.display.lineWidth.join = "link_id";
+            });
+    }
+}
+</code></pre>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/guide-getting-started"><span class="arrow-prev">← </span><span>Getting started tutorial</span></a><a class="docs-next button" href="/docs/guide-dashboards"><span>Dashboards in depth</span><span class="arrow-next"> →</span></a></div></div></div></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/vsp-logo-300dpi.png" alt="SimWrapper"/></a><div><h5>Docs</h5><a href="/docs/guide-getting-started">Getting Started</a><a href="/docs/dev-guide">Developer Guide</a><a href="/blog">Latest Updates</a></div><div><h5>More</h5><a href="https://vsp.berlin">VSP Home</a><a href="https://matsim.org">MATSim.org</a><a href="https://github.com/simwrapper/simwrapper">⭐ us on GitHub!</a></div></section><section class="copyright">Copyright © 2025 VSP, TU Berlin</section></footer></div></body></html>
