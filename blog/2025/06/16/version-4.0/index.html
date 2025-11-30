@@ -1,0 +1,80 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>SimWrapper version 4.0 · SimWrapper</title><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="generator" content="Docusaurus"/><meta name="description" content="Announcing the release of SimWrapper 4.0, available now on GitHub and at **https://simwrapper.app**"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="SimWrapper version 4.0 · SimWrapper"/><meta property="og:type" content="website"/><meta property="og:url" content="https://docs.simwrapper.app/blog/2025/06/16/version-4.0"/><meta property="og:description" content="Announcing the release of SimWrapper 4.0, available now on GitHub and at **https://simwrapper.app**"/><meta property="og:image" content="https://docs.simwrapper.app/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/img/SW_favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://docs.simwrapper.app/blog/atom.xml" title="SimWrapper Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://docs.simwrapper.app/blog/feed.xml" title="SimWrapper Blog RSS Feed"/><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Roboto+Slab:400,400i,700"/><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/SW_favicon.png" alt="SimWrapper"/><h2 class="headerTitleWithLogo">SimWrapper</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/docs/" target="_self">Documentation</a></li><li class=""><a href="/docs/examples" target="_self">Examples</a></li><li class="siteNavGroupActive"><a href="/blog/" target="_self">News</a></li><li class=""><a href="https://github.com/simwrapper/simwrapper" target="_blank">GitHub</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Recent Posts</span></h2></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Recent Posts</h3><ul class=""><li class="navListItem"><a class="navItem" href="/blog/2025/10/23/version-4.3">What&#x27;s new in SimWrapper 4.3</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/blog/2025/06/16/version-4.0">SimWrapper version 4.0</a></li><li class="navListItem"><a class="navItem" href="/blog/2025/03/03/simwrapper-app">simwrapper.app - the new home for SimWrapper</a></li><li class="navListItem"><a class="navItem" href="/blog/2025/02/10/version-3.6">SimWrapper version 3.6</a></li><li class="navListItem"><a class="navItem" href="/blog/2024/07/11/version-3.3">SimWrapper version 3.3</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer postContainer blogContainer"><div class="wrapper"><div class="lonePost"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle"><a href="/blog/2025/06/16/version-4.0">SimWrapper version 4.0</a></h1><p class="post-meta">June 16, 2025</p><div class="authorBlock"><p class="post-authorName"><a href="https://github.com/billyc" target="_blank" rel="noreferrer noopener">Billy Charlton</a></p><div class="authorPhoto"><a href="https://github.com/billyc" target="_blank" rel="noreferrer noopener"><img src="https://avatars0.githubusercontent.com/u/1427526?v=4" alt="Billy Charlton"/></a></div></div></header><div><span><p>Announcing the release of SimWrapper 4.0, available now on GitHub and at <strong><a href="https://simwrapper.app">https://simwrapper.app</a></strong></p>
+<p>There are lots of new things to share:</p>
+<h3><a class="anchor" aria-hidden="true" id="new-front-page-and-file-browser"></a><a href="#new-front-page-and-file-browser" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>New front page and file browser</h3>
+<p><img src="/blog/assets/frontpage.png" alt="simwrapper front page"></p>
+<p>The front page and file browser are much cleaner and more refined with a less garish color scheme. In addition to looking nicer, it now should be easier to find your projects, favorites, and documentation.</p>
+<h3><a class="anchor" aria-hidden="true" id="experimental-matsim-event-file-viewer"></a><a href="#experimental-matsim-event-file-viewer" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Experimental MATSim event file viewer</h3>
+<p><img src="/blog/assets/event-animation.png" alt="Example event viewer with vehicle animation"></p>
+<p>A first stab at a viewer for MATSim event files is now enabled. Currently this just shows vehicle trajectories found in the file, but a more feature-rich version is in the works.</p>
+<p>Inside simwrapper.app you can browse to any folder containing an <code>output_events.xml.gz</code> file, and click on the &quot;EVENTS-output.xml.gz&quot; in the list of maps. The file should start streaming almost immediately.</p>
+<h3><a class="anchor" aria-hidden="true" id="matrix-viewer-for-omxhdf5-files"></a><a href="#matrix-viewer-for-omxhdf5-files" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Matrix viewer for OMX/HDF5 files</h3>
+<p><img src="/blog/assets/matrix-viewer.png" alt="Matrix viewer"></p>
+<p>The OMX/HDF5 matrix viewer allows you to explore your matrix data in tabular form -- or in combination with a zonal shapefile, you can visually inspect it one row or column at a time. (If you have ideas on how to visual the <em>entire</em> matrix on a map instead of just one slice, let me know!)</p>
+<p>The matrix viewer has been out for a while. This version sports a much-improved user interface and massively improved performance for non-local files. Other additions include a built-in compare/diff mode, table and zone filter/search capability,  and editable legend breakpoints.</p>
+<h3><a class="anchor" aria-hidden="true" id="updated-python-package-for-local-installations"></a><a href="#updated-python-package-for-local-installations" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Updated python package for local installations</h3>
+<p>The old <code>pip install simwrapper</code> python app was back-burnered for a while, but it is back!</p>
+<p>The new version is ideal for those of you who want to run SimWrapper inside your firewall instead of using the <a href="https://simwrapper.app">simwrapper.app</a> website.</p>
+<p>The new version learned a new command, <code>simwrapper flask</code> which starts a Python &quot;flask&quot; app and serves up files in the current folder from a local HTTP server. This is super useful if you have cloud-storage files mounted to a folder on a server, for example!</p>
+<p>Contact me or <a href="https://github.com/orgs/simwrapper/discussions">ask on the discussion board</a> for more details on how to use the new Python app.</p>
+<h3><a class="anchor" aria-hidden="true" id="and-more"></a><a href="#and-more" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>...and more!</h3>
+<p>There are many, many bugfixes and small feature improvements in this release. All of us who have been working on this code or supporting the effort thank you for your interest in SimWrapper! Speaking of which...</p>
+<p><img src="/blog/assets/simwrapper-usage.png" alt="simwrapper usage graph"></p>
+<p>There is a lot of interest in SimWrapper this year and the line keeps going up!</p>
+<p>Let's see where 4.x takes us!</p>
+</span></div></div><div class="blogSocialSection"></div></div><div class="blog-recent"><a class="button" href="/blog/">Recent Posts</a></div></div></div></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/vsp-logo-300dpi.png" alt="SimWrapper"/></a><div><h5>Docs</h5><a href="/docs/guide-getting-started">Getting Started</a><a href="/docs/dev-guide">Developer Guide</a><a href="/blog">Latest Updates</a></div><div><h5>More</h5><a href="https://vsp.berlin">VSP Home</a><a href="https://matsim.org">MATSim.org</a><a href="https://github.com/simwrapper/simwrapper">⭐ us on GitHub!</a></div></section><section class="copyright">Copyright © 2025 VSP, TU Berlin</section></footer></div></body></html>
